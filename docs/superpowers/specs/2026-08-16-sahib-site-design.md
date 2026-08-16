@@ -10,7 +10,7 @@
 
 Replace https://www.sahib.ca with a clean 2026 site that a guest on a phone can use to pick a location, read a menu, reserve, or order. Same business: award-winning West Island Indian restaurant + pub, two rooms, catering.
 
-Success: someone lands from Google Maps, switches to FR or हिन्दी, finds Butter Chicken or a signature cocktail, and taps Reserve or Order without fighting Wix chrome.
+Success: someone lands from Google Maps, switches to FR or हिन्दी, finds Butter Chicken or a signature cocktail, and taps Reserve, Order, or JustBookMe without fighting Wix chrome.
 
 ## 2026 look (hard constraint)
 
@@ -26,7 +26,7 @@ This is a **visual replacement**, not a restyle of the Wix layout. If a screensh
 - Photography: only Sahib rooms and food. Full-bleed home hero, then restraint. Gallery is a tight two-tab grid
 - Motion: 200–300ms fades/eases, `prefers-reduced-motion: reduce` disables them. No sliders, no autoplay video
 - Color in OKLCH tokens. AA contrast on text and teal-on-cream
-- Fluid type (`clamp`). Mobile first. Thumb bar on small screens: Reserve · Order · Menu
+- Fluid type (`clamp`). Mobile first. Thumb bar on small screens: Reserve · Order · JustBookMe. Menu stays in the header.
 
 **Do not**
 
@@ -40,7 +40,7 @@ This is a **visual replacement**, not a restyle of the Wix layout. If a screensh
 ## Non-goals
 
 - No CMS / admin login
-- No in-house reservations or online ordering
+- No in-house table map or checkout (JustBookMe takes a request / missed call; it does not replace a full dining-room book)
 - No blog, no birthday newsletter popup
 - No separate mobile app
 - No replacing TBDine, Libro, or the two order vendors
@@ -66,12 +66,12 @@ Legacy Wix URLs 301 to the new ones:
 - `/menu` → `/en/menu`
 
 **Header:** logo · Menu · Pub · Catering · Gallery · Contact · locale switch (EN / FR / हिन्दी).  
-**Mobile thumb bar:** Reserve · Order · Menu. Reserve/Order open a two-button sheet (Pointe-Claire / Dorval).
+**Mobile thumb bar:** Reserve · Order · JustBookMe. Each opens a two-location sheet (Pointe-Claire / Dorval). Menu stays in the header.
 
 ## Pages
 
 **Home**  
-Two-location opener, 20 years, buffet (Pointe-Claire only, Wed–Sun 11:30–14:30), trivia Thursday 7pm Dorval ($50, max 6), gift certificates, Best of MTL badge if we have the asset. Primary CTAs: Reserve, Order, Menu. No Wix video player chrome.
+Two-location opener, 20 years, buffet (Pointe-Claire only, Wed–Sun 11:30–14:30), trivia Thursday 7pm Dorval ($50, max 6), gift certificates, Best of MTL badge if we have the asset. Primary CTAs: Reserve, Order, JustBookMe, Menu. No Wix video player chrome.
 
 **Food menu**  
 Sticky section chips: Appetizers, Vegetarian, Tandoor, Seafood, Chicken, Lamb, Balti, Rice & bread, Sides, Desserts. Each item: localized name, localized description, price (CAD, two decimals), optional tags `vegan` | `vegetarian` | `gluten` | `favorite` | `spicy` | `hot`. Source: current Wix menu, copy-edited.
@@ -95,9 +95,23 @@ Two cards.
 | Hours | Wed–Sun 11:30–22:00. Closed Mon–Tue | Tue–Sun 11:30–22:00. Closed Mon |
 | Reserve | [TBDine](https://www.tbdine.com/book/restaurant/sahib?idApp=1390&language=en-us) | [Libro](https://widgets.libroreserve.com/WEB/QC014745582811/book) |
 | Order | [orderonline.sahib.ca](http://orderonline.sahib.ca/) | [order-online.ai](https://sahibindianrestaurant.order-online.ai/) |
+| JustBookMe | `justbookme.ca/book/sahib-pointe-claire` | `justbookme.ca/book/sahib-dorval` |
 | Map | Google Maps pin | Google Maps pin |
 
 Dorval note: outdoor seating not guaranteed. Email: `rajiv@sahib.ca`.
+
+### JustBookMe (third action)
+
+JustBookMe is **ours** — AI receptionist for missed and after-hours calls. It sits next to Reserve and Order. It does not replace them.
+
+- **Label:** JustBookMe (not “Call AI”, not a generic phone icon)
+- **Copy** (localized): “Can’t get through? JustBookMe answers and takes your request.”
+- **Where:** home CTAs, contact cards, mobile thumb bar, location sheet
+- **Where not:** no floating chat bubble, no full-page takeover, no footer billboard
+- **Links:** public book pages on justbookme.ca, slugs `sahib-pointe-claire` and `sahib-dorval`. If a dedicated Sahib voice number exists at launch, the same sheet may include `tel:` to that number
+- **Look:** same teal/cream type as the rest of the site. Small JustBookMe wordmark on the action is fine; it must still feel like Sahib, not a JustBookMe landing page
+
+Slugs go in `content/locations.ts`. If a book page is not live yet, the button still renders and points at the intended URL so cutover is a JSON change.
 
 ## Language
 
@@ -150,7 +164,7 @@ Prices are integer cents. Format with `Intl.NumberFormat` per locale. Menu edits
 | Catering send fail | “Could not send — call 514.426.1121” (localized) |
 | Missing menu section | Omit the chip; do not render an empty heading |
 | Unknown locale | Redirect to `/en/…` |
-| External reserve/order down | Still a normal link; we do not iframe vendors |
+| External reserve/order/JustBookMe down | Still a normal link; we do not iframe vendors |
 
 ## Testing
 
@@ -158,7 +172,7 @@ Prices are integer cents. Format with `Intl.NumberFormat` per locale. Menu edits
 - Smoke: all six pages × three locales render 200
 - Form: invalid email rejected; valid payload hits the route
 - Visual: mobile 390px and desktop 1280px — menus readable without pinch-zoom
-- Manual: Reserve/Order sheets hit the correct vendor per location
+- Manual: Reserve / Order / JustBookMe sheets hit the correct vendor or book URL per location
 - Lighthouse (staging): LCP &lt; 2.5s on home, no horizontal scroll
 
 ## Launch content rules
@@ -171,4 +185,5 @@ Prices are integer cents. Format with `Intl.NumberFormat` per locale. Menu edits
 
 - Hindi for ~80 dishes is the long pole. Chrome + home + contact can ship first; menu Hindi can follow in the same JSON without a redesign
 - DNS/Wix cutover needs their registrar access
-- Two order systems and two reserve systems stay awkward by design — do not hide that behind one fake checkout
+- Two order systems, two reserve vendors, plus JustBookMe stay explicit — do not hide them behind one fake checkout
+- JustBookMe book slugs must exist on justbookme.ca before Sahib launch, or the third action 404s for guests
