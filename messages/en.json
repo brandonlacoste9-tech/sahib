@@ -1,0 +1,30 @@
+{
+  "meta": { "site": "Sahib" },
+  "nav": {
+    "menu": "Menu",
+    "pub": "Pub",
+    "catering": "Catering",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "reserve": "Reserve",
+    "order": "Order",
+    "justbookme": "JustBookMe",
+    "justbookmeHint": "Can't get through? JustBookMe answers and takes your request.",
+    "skip": "Skip to content"
+  },
+  "sheet": { "pickLocation": "Choose a location", "close": "Close" },
+  "home": {
+    "kicker": "West Island · Est. 20 years",
+    "title": "Indian restaurant and pub.",
+    "lead": "Two rooms. Award-winning cooking. A proper bar.",
+    "buffet": "Buffet lunch, Pointe-Claire only, Wednesday to Sunday 11:30–14:30.",
+    "trivia": "Trivia night, Dorval, Thursdays 7:00 PM. Teams of up to 6. $50 prize. Reserve recommended."
+  },
+  "catering": {
+    "title": "Catering",
+    "send": "Send request",
+    "success": "Sent. We will write you back.",
+    "error": "Could not send — call 514.426.1121"
+  },
+  "contact": { "email": "rajiv@sahib.ca" }
+}

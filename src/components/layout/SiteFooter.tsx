@@ -1,0 +1,38 @@
+import { getLocale, getTranslations } from 'next-intl/server';
+import { cateringEmail, locations } from '@/content/locations';
+import type { Locale } from '@/i18n/routing';
+
+export async function SiteFooter() {
+  const locale = (await getLocale()) as Locale;
+  const t = await getTranslations('contact');
+
+  return (
+    <footer className="mt-auto border-t border-line">
+      <div className="mx-auto grid max-w-[1120px] gap-10 px-6 py-14 md:grid-cols-3">
+        {locations.map((loc) => (
+          <div key={loc.id}>
+            <h2 className="font-heading text-2xl text-ink">{loc.name[locale]}</h2>
+            <address className="mt-3 not-italic text-sm leading-relaxed text-muted">
+              {loc.addressLines.map((line) => (
+                <span key={line} className="block">
+                  {line}
+                </span>
+              ))}
+              <span className="block">{loc.postal}</span>
+              <a href={loc.phoneHref} className="mt-2 block text-teal">
+                {loc.phone}
+              </a>
+              <span className="mt-2 block">{loc.hours[locale]}</span>
+            </address>
+          </div>
+        ))}
+        <div>
+          <h2 className="font-heading text-2xl text-ink">Sahib</h2>
+          <a href={`mailto:${t('email')}`} className="mt-3 block text-sm text-teal">
+            {cateringEmail}
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
+}
