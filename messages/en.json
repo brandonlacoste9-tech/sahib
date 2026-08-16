@@ -5,6 +5,7 @@
     "pub": "Pub",
     "catering": "Catering",
     "gallery": "Gallery",
+    "blog": "Blog",
     "contact": "Contact",
     "reserve": "Reserve",
     "order": "Order",
@@ -46,6 +47,14 @@
     "invalidGuests": "Enter a guest count between 1 and 2000",
     "invalidOccasion": "Enter an occasion",
     "invalidNotes": "Notes are too long"
+  },
+  "blog": {
+    "title": "Blog",
+    "lead": "Dining notes and the stories behind the food.",
+    "by": "By {author}",
+    "readMinutes": "{n} min read",
+    "back": "All posts",
+    "more": "Read"
   },
   "contact": { "email": "rajiv@sahib.ca", "map": "Map" },
   "justbookme": {

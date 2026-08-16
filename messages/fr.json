@@ -5,6 +5,7 @@
     "pub": "Pub",
     "catering": "Traiteur",
     "gallery": "Galerie",
+    "blog": "Blog",
     "contact": "Contact",
     "reserve": "Réserver",
     "order": "Commander",
@@ -46,6 +47,14 @@
     "invalidGuests": "Entrez un nombre d'invités entre 1 et 2000",
     "invalidOccasion": "Entrez une occasion",
     "invalidNotes": "Les notes sont trop longues"
+  },
+  "blog": {
+    "title": "Blog",
+    "lead": "Notes de table et l'histoire derrière les plats.",
+    "by": "Par {author}",
+    "readMinutes": "{n} min de lecture",
+    "back": "Tous les articles",
+    "more": "Lire"
   },
   "contact": { "email": "rajiv@sahib.ca", "map": "Carte" },
   "justbookme": {

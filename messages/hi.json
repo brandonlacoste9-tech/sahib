@@ -5,6 +5,7 @@
     "pub": "पब",
     "catering": "कैटरिंग",
     "gallery": "गैलरी",
+    "blog": "ब्लॉग",
     "contact": "संपर्क",
     "reserve": "रिज़र्व",
     "order": "ऑर्डर",
@@ -46,6 +47,14 @@
     "invalidGuests": "1 से 2000 के बीच मेहमान संख्या दर्ज करें",
     "invalidOccasion": "अवसर दर्ज करें",
     "invalidNotes": "नोट्स बहुत लंबे हैं"
+  },
+  "blog": {
+    "title": "ब्लॉग",
+    "lead": "भोजन की बातें और व्यंजनों के पीछे की कहानी।",
+    "by": "{author}",
+    "readMinutes": "{n} मिनट का पाठ",
+    "back": "सभी लेख",
+    "more": "पढ़ें"
   },
   "contact": { "email": "rajiv@sahib.ca", "map": "नक्शा" },
   "justbookme": {
