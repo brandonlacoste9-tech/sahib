@@ -1,35 +1,9 @@
 import { SectionRule } from '@/components/brand/SectionRule';
 import { StarMark } from '@/components/brand/StarMark';
+import { DishMarks, MenuLegend } from '@/components/menu/DietMark';
 import { formatPrice } from '@/lib/money';
-import type { MenuFile, MenuItem } from '@/lib/menu-schema';
+import type { MenuFile } from '@/lib/menu-schema';
 import type { Locale } from '@/i18n/routing';
-
-const tagLabels: Record<Locale, Record<MenuItem['tags'][number], string>> = {
-  en: {
-    vegan: 'Vegan',
-    vegetarian: 'Vegetarian',
-    gluten: 'Gluten',
-    favorite: 'Favourite',
-    spicy: 'Spicy',
-    hot: 'Hot',
-  },
-  fr: {
-    vegan: 'Végane',
-    vegetarian: 'Végétarien',
-    gluten: 'Gluten',
-    favorite: 'Coup de cœur',
-    spicy: 'Épicé',
-    hot: 'Très piquant',
-  },
-  hi: {
-    vegan: 'वीगन',
-    vegetarian: 'शाकाहारी',
-    gluten: 'ग्लूटेन',
-    favorite: 'पसंदीदा',
-    spicy: 'तीखा',
-    hot: 'बहुत तीखा',
-  },
-};
 
 type Props = {
   data: MenuFile;
@@ -38,9 +12,13 @@ type Props = {
 
 export function MenuList({ data, locale }: Props) {
   const sections = data.sections.filter((section) => section.items.length > 0);
+  const legendTags = sections.flatMap((section) =>
+    section.items.flatMap((item) => item.tags)
+  );
 
   return (
     <div>
+      <MenuLegend tags={legendTags} locale={locale} />
       <nav
         aria-label="Sections"
         className="sticky top-0 z-10 -mx-6 mb-4 border-b border-line bg-paper/95 px-6 py-3 backdrop-blur-sm"
@@ -77,9 +55,12 @@ export function MenuList({ data, locale }: Props) {
                 key={item.id}
                 className="grid grid-cols-[1fr_auto] gap-x-6 border-b border-line py-5 first:border-t"
               >
-                <h3 className="dish-name text-lg leading-snug">
-                  {item.name.en}
-                </h3>
+                <div className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1">
+                  <h3 className="dish-name text-lg leading-snug">
+                    {item.name.en}
+                  </h3>
+                  <DishMarks tags={item.tags} locale={locale} />
+                </div>
                 <p className="tabular-price text-lg text-ink">
                   {formatPrice(item.price, locale)}
                 </p>
@@ -89,11 +70,6 @@ export function MenuList({ data, locale }: Props) {
                 {item.recipe ? (
                   <p className="col-span-2 mt-1 max-w-2xl text-sm leading-relaxed text-muted italic">
                     {item.recipe[locale]}
-                  </p>
-                ) : null}
-                {item.tags.length > 0 ? (
-                  <p className="col-span-2 mt-2 text-xs tracking-[0.14em] text-teal uppercase">
-                    {item.tags.map((tag) => tagLabels[locale][tag]).join(' · ')}
                   </p>
                 ) : null}
               </li>
