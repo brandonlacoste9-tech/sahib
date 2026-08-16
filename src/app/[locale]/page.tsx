@@ -98,8 +98,14 @@ export default async function HomePage({ params }: Props) {
         <div className="mt-6">
           <SectionRule />
         </div>
-        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted">
+        <p className="mt-8 max-w-2xl text-sm tracking-wide text-muted">
+          {t('buffetHours')}
+        </p>
+        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
           {t('buffetBody')}
+        </p>
+        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
+          {t('buffetMore')}
         </p>
       </section>
       <section className="mx-auto max-w-[1120px] px-6 pb-20 md:pb-28">
