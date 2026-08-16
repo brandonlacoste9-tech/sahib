@@ -92,6 +92,18 @@ export default async function HomePage({ params }: Props) {
       </section>
       <section className="mx-auto max-w-[1120px] px-6 pb-20 md:pb-28">
         <p className="text-sm tracking-[0.18em] text-teal uppercase">
+          {t('buffetKicker')}
+        </p>
+        <h2 className="mt-5 text-4xl text-ink md:text-5xl">{t('buffetTitle')}</h2>
+        <div className="mt-6">
+          <SectionRule />
+        </div>
+        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted">
+          {t('buffetBody')}
+        </p>
+      </section>
+      <section className="mx-auto max-w-[1120px] px-6 pb-20 md:pb-28">
+        <p className="text-sm tracking-[0.18em] text-teal uppercase">
           {t('triviaKicker')}
         </p>
         <h2 className="mt-5 text-4xl text-ink md:text-5xl">{t('triviaTitle')}</h2>
