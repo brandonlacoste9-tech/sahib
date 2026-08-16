@@ -1,4 +1,4 @@
-export const DEFAULT_SAHIB_VOICE = '8oCRqOcDUgRwXV5F71Ea';
+export const DEFAULT_SAHIB_VOICE = 'SLhJQg3VdZI7WdEazpYM';
 export const FALLBACK_PREMADE_VOICE = 'JBFqnCBsd6RMkjVDRZzb';
 
 export function parseVoiceText(body: unknown): string | null {

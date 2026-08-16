@@ -14,8 +14,8 @@ describe('ElevenLabs voice', () => {
     expect(parseVoiceText({ text: 'x'.repeat(501) })).toBeNull();
   });
 
-  it('defaults to Ravi, a warm Indian English host', () => {
-    expect(DEFAULT_SAHIB_VOICE).toBe('8oCRqOcDUgRwXV5F71Ea');
+  it('defaults to Pierre, a French-Canadian English host', () => {
+    expect(DEFAULT_SAHIB_VOICE).toBe('SLhJQg3VdZI7WdEazpYM');
     expect(FALLBACK_PREMADE_VOICE).toBe('JBFqnCBsd6RMkjVDRZzb');
   });
 });
