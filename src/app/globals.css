@@ -68,6 +68,14 @@ a {
   font-variant-numeric: tabular-nums;
 }
 
+/* Gold display type — same metal as the script pair, Latin letters. */
+.dish-name {
+  font-family: var(--font-heading), 'Libre Baskerville', ui-serif, Georgia, serif;
+  font-weight: 400;
+  color: var(--gold);
+  letter-spacing: 0.01em;
+}
+
 .font-arabic {
   font-family: var(--font-arabic), 'Noto Naskh Arabic', serif;
 }

@@ -77,7 +77,9 @@ export function MenuList({ data, locale }: Props) {
                 key={item.id}
                 className="grid grid-cols-[1fr_auto] gap-x-6 border-b border-line py-5 first:border-t"
               >
-                <h3 className="text-lg leading-snug text-ink">{item.name[locale]}</h3>
+                <h3 className="dish-name text-lg leading-snug">
+                  {item.name.en}
+                </h3>
                 <p className="tabular-price text-lg text-ink">
                   {formatPrice(item.price, locale)}
                 </p>

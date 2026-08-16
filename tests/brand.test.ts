@@ -19,4 +19,16 @@ describe('Indo-Arabic brand marks', () => {
     expect(css).toContain('--gold');
     expect(css).toContain('jali');
   });
+
+  it('sets menu dish names in gold Latin type', () => {
+    const css = readFileSync(resolve(__dirname, '../src/app/globals.css'), 'utf8');
+    const list = readFileSync(
+      resolve(__dirname, '../src/components/menu/MenuList.tsx'),
+      'utf8'
+    );
+    expect(css).toContain('.dish-name');
+    expect(css).toMatch(/\.dish-name[\s\S]*var\(--gold\)/);
+    expect(list).toContain('dish-name');
+    expect(list).toContain('item.name.en');
+  });
 });
