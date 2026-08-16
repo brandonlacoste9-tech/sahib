@@ -15,21 +15,10 @@ export default async function MenuPage({ params }: Props) {
   const data = loadFood();
 
   return (
-    <section className="relative">
-      <div
-        className="pointer-events-none absolute inset-0 opacity-[0.09]"
-        style={{
-          backgroundImage: 'url(/menu-print.jpg)',
-          backgroundSize: '28rem',
-          backgroundRepeat: 'repeat',
-        }}
-        aria-hidden="true"
-      />
-      <div className="relative mx-auto max-w-[1120px] px-6 py-16 md:py-20">
-        <PageHeading>{t('menu')}</PageHeading>
-        <div className="mt-10">
-          <MenuList data={data} locale={locale as Locale} />
-        </div>
+    <section className="mx-auto max-w-[1120px] px-6 py-16 md:py-20">
+      <PageHeading>{t('menu')}</PageHeading>
+      <div className="mt-10">
+        <MenuList data={data} locale={locale as Locale} />
       </div>
     </section>
   );
