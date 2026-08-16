@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { tagLabels, visibleTags } from '../src/components/menu/DietMark';
+import { tagLabels, visibleTags } from '../src/lib/menu-tags';
 
 describe('diet marks', () => {
   it('hides vegetarian when a dish is already vegan', () => {

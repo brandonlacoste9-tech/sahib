@@ -1,7 +1,7 @@
 import { SectionRule } from '@/components/brand/SectionRule';
 import { StarMark } from '@/components/brand/StarMark';
-import { DishMarks, MenuLegend } from '@/components/menu/DietMark';
 import { formatPrice } from '@/lib/money';
+import { tagLabels, visibleTags } from '@/lib/menu-tags';
 import type { MenuFile } from '@/lib/menu-schema';
 import type { Locale } from '@/i18n/routing';
 
@@ -12,13 +12,9 @@ type Props = {
 
 export function MenuList({ data, locale }: Props) {
   const sections = data.sections.filter((section) => section.items.length > 0);
-  const legendTags = sections.flatMap((section) =>
-    section.items.flatMap((item) => item.tags)
-  );
 
   return (
     <div>
-      <MenuLegend tags={legendTags} locale={locale} />
       <nav
         aria-label="Sections"
         className="sticky top-0 z-10 -mx-6 mb-4 border-b border-line bg-paper/95 px-6 py-3 backdrop-blur-sm"
@@ -55,12 +51,9 @@ export function MenuList({ data, locale }: Props) {
                 key={item.id}
                 className="grid grid-cols-[1fr_auto] gap-x-6 border-b border-line py-5 first:border-t"
               >
-                <div className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1">
-                  <h3 className="dish-name text-lg leading-snug">
-                    {item.name.en}
-                  </h3>
-                  <DishMarks tags={item.tags} locale={locale} />
-                </div>
+                <h3 className="dish-name text-lg leading-snug">
+                  {item.name.en}
+                </h3>
                 <p className="tabular-price text-lg text-ink">
                   {formatPrice(item.price, locale)}
                 </p>
@@ -70,6 +63,13 @@ export function MenuList({ data, locale }: Props) {
                 {item.recipe ? (
                   <p className="col-span-2 mt-1 max-w-2xl text-sm leading-relaxed text-muted italic">
                     {item.recipe[locale]}
+                  </p>
+                ) : null}
+                {visibleTags(item.tags).length > 0 ? (
+                  <p className="col-span-2 mt-2 text-sm text-gold">
+                    {visibleTags(item.tags)
+                      .map((tag) => tagLabels[locale][tag])
+                      .join(' · ')}
                   </p>
                 ) : null}
               </li>
