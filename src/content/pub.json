@@ -413,17 +413,6 @@
           "tags": []
         },
         {
-          "id": "mouton-cadet-white-750",
-          "name": { "en": "Mouton Cadet, Philippe de Rothschild, 750 ml", "fr": "Mouton Cadet, Philippe de Rothschild, 750 ml", "hi": "Mouton Cadet, Philippe de Rothschild, 750 ml" },
-          "description": {
-            "en": "France. White. Bottle.",
-            "fr": "France. Blanc. Bouteille.",
-            "hi": "फ़्रांस। सफ़ेद। बोतल।"
-          },
-          "price": 3600,
-          "tags": []
-        },
-        {
           "id": "riesling-wilm-375",
           "name": { "en": "Riesling, Wilm Alsace, 375 ml", "fr": "Riesling, Wilm Alsace, 375 ml", "hi": "Riesling, Wilm Alsace, 375 ml" },
           "description": {

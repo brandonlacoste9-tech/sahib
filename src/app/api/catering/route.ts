@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 import { cateringEmail } from '@/content/locations';
-import { parseCatering } from '@/lib/handle-catering';
+import { cateringSendResult, parseCatering } from '@/lib/handle-catering';
 
 export async function POST(request: Request) {
   let body: unknown;
@@ -32,9 +32,16 @@ export async function POST(request: Request) {
   const apiKey = process.env.RESEND_API_KEY;
 
   if (apiKey) {
+    const from = process.env.CATERING_FROM;
+    if (!from) {
+      return NextResponse.json(
+        { error: 'CATERING_FROM is not configured' },
+        { status: 502 },
+      );
+    }
     const resend = new Resend(apiKey);
-    await resend.emails.send({
-      from: 'Sahib Catering <onboarding@resend.dev>',
+    const resendResponse = await resend.emails.send({
+      from,
       to: cateringEmail,
       replyTo: data.email,
       subject: `Catering quote: ${data.occasion} · ${data.guests} guests`,
@@ -47,6 +54,10 @@ export async function POST(request: Request) {
         `Notes: ${data.notes || '—'}`,
       ].join('\n'),
     });
+    const send = cateringSendResult(resendResponse);
+    if (!send.ok) {
+      return NextResponse.json({ error: send.message }, { status: 502 });
+    }
   } else {
     console.info('[catering]', data);
   }

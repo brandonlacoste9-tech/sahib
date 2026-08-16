@@ -1,5 +1,8 @@
 import { describe, it, expect } from 'vitest';
-import { parseCatering } from '../src/lib/handle-catering';
+import {
+  cateringSendResult,
+  parseCatering,
+} from '../src/lib/handle-catering';
 
 describe('parseCatering', () => {
   it('rejects missing first name', () => {
@@ -15,5 +18,22 @@ describe('parseCatering', () => {
         honey: '',
       }).success
     ).toBe(false);
+  });
+});
+
+describe('cateringSendResult', () => {
+  it('treats Resend error payload as failure', () => {
+    const r = cateringSendResult({
+      data: null,
+      error: { message: 'Invalid API key' },
+    });
+    expect(r.ok).toBe(false);
+    if (!r.ok) expect(r.message).toBe('Invalid API key');
+  });
+
+  it('treats successful send as ok', () => {
+    expect(cateringSendResult({ data: { id: 're_123' }, error: null }).ok).toBe(
+      true,
+    );
   });
 });
