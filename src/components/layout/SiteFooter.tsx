@@ -1,5 +1,6 @@
 import { getLocale, getTranslations } from 'next-intl/server';
 import { ScriptPair } from '@/components/brand/ScriptPair';
+import { SocialLinks } from '@/components/layout/SocialLinks';
 import { cateringEmail, locations } from '@/content/locations';
 import type { Locale } from '@/i18n/routing';
 
@@ -34,6 +35,7 @@ export async function SiteFooter() {
           <a href={`mailto:${t('email')}`} className="mt-3 block text-sm text-teal">
             {cateringEmail}
           </a>
+          <SocialLinks />
         </div>
       </div>
     </footer>

@@ -1,4 +1,5 @@
 import { locations, type Location, type LocationId } from '@/content/locations';
+import { socialLinks } from '@/content/social';
 
 const siteUrl = 'https://www.sahib.ca';
 
@@ -46,6 +47,7 @@ function restaurantNode(loc: Location) {
     address: postalAddress(loc),
     hasMap: loc.mapUrl,
     url: `${siteUrl}/en/contact#${loc.id}`,
+    sameAs: socialLinks.map((item) => item.href),
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: daysOpen[loc.id],

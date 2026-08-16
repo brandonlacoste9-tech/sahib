@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { PageHeading } from '@/components/brand/PageHeading';
 import { RestaurantJsonLd } from '@/components/jsonld/RestaurantJsonLd';
+import { SocialLinks } from '@/components/layout/SocialLinks';
 import { Link } from '@/i18n/navigation';
 import { cateringEmail, locations } from '@/content/locations';
 import type { Locale } from '@/i18n/routing';
@@ -95,6 +96,7 @@ export default async function ContactPage({ params }: Props) {
             </article>
           ))}
         </div>
+        <SocialLinks className="mt-16 flex flex-wrap gap-x-6 gap-y-3 text-base" />
       </section>
     </>
   );
