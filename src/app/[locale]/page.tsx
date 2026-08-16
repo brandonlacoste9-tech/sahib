@@ -20,41 +20,45 @@ export default async function HomePage({ params }: Props) {
   return (
     <>
       <RestaurantJsonLd />
-      <section className="mx-auto max-w-[1120px] px-6 py-20 md:py-28">
-        <ScriptPair />
-        <p className="mt-6 text-sm tracking-[0.18em] text-teal uppercase">
-          {t('kicker')}
-        </p>
-        <h1 className="mt-6 max-w-4xl text-5xl leading-[1.05] text-ink md:text-7xl lg:text-8xl">
-          {t('title')}
-        </h1>
-        <div className="mt-8">
-          <SectionRule />
-        </div>
-        <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted">
-          {t('lead')}
-        </p>
-        <p className="mt-12 font-heading text-2xl text-ink md:text-3xl">
-          {locations.map((room) => room.name[loc]).join('  ·  ')}
-        </p>
-        <p className="mt-8 max-w-xl text-sm leading-relaxed text-muted">
-          {t('buffet')}
-        </p>
-        <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted">
-          {t('trivia')}
-        </p>
-        <HomeActions />
-      </section>
-      <div className="relative h-[min(80vh,52rem)] w-full">
+      <section className="relative isolate min-h-[min(92vh,56rem)] w-full overflow-hidden">
         <Image
           src="/hero-thali.jpg"
           alt="Brass thali of butter chicken, saffron rice and naan with an Arabic dallah"
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className="object-cover object-[center_62%]"
         />
-      </div>
+        <div
+          className="absolute inset-0 bg-gradient-to-r from-paper/70 via-paper/55 to-paper/35"
+          aria-hidden="true"
+        />
+        <div className="relative z-10 mx-auto max-w-[1120px] px-6 py-20 md:py-28">
+          <ScriptPair />
+          <p className="mt-6 text-sm tracking-[0.18em] text-teal uppercase">
+            {t('kicker')}
+          </p>
+          <h1 className="mt-6 max-w-4xl text-5xl leading-[1.05] text-ink md:text-7xl lg:text-8xl">
+            {t('title')}
+          </h1>
+          <div className="mt-8">
+            <SectionRule />
+          </div>
+          <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted">
+            {t('lead')}
+          </p>
+          <p className="mt-12 font-heading text-2xl text-ink md:text-3xl">
+            {locations.map((room) => room.name[loc]).join('  ·  ')}
+          </p>
+          <p className="mt-8 max-w-xl text-sm leading-relaxed text-muted">
+            {t('buffet')}
+          </p>
+          <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted">
+            {t('trivia')}
+          </p>
+          <HomeActions />
+        </div>
+      </section>
     </>
   );
 }
