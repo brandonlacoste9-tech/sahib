@@ -1,0 +1,1063 @@
+{
+  "sections": [
+    {
+      "id": "appetizers",
+      "title": { "en": "Appetizers", "fr": "Entrées", "hi": "स्टार्टर" },
+      "items": [
+        {
+          "id": "lentil-soup",
+          "name": { "en": "Lentil Soup", "fr": "Soupe aux lentilles", "hi": "दाल सूप" },
+          "description": {
+            "en": "Anglo-Indian lentil soup, scented with cumin.",
+            "fr": "Soupe indo-anglaise de légumineuses, parfumée au cumin.",
+            "hi": "जीरे की खुशबू वाला एंग्लो-इंडियन दाल सूप।"
+          },
+          "price": 495,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "mulligatawny",
+          "name": { "en": "Mulligatawny Soup", "fr": "Soupe mulligatawny", "hi": "मुल्लिगटावनी सूप" },
+          "description": {
+            "en": "Lentils, chicken, rice and coriander.",
+            "fr": "Lentilles, poulet, riz et coriandre.",
+            "hi": "दाल, चिकन, चावल और धनिया का सूप।"
+          },
+          "price": 695,
+          "tags": []
+        },
+        {
+          "id": "chaat-samosa-channa",
+          "name": { "en": "Samosa Channa Chaat", "fr": "Chaat samosa channa", "hi": "समोसा चना चाट" },
+          "description": {
+            "en": "Crushed samosa and chickpeas with sweetened yogurt, tamarind, mint chutney, coriander and pomegranate.",
+            "fr": "Samosa écrasé et pois chiches, yaourt sucré, chutneys tamarin et menthe, coriandre et grenade.",
+            "hi": "कुचला समोसा और चने, मीठा दही, इमली-पुदीना चटनी, धनिया और अनार।"
+          },
+          "price": 795,
+          "tags": ["vegetarian", "gluten"]
+        },
+        {
+          "id": "chaat-dahi-puri",
+          "name": { "en": "Dahi Puri Chaat", "fr": "Chaat dahi puri", "hi": "दही पूरी चाट" },
+          "description": {
+            "en": "Crisp puris filled with potato and chickpeas, finished with sweetened yogurt, tamarind, mint, coriander and pomegranate.",
+            "fr": "Puris croustillantes, pomme de terre et pois chiches, yaourt sucré, chutneys, coriandre et grenade.",
+            "hi": "कुरकुरी पूरी, आलू-चने, मीठा दही, इमली-पुदीना चटनी, धनिया और अनार।"
+          },
+          "price": 795,
+          "tags": ["vegetarian", "gluten"]
+        },
+        {
+          "id": "chaat-aloo-tikki",
+          "name": { "en": "Aloo Tikki Chaat", "fr": "Chaat aloo tikki", "hi": "आलू टिक्की चाट" },
+          "description": {
+            "en": "Crisp potato patties with sweetened yogurt, tamarind, mint chutney, coriander and pomegranate.",
+            "fr": "Galettes de pommes de terre, yaourt sucré, chutneys tamarin et menthe, coriandre et grenade.",
+            "hi": "कुरकुरी आलू टिक्की, मीठा दही, इमली-पुदीना चटनी, धनिया और अनार।"
+          },
+          "price": 795,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "onion-bhajia",
+          "name": { "en": "Onion Bhajia", "fr": "Bhajia aux oignons", "hi": "प्याज़ भजिया" },
+          "description": {
+            "en": "Chickpea-flour onion fritters, Indian spices, fried crisp.",
+            "fr": "Beignets d'oignons à la farine de pois chiches, épices indiennes, frits croustillants.",
+            "hi": "बेसन, प्याज़ और भारतीय मसालों की कुरकुरी भजिया।"
+          },
+          "price": 695,
+          "tags": ["vegan", "vegetarian"]
+        },
+        {
+          "id": "vegetable-pakoras",
+          "name": { "en": "Vegetable Pakoras", "fr": "Pakoras aux légumes", "hi": "सब्ज़ी पकौड़ा" },
+          "description": {
+            "en": "Mixed vegetables fried in a chickpea batter.",
+            "fr": "Légumes mélangés frits dans une pâte de pois chiches.",
+            "hi": "मिश्रित सब्ज़ियाँ, बेसन के घोल में तली हुईं।"
+          },
+          "price": 695,
+          "tags": ["vegan", "vegetarian"]
+        },
+        {
+          "id": "tangra-chili-paneer",
+          "name": { "en": "Tangra Chili Paneer", "fr": "Chili paneer Tangra", "hi": "टांगरा चिली पनीर" },
+          "description": {
+            "en": "Paneer chili in a Kolkata-Chinese style.",
+            "fr": "Paneer sauté façon chili, style sino-indien de Kolkata.",
+            "hi": "कोलकाता-चाइनीज़ अंदाज़ में चिली पनीर।"
+          },
+          "price": 1095,
+          "tags": ["vegetarian", "spicy"]
+        },
+        {
+          "id": "gobi-manchurian",
+          "name": { "en": "Gobi Manchurian", "fr": "Gobi manchurian", "hi": "गोभी मंचूरियन" },
+          "description": {
+            "en": "Cauliflower, Indo-Chinese style.",
+            "fr": "Chou-fleur à l'indo-chinoise.",
+            "hi": "इंडो-चाइनीज़ शैली की गोभी मंचूरियन।"
+          },
+          "price": 995,
+          "tags": ["vegetarian", "spicy"]
+        },
+        {
+          "id": "veg-appetizers-for-two",
+          "name": {
+            "en": "Vegetarian Appetizers for Two",
+            "fr": "Entrées végétariennes pour deux",
+            "hi": "शाकाहारी स्टार्टर, दो लोगों के लिए"
+          },
+          "description": {
+            "en": "A mixed plate of vegetarian starters.",
+            "fr": "Assortiment d'entrées végétariennes.",
+            "hi": "शाकाहारी स्टार्टरों की थाली।"
+          },
+          "price": 1495,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "amritsari-fish",
+          "name": { "en": "Amritsari Fish", "fr": "Poisson Amritsari", "hi": "अमृतसरी मछली" },
+          "description": {
+            "en": "Fish in a chickpea batter, Punjabi street style.",
+            "fr": "Poisson en pâte de pois chiches, style pendjabi.",
+            "hi": "बेसन में लपेटी पंजाबी अमृतसरी मछली।"
+          },
+          "price": 1095,
+          "tags": []
+        },
+        {
+          "id": "chicken-chili-chowrangi",
+          "name": { "en": "Chicken Chili Chowrangi", "fr": "Poulet chili Chowrangi", "hi": "चौरांगी चिली चिकन" },
+          "description": {
+            "en": "Indo-Chinese chili chicken from the streets of Kolkata.",
+            "fr": "Poulet chili indo-chinois des rues de Kolkata.",
+            "hi": "कोलकाता की गलियों वाला इंडो-चाइनीज़ चिली चिकन।"
+          },
+          "price": 1095,
+          "tags": ["spicy"]
+        },
+        {
+          "id": "wings-65",
+          "name": { "en": "Whole Wings 65", "fr": "Ailes 65 entières", "hi": "विंग्स ६५" },
+          "description": {
+            "en": "Whole chicken wings fried in a South Indian spice blend.",
+            "fr": "Ailes de poulet entières frites dans un mélange d'épices du Sud.",
+            "hi": "दक्षिणी मसालों में तले पूरे चिकन विंग्स।"
+          },
+          "price": 995,
+          "tags": ["spicy"]
+        },
+        {
+          "id": "cocktail-kebabs",
+          "name": { "en": "Sahib Cocktail Kebabs", "fr": "Cocktail kebabs Sahib", "hi": "साहिब कॉकटेल कबाब" },
+          "description": {
+            "en": "Spiced seekh kebabs from the tandoor, in a tangy sauce.",
+            "fr": "Seekh kebabs épicés du tandoor, sauce acidulée.",
+            "hi": "तंदूर के तिक्खे सीख कबाब, खट्टी-तिक्खी चटनी में।"
+          },
+          "price": 1095,
+          "tags": ["spicy"]
+        },
+        {
+          "id": "assorted-appetizers-for-two",
+          "name": {
+            "en": "Assorted Appetizers for Two",
+            "fr": "Entrées assorties pour deux",
+            "hi": "मिश्रित स्टार्टर, दो लोगों के लिए"
+          },
+          "description": {
+            "en": "Amritsari fish, chicken wings and cocktail kebabs.",
+            "fr": "Poisson Amritsari, ailes de poulet et cocktail kebabs.",
+            "hi": "अमृतसरी मछली, चिकन विंग्स और कॉकटेल कबाब।"
+          },
+          "price": 1595,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "vegetarian",
+      "title": { "en": "Vegetarian", "fr": "Végétarien", "hi": "शाकाहारी" },
+      "items": [
+        {
+          "id": "shahi-paneer-makhanwala",
+          "name": { "en": "Shahi Paneer Makhanwala", "fr": "Shahi paneer makhanwala", "hi": "शाही पनीर मक्खनवाला" },
+          "description": {
+            "en": "Indian cottage cheese in a creamy butter sauce.",
+            "fr": "Fromage indien dans une sauce au beurre crémeuse.",
+            "hi": "मलाईदार मक्खन सॉस में पनीर।"
+          },
+          "price": 1795,
+          "tags": ["vegetarian", "favorite"]
+        },
+        {
+          "id": "saag-paneer",
+          "name": { "en": "Saag Paneer", "fr": "Saag paneer", "hi": "साग पनीर" },
+          "description": {
+            "en": "Fresh spinach and cubes of homemade cheese.",
+            "fr": "Épinards frais et cubes de fromage maison.",
+            "hi": "ताज़ा पालक और घर के पनीर के टुकड़े।"
+          },
+          "price": 1795,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "malai-kofta",
+          "name": { "en": "Malai Kofta", "fr": "Malai kofta", "hi": "मलाई कोफ़्ता" },
+          "description": {
+            "en": "Vegetable dumplings in a creamy almond sauce.",
+            "fr": "Boulettes de légumes dans une sauce crémeuse aux amandes.",
+            "hi": "बादाम की मलाईदार सॉस में सब्ज़ी के कोफ़्ते।"
+          },
+          "price": 1795,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "mushrooms-peas-cashews",
+          "name": {
+            "en": "Mushrooms, Peas and Cashews",
+            "fr": "Champignons, pois et noix de cajou",
+            "hi": "मशरूम, मटर और काजू"
+          },
+          "description": {
+            "en": "Mushrooms, peas and cashews in a mild almond sauce.",
+            "fr": "Champignons, pois et cajous dans une sauce douce aux amandes.",
+            "hi": "हल्की बादाम सॉस में मशरूम, मटर और काजू।"
+          },
+          "price": 1695,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "eggplant-bharta",
+          "name": { "en": "Eggplant Bharta", "fr": "Baingan bharta", "hi": "बैंगन का भरता" },
+          "description": {
+            "en": "Tandoor-roasted eggplant with fresh sautéed tomatoes.",
+            "fr": "Aubergine rôtie au tandoor, tomates fraîches sautées.",
+            "hi": "तंदूर में भुना बैंगन, ताज़ी टमाटर के साथ।"
+          },
+          "price": 1495,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "okra-masala",
+          "name": { "en": "Okra Masala Do Pyaza", "fr": "Okra masala do pyaza", "hi": "भिंडी मसाला दो प्याज़ा" },
+          "description": {
+            "en": "Okra tossed with fresh tomatoes and onion masala.",
+            "fr": "Gombo sauté aux tomates fraîches et masala d'oignons.",
+            "hi": "टमाटर और प्याज़ मसाले में भुनी भिंडी।"
+          },
+          "price": 1495,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "aloo-gobi-masala",
+          "name": { "en": "Aloo Gobi Masala", "fr": "Aloo gobi masala", "hi": "आलू गोभी मसाला" },
+          "description": {
+            "en": "Cauliflower and potato cooked with mild spices.",
+            "fr": "Chou-fleur et pomme de terre aux épices douces.",
+            "hi": "हल्के मसालों में पकी आलू-गोभी।"
+          },
+          "price": 1495,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "vegetable-jalfrazie",
+          "name": { "en": "Vegetable Jalfrazie", "fr": "Jalfrazie de légumes", "hi": "सब्ज़ी जलफ़रेज़ी" },
+          "description": {
+            "en": "Assorted vegetables tossed in a sweet-and-sour masala.",
+            "fr": "Légumes assortis dans un masala aigre-doux.",
+            "hi": "खट्टी-मीठी मसाले में मिश्रित सब्ज़ियाँ।"
+          },
+          "price": 1495,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "dal-makhani",
+          "name": { "en": "Sahib Dal Makhani", "fr": "Dal makhani Sahib", "hi": "साहिब दाल मखनी" },
+          "description": {
+            "en": "Black lentils cooked Sahib-style.",
+            "fr": "Lentilles noires cuites à la façon Sahib.",
+            "hi": "साहिब अंदाज़ में पकी काली दाल मखनी।"
+          },
+          "price": 1595,
+          "tags": ["vegetarian", "favorite"]
+        },
+        {
+          "id": "daal-tarka",
+          "name": { "en": "Yellow Lentils Daal Tarka", "fr": "Dal tarka aux lentilles jaunes", "hi": "पीली दाल तड़का" },
+          "description": {
+            "en": "Yellow lentils tempered with onion and cumin.",
+            "fr": "Lentilles jaunes relevées à l'oignon et au cumin.",
+            "hi": "प्याज़ और जीरे के तड़के वाली पीली दाल।"
+          },
+          "price": 1395,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "channa-masala",
+          "name": { "en": "Channa Masala", "fr": "Channa masala", "hi": "चना मसाला" },
+          "description": {
+            "en": "Chickpeas in a spiced tomato-onion sauce.",
+            "fr": "Pois chiches dans une sauce épicée.",
+            "hi": "टिक्खे मसाले में चने।"
+          },
+          "price": 1395,
+          "tags": ["vegetarian", "spicy"]
+        },
+        {
+          "id": "saag-aloo",
+          "name": { "en": "Saag Aloo", "fr": "Saag aloo", "hi": "साग आलू" },
+          "description": {
+            "en": "Potatoes sautéed in spinach.",
+            "fr": "Pommes de terre sautées aux épinards.",
+            "hi": "पालक में भुने आलू।"
+          },
+          "price": 1395,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "methi-aloo",
+          "name": { "en": "Methi Aloo", "fr": "Methi aloo", "hi": "मेथी आलू" },
+          "description": {
+            "en": "Potatoes sautéed with fenugreek.",
+            "fr": "Pommes de terre sautées au fenugrec.",
+            "hi": "मेथी में भुने आलू।"
+          },
+          "price": 1395,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "jeera-aloo",
+          "name": { "en": "Jeera Aloo", "fr": "Jeera aloo", "hi": "जीरा आलू" },
+          "description": {
+            "en": "Potatoes sautéed with cumin.",
+            "fr": "Pommes de terre sautées au cumin.",
+            "hi": "जीरे में भुने आलू।"
+          },
+          "price": 1395,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "subz-bahar",
+          "name": { "en": "Spring Vegetables Subz Bahar", "fr": "Légumes printaniers subz bahar", "hi": "सब्ज़ बहार" },
+          "description": {
+            "en": "Assorted vegetables in a fresh spinach purée.",
+            "fr": "Assortiment de légumes dans une purée d'épinards frais.",
+            "hi": "ताज़ा पालक की प्यूरे में मौसमी सब्ज़ियाँ।"
+          },
+          "price": 1495,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "veg-bhojan-thali",
+          "name": { "en": "Vegetarian Bhojan Thali", "fr": "Thali bhojan végétarien", "hi": "शाकाहारी भोजन थाली" },
+          "description": {
+            "en": "Paneer, vegetables, dal, rice, bread, yogurt, dessert and pickle.",
+            "fr": "Paneer, légumes, légumineuses, riz, pain, yaourt, dessert et accompagnement.",
+            "hi": "पनीर, सब्ज़ी, दाल, चावल, रोटी, दही, मिठाई और अचार।"
+          },
+          "price": 2595,
+          "tags": ["vegetarian", "gluten"]
+        }
+      ]
+    },
+    {
+      "id": "tandoor",
+      "title": { "en": "Tandoor", "fr": "Tandoor", "hi": "तंदूर" },
+      "note": {
+        "en": "Served with basmati rice or naan.",
+        "fr": "Servi avec du riz basmati ou un naan.",
+        "hi": "बासमती चावल या नान के साथ।"
+      },
+      "items": [
+        {
+          "id": "paneer-tikka",
+          "name": { "en": "Paneer Tikka", "fr": "Paneer tikka", "hi": "पनीर टिक्का" },
+          "description": {
+            "en": "Paneer cubes with bell peppers in a yogurt marinade.",
+            "fr": "Cubes de paneer, poivrons, marinade au yaourt.",
+            "hi": "शिमला मिर्च और दही के मसाले में पनीर टिक्का।"
+          },
+          "price": 1995,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "soya-chaap",
+          "name": { "en": "Soya Chaap", "fr": "Soya chaap", "hi": "सोया चाप" },
+          "description": {
+            "en": "Soya kebab in a creamy marinade.",
+            "fr": "Brochette de soya, marinade crémeuse.",
+            "hi": "मलाईदार मैरिनेड में सोया चाप।"
+          },
+          "price": 1995,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "salmon-tikka",
+          "name": { "en": "Salmon Tikka", "fr": "Tikka au saumon", "hi": "सैल्मन टिक्का" },
+          "description": {
+            "en": "Fresh salmon grilled in the tandoor — the chef's specialty.",
+            "fr": "Saumon frais grillé au tandoor, la spécialité du chef.",
+            "hi": "तंदूर में ग्रिल ताज़ा सैल्मन — शेफ़ की ख़ास डिश।"
+          },
+          "price": 2195,
+          "tags": ["favorite"]
+        },
+        {
+          "id": "prawn-tandoori",
+          "name": { "en": "Prawn Tandoori", "fr": "Crevettes tandoori", "hi": "तंदूरी झींगा" },
+          "description": {
+            "en": "Marinated jumbo tiger prawns, grilled in the tandoor.",
+            "fr": "Crevettes tigrées géantes marinées, grillées au tandoor.",
+            "hi": "तंदूर में ग्रिल मैरिनेटेड जंबो टाइगर प्रॉन।"
+          },
+          "price": 2395,
+          "tags": []
+        },
+        {
+          "id": "tandoori-chicken",
+          "name": { "en": "Tandoori Chicken", "fr": "Poulet tandoori", "hi": "तंदूरी चिकन" },
+          "description": {
+            "en": "Half chicken, marinated overnight.",
+            "fr": "Demi-poulet mariné toute une nuit.",
+            "hi": "रात भर मैरिनेट किया आधा तंदूरी चिकन।"
+          },
+          "price": 1895,
+          "tags": ["favorite"]
+        },
+        {
+          "id": "chicken-tikka",
+          "name": { "en": "Chicken Tikka", "fr": "Chicken tikka", "hi": "चिकन टिक्का" },
+          "description": {
+            "en": "Boneless grilled chicken in a yogurt marinade.",
+            "fr": "Poulet désossé mariné et grillé.",
+            "hi": "दही में मैरिनेट बोनलेस ग्रिल्ड चिकन।"
+          },
+          "price": 1895,
+          "tags": []
+        },
+        {
+          "id": "murgh-malai-kebab",
+          "name": { "en": "Murgh Malai Kebab", "fr": "Murgh malai kebab", "hi": "मुर्ग़ मलाई कबाब" },
+          "description": {
+            "en": "Chicken cubes grilled in a creamy marinade.",
+            "fr": "Cubes de poulet grillés, marinade crémeuse.",
+            "hi": "मलाईदार मैरिनेड में ग्रिल चिकन कबाब।"
+          },
+          "price": 1995,
+          "tags": []
+        },
+        {
+          "id": "chicken-tikka-verde",
+          "name": { "en": "Chicken Tikka Verde", "fr": "Chicken tikka verde", "hi": "चिकन टिक्का वर्दे" },
+          "description": {
+            "en": "Chicken cubes in a lemongrass and coriander marinade.",
+            "fr": "Cubes de poulet, marinade citronnelle et coriandre.",
+            "hi": "लेमनग्रास और धनिए के मसाले में चिकन टिक्का।"
+          },
+          "price": 2095,
+          "tags": []
+        },
+        {
+          "id": "lamb-seekh-kebab",
+          "name": { "en": "Lamb Seekh Kebab", "fr": "Seekh kebab d'agneau", "hi": "मटन सीख कबाब" },
+          "description": {
+            "en": "Spiced ground lamb, grilled on a skewer.",
+            "fr": "Agneau haché aux épices, grillé en brochette.",
+            "hi": "मसालेदार कीमा, सीख पर ग्रिल।"
+          },
+          "price": 2195,
+          "tags": []
+        },
+        {
+          "id": "lamb-chops-kandahari",
+          "name": { "en": "Lamb Chops Kandahari", "fr": "Côtelettes d'agneau kandahari", "hi": "कंदहारी लैंब चॉप्स" },
+          "description": {
+            "en": "Tender lamb chops in the chef's marinade, grilled in the tandoor.",
+            "fr": "Tendres côtelettes d'agneau, marinade secrète du chef.",
+            "hi": "शेफ़ के मसाले में तंदूर-ग्रिल लैंब चॉप्स।"
+          },
+          "price": 3295,
+          "tags": ["favorite"]
+        },
+        {
+          "id": "tandoori-platter",
+          "name": { "en": "Tandoori Platter", "fr": "Plateau tandoori", "hi": "तंदूरी प्लैटर" },
+          "description": {
+            "en": "Chicken, lamb kebab, fish and prawns from the tandoor.",
+            "fr": "Poulet, kebab d'agneau, poisson et crevettes.",
+            "hi": "तंदूर से चिकन, मटन कबाब, मछली और झींगा।"
+          },
+          "price": 1995,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "seafood",
+      "title": { "en": "Seafood", "fr": "Fruits de mer", "hi": "समुद्री व्यंजन" },
+      "note": {
+        "en": "Served with basmati rice or naan. Black tiger salt-water shrimp only.",
+        "fr": "Servi avec du riz basmati ou un naan. Crevettes tigrées d'eau salée uniquement.",
+        "hi": "बासमती चावल या नान के साथ। केवल समुद्री टाइगर श्रिम्प।"
+      },
+      "items": [
+        {
+          "id": "shrimp-moilee",
+          "name": { "en": "Shrimp Moilee", "fr": "Moilée aux crevettes", "hi": "श्रिम्प मोइली" },
+          "description": {
+            "en": "Shrimp in a coconut curry with a touch of tamarind.",
+            "fr": "Crevettes au curry de coco, touche de tamarin.",
+            "hi": "नारियल करी और इमली के स्पर्श में झींगे।"
+          },
+          "price": 2295,
+          "tags": []
+        },
+        {
+          "id": "fish-tikka-masala",
+          "name": { "en": "Fish Tikka Masala", "fr": "Poisson tikka masala", "hi": "फ़िश टिक्का मसाला" },
+          "description": {
+            "en": "Fish cubes tossed with onion and tomato masala.",
+            "fr": "Cubes de poisson au masala d'oignons et de tomates.",
+            "hi": "प्याज़-टमाटर मसाले में मछली के टिक्के।"
+          },
+          "price": 2095,
+          "tags": []
+        },
+        {
+          "id": "butter-shrimp",
+          "name": { "en": "Butter Shrimp", "fr": "Crevettes au beurre", "hi": "बटर श्रिम्प" },
+          "description": {
+            "en": "Tiger prawns in a creamy tomato sauce.",
+            "fr": "Crevettes tigrées dans une sauce tomate crémeuse.",
+            "hi": "मलाईदार टमाटर सॉस में टाइगर प्रॉन।"
+          },
+          "price": 2295,
+          "tags": ["favorite"]
+        }
+      ]
+    },
+    {
+      "id": "chicken",
+      "title": { "en": "Chicken", "fr": "Poulet", "hi": "चिकन" },
+      "note": {
+        "en": "Boneless halal chicken breast, served with basmati rice or naan.",
+        "fr": "Poitrine de poulet halal désossée, servie avec du riz basmati ou un naan.",
+        "hi": "बोनलेस हलाल चिकन ब्रेस्ट, बासमती या नान के साथ।"
+      },
+      "items": [
+        {
+          "id": "butter-chicken",
+          "name": { "en": "Butter Chicken", "fr": "Poulet au beurre", "hi": "बटर चिकन" },
+          "description": {
+            "en": "In a creamy tomato sauce.",
+            "fr": "Dans une sauce tomate crémeuse.",
+            "hi": "मलाईदार टमाटर की सॉस में।"
+          },
+          "price": 2195,
+          "tags": ["favorite"]
+        },
+        {
+          "id": "dhaba-chicken-curry",
+          "name": { "en": "Dhaba Chicken Curry", "fr": "Curry de poulet dhaba", "hi": "ढाबा चिकन करी" },
+          "description": {
+            "en": "Boneless chicken with hand-picked spices, roadside-kitchen style.",
+            "fr": "Poulet désossé, épices cueillies à la main, façon dhaba.",
+            "hi": "चुने मसालों में ढाबा-अंदाज़ बोनलेस चिकन।"
+          },
+          "price": 2095,
+          "tags": []
+        },
+        {
+          "id": "badami-chicken-korma",
+          "name": { "en": "Badami Chicken Korma", "fr": "Korma de poulet badami", "hi": "बादामी चिकन कोरमा" },
+          "description": {
+            "en": "Mild chicken curry in an almond sauce.",
+            "fr": "Curry de poulet doux, sauce aux amandes.",
+            "hi": "हल्की बादाम सॉस में चिकन कोरमा।"
+          },
+          "price": 2195,
+          "tags": []
+        },
+        {
+          "id": "chicken-jalfrazie",
+          "name": { "en": "Chicken Jalfrazie", "fr": "Poulet jalfrazie", "hi": "चिकन जलफ़रेज़ी" },
+          "description": {
+            "en": "With tomatoes, onions and bell peppers.",
+            "fr": "Tomates, oignons et poivrons.",
+            "hi": "टमाटर, प्याज़ और शिमला मिर्च के साथ।"
+          },
+          "price": 2095,
+          "tags": []
+        },
+        {
+          "id": "saag-chicken",
+          "name": { "en": "Saag Chicken", "fr": "Poulet saag", "hi": "साग चिकन" },
+          "description": {
+            "en": "Cooked with spinach.",
+            "fr": "Cuit aux épinards.",
+            "hi": "पालक में पका चिकन।"
+          },
+          "price": 2095,
+          "tags": []
+        },
+        {
+          "id": "methi-chicken",
+          "name": { "en": "Methi Chicken", "fr": "Poulet methi", "hi": "मेथी चिकन" },
+          "description": {
+            "en": "Cooked with fenugreek.",
+            "fr": "Cuit au fenugrec.",
+            "hi": "मेथी में पका चिकन।"
+          },
+          "price": 2095,
+          "tags": []
+        },
+        {
+          "id": "karhai-patiala-chicken",
+          "name": { "en": "Karhai Patiala Chicken", "fr": "Poulet karhai Patiala", "hi": "कड़ाही पटियाला चिकन" },
+          "description": {
+            "en": "Coarse-spiced chicken masala, wok-style.",
+            "fr": "Masala de poulet aux épices grossières, façon karhai.",
+            "hi": "मोटे मसालों वाली कड़ाही चिकन।"
+          },
+          "price": 2095,
+          "tags": ["spicy"]
+        },
+        {
+          "id": "chicken-madras",
+          "name": { "en": "Chicken Madras", "fr": "Poulet madras", "hi": "चिकन मद्रास" },
+          "description": {
+            "en": "Mustard seeds and whole dried chili. Spicy.",
+            "fr": "Graines de moutarde et piments séchés entiers. Épicé.",
+            "hi": "राई और साबुत सूखी मिर्च — तीखा।"
+          },
+          "price": 2095,
+          "tags": ["spicy"]
+        },
+        {
+          "id": "chicken-vindaloo",
+          "name": { "en": "Chicken Vindaloo", "fr": "Poulet vindaloo", "hi": "चिकन विंदालू" },
+          "description": {
+            "en": "Fiery red curry. A Goan-Portuguese specialty.",
+            "fr": "Curry rouge très piquant. Spécialité goano-portugaise.",
+            "hi": "बहुत तीखी लाल करी। गोआ-पुर्तगाली व्यंजन।"
+          },
+          "price": 2095,
+          "tags": ["hot"]
+        }
+      ]
+    },
+    {
+      "id": "lamb",
+      "title": { "en": "Lamb", "fr": "Agneau", "hi": "गोश्त" },
+      "note": {
+        "en": "Boneless halal lamb, served with basmati rice or naan.",
+        "fr": "Agneau halal désossé, servi avec du riz basmati ou un naan.",
+        "hi": "बोनलेस हलाल गोश्त, बासमती या नान के साथ।"
+      },
+      "items": [
+        {
+          "id": "roganjosh-lamb",
+          "name": { "en": "Rogan Josh", "fr": "Rogan josh d'agneau", "hi": "रोगन जोश" },
+          "description": {
+            "en": "Kashmiri-style lamb curry, gently spiced.",
+            "fr": "Curry d'agneau cachemiri, légèrement épicé.",
+            "hi": "कश्मीरी अंदाज़ की हल्की तीखी गोश्त करी।"
+          },
+          "price": 2195,
+          "tags": []
+        },
+        {
+          "id": "lamb-saag",
+          "name": { "en": "Lamb Saag", "fr": "Agneau saag", "hi": "साग गोश्त" },
+          "description": {
+            "en": "Cooked with fresh spinach.",
+            "fr": "Cuit aux épinards frais.",
+            "hi": "ताज़ा पालक में पका गोश्त।"
+          },
+          "price": 2195,
+          "tags": []
+        },
+        {
+          "id": "lamb-karhai-patiala",
+          "name": { "en": "Lamb Karhai Patiala", "fr": "Agneau karhai Patiala", "hi": "कड़ाही पटियाला गोश्त" },
+          "description": {
+            "en": "Coarse-spiced lamb masala, wok-style.",
+            "fr": "Masala d'agneau aux épices grossières, façon karhai.",
+            "hi": "मोटे मसालों वाली कड़ाही गोश्त।"
+          },
+          "price": 2195,
+          "tags": ["spicy"]
+        },
+        {
+          "id": "lamb-bhoona",
+          "name": { "en": "Lamb Bhoona", "fr": "Agneau bhuna", "hi": "भुना गोश्त" },
+          "description": {
+            "en": "Slow-cooked in a curry sauce with mushrooms.",
+            "fr": "Mijoté dans une sauce au curry, avec champignons.",
+            "hi": "मशरूम वाली करी में धीरे पका भुना गोश्त।"
+          },
+          "price": 2195,
+          "tags": []
+        },
+        {
+          "id": "lamb-madras",
+          "name": { "en": "Lamb Madras", "fr": "Agneau madras", "hi": "मटन मद्रास" },
+          "description": {
+            "en": "Mustard seeds, coconut and chili. Spicy.",
+            "fr": "Graines de moutarde, coco et piment. Épicé.",
+            "hi": "राई, नारियल और मिर्च — तीखा।"
+          },
+          "price": 2195,
+          "tags": ["spicy"]
+        },
+        {
+          "id": "lamb-vindaloo",
+          "name": { "en": "Lamb Vindaloo", "fr": "Agneau vindaloo", "hi": "मटन विंदालू" },
+          "description": {
+            "en": "Fiery red curry. A Goan-Portuguese specialty.",
+            "fr": "Curry rouge très piquant. Spécialité goano-portugaise.",
+            "hi": "बहुत तीखी लाल करी। गोआ-पुर्तगाली व्यंजन।"
+          },
+          "price": 2195,
+          "tags": ["hot"]
+        }
+      ]
+    },
+    {
+      "id": "balti",
+      "title": { "en": "Balti", "fr": "Balti", "hi": "बाल्टी" },
+      "note": {
+        "en": "Birmingham's wok-style curry, served in the karahi. With basmati rice or naan.",
+        "fr": "Curry façon Birmingham, servi dans le karahi. Avec riz basmati ou naan.",
+        "hi": "बर्मिंघम शैली की कड़ाही करी। बासमती या नान के साथ।"
+      },
+      "items": [
+        {
+          "id": "vegetable-korma-balti",
+          "name": { "en": "Vegetable Korma Balti", "fr": "Korma de légumes balti", "hi": "सब्ज़ी कोरमा बाल्टी" },
+          "description": {
+            "en": "Mixed vegetables in a mild cashew and almond sauce.",
+            "fr": "Légumes dans une sauce douce aux cajous et aux amandes.",
+            "hi": "हल्की काजू-बादाम सॉस में मिश्रित सब्ज़ियाँ।"
+          },
+          "price": 1695,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "paneer-butter-masala-balti",
+          "name": { "en": "Paneer Butter Masala Balti", "fr": "Paneer butter masala balti", "hi": "पनीर बटर मसाला बाल्टी" },
+          "description": {
+            "en": "Grilled paneer with tangy onion and tomato masala.",
+            "fr": "Paneer grillé, masala d'oignons et de tomates acidulé.",
+            "hi": "ग्रिल पनीर, खट्टे प्याज़-टमाटर मसाले में।"
+          },
+          "price": 2195,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "prawns-masala-balti",
+          "name": { "en": "Prawns Masala Balti", "fr": "Crevettes masala balti", "hi": "प्रॉन मसाला बाल्टी" },
+          "description": {
+            "en": "Black tiger shrimp in a tomato, onion and bell-pepper sauce.",
+            "fr": "Crevettes tigrées, sauce tomate, oignon et poivron.",
+            "hi": "टमाटर, प्याज़ और शिमला मिर्च की सॉस में टाइगर श्रिम्प।"
+          },
+          "price": 2395,
+          "tags": []
+        },
+        {
+          "id": "chicken-tikka-masala-balti",
+          "name": { "en": "Chicken Tikka Masala Balti", "fr": "Chicken tikka masala balti", "hi": "चिकन टिक्का मसाला बाल्टी" },
+          "description": {
+            "en": "Chicken tikka in a tomato, onion and bell-pepper sauce.",
+            "fr": "Chicken tikka, sauce tomate, oignon et poivron.",
+            "hi": "टमाटर, प्याज़ और शिमला मिर्च की सॉस में चिकन टिक्का।"
+          },
+          "price": 2295,
+          "tags": ["favorite"]
+        },
+        {
+          "id": "lamb-korma-balti",
+          "name": { "en": "Lamb Korma Balti", "fr": "Korma d'agneau balti", "hi": "मटन कोरमा बाल्टी" },
+          "description": {
+            "en": "Lamb in a creamy cashew and almond sauce.",
+            "fr": "Agneau dans une sauce crémeuse aux cajous et aux amandes.",
+            "hi": "मलाईदार काजू-बादाम सॉस में गोश्त।"
+          },
+          "price": 2295,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "rice-bread",
+      "title": { "en": "Rice and bread", "fr": "Riz et pains", "hi": "चावल और रोटी" },
+      "note": {
+        "en": "Long-grain aged Himalayan basmati only.",
+        "fr": "Uniquement du riz basmati himalayen à grain long, vieilli.",
+        "hi": "केवल हिमालय का पुराना लंबा-दाना बासमती।"
+      },
+      "items": [
+        {
+          "id": "saffron-rice",
+          "name": { "en": "Saffron Rice", "fr": "Riz safran", "hi": "केसरी पुलाव" },
+          "description": {
+            "en": "Basmati with nuts and raisins.",
+            "fr": "Riz basmati, noix et raisins secs.",
+            "hi": "मेवे और किशमिश वाला केसरी बासमती।"
+          },
+          "price": 995,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "peas-pilaf",
+          "name": { "en": "Peas Pilaf", "fr": "Pilaf aux pois", "hi": "मटर पुलाव" },
+          "description": {
+            "en": "Aromatic basmati with peas.",
+            "fr": "Riz basmati aromatique et petits pois.",
+            "hi": "खुशबूदार बासमती और मटर।"
+          },
+          "price": 795,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "basmati-rice",
+          "name": { "en": "Basmati Rice", "fr": "Riz basmati", "hi": "बासमती चावल" },
+          "description": {
+            "en": "Steamed white basmati, 12 oz.",
+            "fr": "Riz basmati blanc vapeur, 12 oz.",
+            "hi": "भाप में पका सफ़ेद बासमती, १२ आउंस।"
+          },
+          "price": 325,
+          "tags": ["vegetarian", "vegan"]
+        },
+        {
+          "id": "naan",
+          "name": { "en": "Naan", "fr": "Naan", "hi": "नान" },
+          "description": {
+            "en": "Light, from the tandoor.",
+            "fr": "Léger, tout juste sorti du tandoor.",
+            "hi": "तंदूर से हल्का गरम नान।"
+          },
+          "price": 325,
+          "tags": ["vegetarian", "gluten", "favorite"]
+        },
+        {
+          "id": "butter-garlic-naan",
+          "name": { "en": "Butter or Garlic Naan", "fr": "Naan au beurre ou à l'ail", "hi": "बटर या लहसुन नान" },
+          "description": {
+            "en": "Tandoor naan finished with butter or garlic.",
+            "fr": "Naan du tandoor, beurre ou ail.",
+            "hi": "मक्खन या लहसुन वाला तंदूरी नान।"
+          },
+          "price": 395,
+          "tags": ["vegetarian", "gluten"]
+        },
+        {
+          "id": "roti",
+          "name": { "en": "Roti", "fr": "Roti", "hi": "रोटी" },
+          "description": {
+            "en": "Whole-wheat bread baked in the clay oven.",
+            "fr": "Pain de blé entier cuit au tandoor.",
+            "hi": "तंदूर में पकी पूरी गेहूँ की रोटी।"
+          },
+          "price": 325,
+          "tags": ["vegetarian", "gluten"]
+        },
+        {
+          "id": "laccha-paratha",
+          "name": { "en": "Laccha Paratha", "fr": "Laccha paratha", "hi": "लच्छा पराठा" },
+          "description": {
+            "en": "Spiraled whole-wheat bread, with or without mint.",
+            "fr": "Pain de blé entier en spirale, avec ou sans menthe.",
+            "hi": "परतों वाला गेहूँ का पराठा, पुदीने के साथ या बिना।"
+          },
+          "price": 395,
+          "tags": ["vegetarian", "gluten"]
+        },
+        {
+          "id": "onion-potato-kulcha",
+          "name": { "en": "Onion or Potato Kulcha", "fr": "Kulcha à l'oignon ou à la pomme de terre", "hi": "प्याज़ या आलू कुलचा" },
+          "description": {
+            "en": "Naan stuffed with onion or potato.",
+            "fr": "Naan farci à l'oignon ou à la pomme de terre.",
+            "hi": "प्याज़ या आलू से भरा कुलचा।"
+          },
+          "price": 495,
+          "tags": ["vegetarian", "gluten"]
+        },
+        {
+          "id": "stuffed-kulcha",
+          "name": { "en": "Stuffed Kulcha", "fr": "Kulcha farci", "hi": "भरवां कुलचा" },
+          "description": {
+            "en": "Your choice of chili cheese or minced lamb.",
+            "fr": "Au choix : fromage chili ou agneau haché.",
+            "hi": "चिली चीज़ या कीमा — आपकी पसंद।"
+          },
+          "price": 795,
+          "tags": ["gluten"]
+        }
+      ]
+    },
+    {
+      "id": "sides",
+      "title": { "en": "Sides", "fr": "À côtés", "hi": "साथ में" },
+      "items": [
+        {
+          "id": "raita-or-dahi",
+          "name": { "en": "Cucumber Raita or Plain Dahi", "fr": "Raita concombre ou dahi nature", "hi": "खीरा रायता या सादा दही" },
+          "description": {
+            "en": "Cool yogurt with cucumber and cumin, or plain homemade dahi.",
+            "fr": "Yaourt maison au concombre et cumin, ou dahi nature.",
+            "hi": "खीरे-जीरे वाला ठंडा रायता, या सादा घर का दही।"
+          },
+          "price": 395,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "katchumber-salad",
+          "name": { "en": "Katchumber Salad", "fr": "Salade kachumber", "hi": "कचूम्बर सलाद" },
+          "description": {
+            "en": "Cucumber, tomato and pepper with a lemon dressing.",
+            "fr": "Concombre, tomate et poivron, vinaigrette au citron.",
+            "hi": "खीरा, टमाटर, शिमला मिर्च, नींबू की ड्रेसिंग।"
+          },
+          "price": 495,
+          "tags": ["vegan", "vegetarian"]
+        },
+        {
+          "id": "onion-chili-salad",
+          "name": { "en": "Onion and Green Chili Salad", "fr": "Salade d'oignons et piment vert", "hi": "प्याज़ और हरी मिर्च" },
+          "description": {
+            "en": "Sliced onion with green chili.",
+            "fr": "Oignons tranchés et piment vert.",
+            "hi": "कटा प्याज़ और हरी मिर्च।"
+          },
+          "price": 395,
+          "tags": ["vegan", "vegetarian", "spicy"]
+        },
+        {
+          "id": "crunchy-corn-salad",
+          "name": { "en": "Crunchy Corn Salad", "fr": "Salade de maïs croquante", "hi": "मक्का सलाद" },
+          "description": {
+            "en": "Sweet corn, crisp and lightly dressed.",
+            "fr": "Maïs sucré, croquant, légèrement assaisonné.",
+            "hi": "हल्के मसाले में कुरकुरा मक्का।"
+          },
+          "price": 595,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "papadum",
+          "name": { "en": "Papadum", "fr": "Papadum", "hi": "पापड़" },
+          "description": {
+            "en": "Lentil crackers.",
+            "fr": "Galettes croustillantes aux lentilles.",
+            "hi": "दाल के कुरकुरे पापड़।"
+          },
+          "price": 295,
+          "tags": ["vegan", "vegetarian"]
+        },
+        {
+          "id": "mango-chutney",
+          "name": { "en": "Mango Chutney", "fr": "Chutney à la mangue", "hi": "आम की चटनी" },
+          "description": {
+            "en": "Sweet mango relish.",
+            "fr": "Chutney sucré à la mangue.",
+            "hi": "मीठी आम की चटनी।"
+          },
+          "price": 395,
+          "tags": ["vegan", "vegetarian"]
+        },
+        {
+          "id": "pickled-carrots",
+          "name": { "en": "Marinated Pickled Carrots", "fr": "Carottes marinées", "hi": "गाजर का अचार" },
+          "description": {
+            "en": "House-pickled carrots.",
+            "fr": "Carottes marinées maison.",
+            "hi": "घर का गाजर अचार।"
+          },
+          "price": 395,
+          "tags": ["vegan", "vegetarian"]
+        },
+        {
+          "id": "mint-tamarind-chutney",
+          "name": { "en": "Mint or Tamarind Chutney", "fr": "Chutney menthe ou tamarin", "hi": "पुदीना या इमली चटनी" },
+          "description": {
+            "en": "Your choice of mint or tamarind.",
+            "fr": "Menthe ou tamarin, au choix.",
+            "hi": "पुदीना या इमली — आपकी पसंद।"
+          },
+          "price": 295,
+          "tags": ["vegan", "vegetarian"]
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "title": { "en": "Desserts", "fr": "Desserts", "hi": "मिठाई" },
+      "items": [
+        {
+          "id": "gulab-jamun",
+          "name": { "en": "Gulab Jamun", "fr": "Gulab jamun", "hi": "गुलाब जामुन" },
+          "description": {
+            "en": "Milk dumplings in rose and cardamom syrup.",
+            "fr": "Beignets de lait, sirop à la rose et à la cardamome.",
+            "hi": "गुलाब और इलायची की चाशनी में दूध के जामुन।"
+          },
+          "price": 495,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "kesari-ras-malai",
+          "name": { "en": "Kesari Ras Malai", "fr": "Ras malai kesari", "hi": "केसरी रस मलाई" },
+          "description": {
+            "en": "Saffron cottage-cheese dumplings in sweetened milk, with pistachio.",
+            "fr": "Fromage frais au safran, lait sucré et pistaches.",
+            "hi": "केसर वाला छेना, मीठे दूध और पिस्ते के साथ।"
+          },
+          "price": 595,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "gajar-halwa",
+          "name": { "en": "Gajar Halwa", "fr": "Gajar halwa", "hi": "गाजर का हलवा" },
+          "description": {
+            "en": "Slow-cooked carrot pudding.",
+            "fr": "Pudding aux carottes, mijoté.",
+            "hi": "धीरे पका गाजर का हलवा।"
+          },
+          "price": 695,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "mango-breeze",
+          "name": { "en": "Mango Breeze", "fr": "Brise à la mangue", "hi": "मैंगो ब्रीज़" },
+          "description": {
+            "en": "Cubed mango with cookie crumble and whipped cream.",
+            "fr": "Mangue en cubes, crumble de biscuits et crème fouettée.",
+            "hi": "आम के टुकड़े, बिस्कुट क्रम्बल और व्हिप्ड क्रीम।"
+          },
+          "price": 895,
+          "tags": ["vegetarian", "gluten"]
+        },
+        {
+          "id": "kulfi",
+          "name": { "en": "Kulfi", "fr": "Kulfi", "hi": "कुलफ़ी" },
+          "description": {
+            "en": "Cardamom ice cream with pistachio.",
+            "fr": "Crème glacée à la cardamome et aux pistaches.",
+            "hi": "इलायची की कुलफ़ी, पिस्ते के साथ।"
+          },
+          "price": 895,
+          "tags": ["vegetarian"]
+        }
+      ]
+    }
+  ]
+}

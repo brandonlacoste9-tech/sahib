@@ -1,0 +1,51 @@
+{
+  "meta": { "site": "Sahib" },
+  "nav": {
+    "menu": "Menu",
+    "pub": "Pub",
+    "catering": "Catering",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "reserve": "Reserve",
+    "order": "Order",
+    "justbookme": "JustBookMe",
+    "justbookmeHint": "Can't get through? JustBookMe answers and takes your request.",
+    "skip": "Skip to content"
+  },
+  "sheet": { "pickLocation": "Choose a location", "close": "Close" },
+  "home": {
+    "kicker": "West Island · Est. 20 years",
+    "title": "Indian restaurant and pub.",
+    "lead": "Two rooms. Award-winning cooking. A proper bar.",
+    "buffet": "Buffet lunch, Pointe-Claire only, Wednesday to Sunday 11:30–14:30.",
+    "trivia": "Trivia night, Dorval, Thursdays 7:00 PM. Teams of up to 6. $50 prize. Reserve recommended."
+  },
+  "catering": {
+    "title": "Catering",
+    "weddingsTitle": "Weddings",
+    "weddingsBody": "Receptions and celebrations with custom menus — buffet or plated — for the day that matters.",
+    "corporateTitle": "Corporate",
+    "corporateBody": "Working lunches, office parties, and client dinners. Flexible headcounts and delivery.",
+    "privateTitle": "Private events",
+    "privateBody": "Birthdays, family gatherings, and private parties at either room or your venue.",
+    "formTitle": "Request a quote",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "guests": "Number of guests",
+    "occasion": "Occasion",
+    "notes": "Notes",
+    "send": "Send request",
+    "success": "Sent. We will write you back.",
+    "error": "Could not send — call 514.426.1121",
+    "invalidFirstName": "Enter a first name",
+    "invalidLastName": "Enter a last name",
+    "invalidEmail": "Enter a valid email",
+    "invalidPhone": "Enter a phone number",
+    "invalidGuests": "Enter a guest count between 1 and 2000",
+    "invalidOccasion": "Enter an occasion",
+    "invalidNotes": "Notes are too long"
+  },
+  "contact": { "email": "rajiv@sahib.ca", "map": "Map" }
+}

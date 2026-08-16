@@ -1,0 +1,65 @@
+@import 'tailwindcss';
+
+:root {
+  --paper: oklch(0.97 0.015 85);
+  --ink: oklch(0.22 0.02 55);
+  --muted: oklch(0.45 0.02 55);
+  --teal: oklch(0.48 0.07 220);
+  --line: oklch(0.88 0.015 85);
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-teal: var(--teal);
+  --color-line: var(--line);
+  --font-heading: var(--font-heading);
+  --font-sans: var(--font-body);
+}
+
+html {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body), ui-sans-serif, system-ui, 'Nirmala UI',
+    'Noto Sans Devanagari', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading), 'Libre Baskerville', ui-serif, Georgia,
+    'Nirmala UI', serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+}
+
+.tabular-price {
+  font-variant-numeric: tabular-nums;
+}
