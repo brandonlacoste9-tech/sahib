@@ -67,6 +67,10 @@
     "invalidEmail": "Enter a valid email",
     "invalidGuests": "Party size must be 1 to 20",
     "invalidDate": "That day we are closed — pick another",
-    "invalidTime": "Pick a time between 11:30 and 21:30"
+    "invalidTime": "Pick a time between 11:30 and 21:30",
+    "connected": "Line answered",
+    "typeHere": "Type as if you were on the phone…",
+    "say": "Send",
+    "orForm": "Prefer a form instead"
   }
 }

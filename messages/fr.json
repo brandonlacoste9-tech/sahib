@@ -67,6 +67,10 @@
     "invalidEmail": "Entrez un courriel valide",
     "invalidGuests": "Entre 1 et 20 personnes",
     "invalidDate": "Fermé ce jour-là — choisissez une autre date",
-    "invalidTime": "Choisissez une heure entre 11 h 30 et 21 h 30"
+    "invalidTime": "Choisissez une heure entre 11 h 30 et 21 h 30",
+    "connected": "Ligne décrochée",
+    "typeHere": "Écrivez comme au téléphone…",
+    "say": "Envoyer",
+    "orForm": "Je préfère le formulaire"
   }
 }
