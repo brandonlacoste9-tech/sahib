@@ -27,7 +27,7 @@ export function ThumbBar() {
                 onClick={() => setAction(item)}
                 className="flex w-full items-center justify-center px-2 py-3.5 text-sm tracking-wide text-ink"
               >
-                {item === 'justbookme' ? 'JustBookMe' : t(item)}
+                {t(item)}
               </button>
             </li>
           ))}

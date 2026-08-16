@@ -10,8 +10,8 @@
     "contact": "Contact",
     "reserve": "Réserver",
     "order": "Commander",
-    "justbookme": "JustBookMe",
-    "justbookmeHint": "Vous n'arrivez pas à joindre ? JustBookMe répond et prend votre demande.",
+    "justbookme": "Réservation Sahib",
+    "justbookmeHint": "Vous n'arrivez pas à joindre ? Sahib répond et prend votre demande de table.",
     "skip": "Aller au contenu"
   },
   "sheet": { "pickLocation": "Choisissez un emplacement", "close": "Fermer" },
@@ -84,7 +84,7 @@
     "gift": "Toutes dénominations, pour la table, à emporter ou en livraison. Demandez au comptoir."
   },
   "justbookme": {
-    "title": "JustBookMe",
+    "title": "Réservation Sahib",
     "lead": "Vous n'arrivez pas à joindre ? Laissez une demande de table. Nous confirmons par téléphone ou texto.",
     "name": "Nom",
     "phone": "Téléphone",

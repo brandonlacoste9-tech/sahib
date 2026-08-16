@@ -104,7 +104,7 @@ export function SahibAssistant({
             guests: next.draft.guests,
             date: next.draft.date,
             time: next.draft.time,
-            notes: 'Via fake Sahib assistant (demo until voice is live)',
+            notes: 'Via Sahib booking',
             honey: '',
           }),
         });

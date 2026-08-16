@@ -79,7 +79,7 @@ export async function POST(request: Request) {
       from,
       to: cateringEmail,
       replyTo: data.email || undefined,
-      subject: `JustBookMe request · ${loc.name.en} · ${data.guests} guests`,
+      subject: `Sahib booking · ${loc.name.en} · ${data.guests} guests`,
       text: summary,
     });
     const send = cateringSendResult(resendResponse);

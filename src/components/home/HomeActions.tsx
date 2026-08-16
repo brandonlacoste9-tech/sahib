@@ -24,7 +24,7 @@ export function HomeActions() {
               onClick={() => setAction(item)}
               className="text-lg tracking-wide text-teal hover:text-ink"
             >
-              {item === 'justbookme' ? 'JustBookMe' : t(item)}
+              {t(item)}
             </button>
           </li>
         ))}

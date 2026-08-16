@@ -10,8 +10,8 @@
     "contact": "Contact",
     "reserve": "Reserve",
     "order": "Order",
-    "justbookme": "JustBookMe",
-    "justbookmeHint": "Can't get through? JustBookMe answers and takes your request.",
+    "justbookme": "Sahib booking",
+    "justbookmeHint": "Can't get through? Sahib answers and takes your table request.",
     "skip": "Skip to content"
   },
   "sheet": { "pickLocation": "Choose a location", "close": "Close" },
@@ -84,7 +84,7 @@
     "gift": "Any denomination, for the table, take-away, or delivery. Ask at the desk."
   },
   "justbookme": {
-    "title": "JustBookMe",
+    "title": "Sahib booking",
     "lead": "Can't get through? Leave a table request. We will confirm by phone or text.",
     "name": "Name",
     "phone": "Phone",

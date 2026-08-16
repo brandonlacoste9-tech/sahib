@@ -78,7 +78,7 @@ export default async function ContactPage({ params }: Props) {
                     href={`/book/${room.justBookMeSlug}`}
                     className="text-teal"
                   >
-                    JustBookMe
+                    {tNav('justbookme')}
                   </Link>
                 </li>
               </ul>
