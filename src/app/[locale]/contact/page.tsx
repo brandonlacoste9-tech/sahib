@@ -1,4 +1,5 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { PageHeading } from '@/components/brand/PageHeading';
 import { RestaurantJsonLd } from '@/components/jsonld/RestaurantJsonLd';
 import { cateringEmail, locations } from '@/content/locations';
 import type { Locale } from '@/i18n/routing';
@@ -18,7 +19,7 @@ export default async function ContactPage({ params }: Props) {
     <>
       <RestaurantJsonLd />
       <section className="mx-auto max-w-[1120px] px-6 py-20 md:py-28">
-        <h1 className="text-5xl text-ink md:text-6xl">{tNav('contact')}</h1>
+        <PageHeading>{tNav('contact')}</PageHeading>
         <div className="mt-16 grid gap-16 md:grid-cols-2 md:gap-24">
           {locations.map((room) => (
             <article

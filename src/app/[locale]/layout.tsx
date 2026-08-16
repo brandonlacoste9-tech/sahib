@@ -1,6 +1,11 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
-import { Libre_Baskerville, Inter } from 'next/font/google';
+import {
+  Inter,
+  Libre_Baskerville,
+  Noto_Naskh_Arabic,
+  Noto_Serif_Devanagari,
+} from 'next/font/google';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -18,6 +23,18 @@ const heading = Libre_Baskerville({
 const body = Inter({
   subsets: ['latin'],
   variable: '--font-body',
+});
+
+const arabic = Noto_Naskh_Arabic({
+  subsets: ['arabic'],
+  weight: ['400', '600'],
+  variable: '--font-arabic',
+});
+
+const deva = Noto_Serif_Devanagari({
+  subsets: ['devanagari'],
+  weight: ['400', '600'],
+  variable: '--font-deva',
 });
 
 type Props = {
@@ -54,7 +71,10 @@ export default async function LocaleLayout({ children, params }: Props) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${heading.variable} ${body.variable}`}>
+    <html
+      lang={locale}
+      className={`${heading.variable} ${body.variable} ${arabic.variable} ${deva.variable}`}
+    >
       <body className="flex min-h-dvh flex-col antialiased">
         <NextIntlClientProvider messages={messages}>
           <SiteHeader />

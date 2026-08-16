@@ -1,4 +1,5 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { PageHeading } from '@/components/brand/PageHeading';
 import { MenuList } from '@/components/menu/MenuList';
 import type { Locale } from '@/i18n/routing';
 import { loadPub } from '@/lib/load-menu';
@@ -15,7 +16,7 @@ export default async function PubPage({ params }: Props) {
 
   return (
     <section className="mx-auto max-w-[1120px] px-6 py-16 md:py-20">
-      <h1 className="text-5xl text-ink md:text-6xl">{t('pub')}</h1>
+      <PageHeading>{t('pub')}</PageHeading>
       <div className="mt-10">
         <MenuList data={data} locale={locale as Locale} />
       </div>

@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { ScriptPair } from '@/components/brand/ScriptPair';
+import { SectionRule } from '@/components/brand/SectionRule';
 import { HomeActions } from '@/components/home/HomeActions';
 import { RestaurantJsonLd } from '@/components/jsonld/RestaurantJsonLd';
 import { locations } from '@/content/locations';
@@ -19,12 +21,16 @@ export default async function HomePage({ params }: Props) {
     <>
       <RestaurantJsonLd />
       <section className="mx-auto max-w-[1120px] px-6 py-20 md:py-28">
-        <p className="text-sm tracking-[0.18em] text-teal uppercase">
+        <ScriptPair />
+        <p className="mt-6 text-sm tracking-[0.18em] text-teal uppercase">
           {t('kicker')}
         </p>
         <h1 className="mt-6 max-w-4xl text-5xl leading-[1.05] text-ink md:text-7xl lg:text-8xl">
           {t('title')}
         </h1>
+        <div className="mt-8">
+          <SectionRule />
+        </div>
         <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted">
           {t('lead')}
         </p>

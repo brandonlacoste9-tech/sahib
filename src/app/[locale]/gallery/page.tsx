@@ -1,4 +1,5 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { PageHeading } from '@/components/brand/PageHeading';
 import { GalleryGrid } from '@/components/gallery/GalleryGrid';
 
 type Props = {
@@ -12,7 +13,7 @@ export default async function GalleryPage({ params }: Props) {
 
   return (
     <section className="mx-auto max-w-[1120px] px-6 py-20 md:py-28">
-      <h1 className="text-5xl text-ink md:text-6xl">{t('gallery')}</h1>
+      <PageHeading>{t('gallery')}</PageHeading>
       <GalleryGrid />
     </section>
   );

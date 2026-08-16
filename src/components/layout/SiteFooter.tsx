@@ -1,4 +1,5 @@
 import { getLocale, getTranslations } from 'next-intl/server';
+import { ScriptPair } from '@/components/brand/ScriptPair';
 import { cateringEmail, locations } from '@/content/locations';
 import type { Locale } from '@/i18n/routing';
 
@@ -8,6 +9,7 @@ export async function SiteFooter() {
 
   return (
     <footer className="mt-auto border-t border-line">
+      <div className="jali h-1.5 w-full border-b border-gold/40" aria-hidden="true" />
       <div className="mx-auto grid max-w-[1120px] gap-10 px-6 py-14 md:grid-cols-3">
         {locations.map((loc) => (
           <div key={loc.id}>
@@ -27,7 +29,8 @@ export async function SiteFooter() {
           </div>
         ))}
         <div>
-          <h2 className="font-heading text-2xl text-ink">Sahib</h2>
+          <ScriptPair size="sm" />
+          <h2 className="mt-4 font-heading text-2xl text-ink">Sahib</h2>
           <a href={`mailto:${t('email')}`} className="mt-3 block text-sm text-teal">
             {cateringEmail}
           </a>

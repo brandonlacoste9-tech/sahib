@@ -5,6 +5,7 @@
   --ink: oklch(0.22 0.02 55);
   --muted: oklch(0.45 0.02 55);
   --teal: oklch(0.48 0.07 220);
+  --gold: oklch(0.72 0.08 80);
   --line: oklch(0.88 0.015 85);
 }
 
@@ -13,9 +14,12 @@
   --color-ink: var(--ink);
   --color-muted: var(--muted);
   --color-teal: var(--teal);
+  --color-gold: var(--gold);
   --color-line: var(--line);
   --font-heading: var(--font-heading);
   --font-sans: var(--font-body);
+  --font-arabic: var(--font-arabic);
+  --font-deva: var(--font-deva);
 }
 
 html {
@@ -62,4 +66,21 @@ a {
 
 .tabular-price {
   font-variant-numeric: tabular-nums;
+}
+
+.font-arabic {
+  font-family: var(--font-arabic), 'Noto Naskh Arabic', serif;
+}
+
+.font-deva {
+  font-family: var(--font-deva), 'Noto Serif Devanagari', serif;
+}
+
+/* Quiet jali lattice — geometry, not paisley. */
+.jali {
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(45deg, color-mix(in oklch, var(--teal) 9%, transparent) 1px, transparent 1px),
+    linear-gradient(-45deg, color-mix(in oklch, var(--gold) 14%, transparent) 1px, transparent 1px);
+  background-size: 18px 18px;
 }

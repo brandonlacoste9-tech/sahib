@@ -1,4 +1,5 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { PageHeading } from '@/components/brand/PageHeading';
 import { CateringForm } from '@/components/catering/CateringForm';
 
 type Props = {
@@ -14,7 +15,7 @@ export default async function CateringPage({ params }: Props) {
 
   return (
     <section className="mx-auto max-w-[1120px] px-6 py-20 md:py-28">
-      <h1 className="text-5xl text-ink md:text-6xl">{t('title')}</h1>
+      <PageHeading>{t('title')}</PageHeading>
 
       <div className="mt-16 grid gap-14 md:grid-cols-3 md:gap-12">
         {blocks.map((key) => (

@@ -1,3 +1,5 @@
+import { SectionRule } from '@/components/brand/SectionRule';
+import { StarMark } from '@/components/brand/StarMark';
 import { formatPrice } from '@/lib/money';
 import type { MenuFile, MenuItem } from '@/lib/menu-schema';
 import type { Locale } from '@/i18n/routing';
@@ -56,7 +58,13 @@ export function MenuList({ data, locale }: Props) {
 
       {sections.map((section) => (
         <section key={section.id} id={section.id} className="scroll-mt-16 pt-14">
-          <h2 className="text-3xl text-ink md:text-4xl">{section.title[locale]}</h2>
+          <div className="flex items-center gap-3">
+            <StarMark className="h-4 w-4 shrink-0 text-gold" />
+            <h2 className="text-3xl text-ink md:text-4xl">{section.title[locale]}</h2>
+          </div>
+          <div className="mt-4">
+            <SectionRule />
+          </div>
           {section.note ? (
             <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted">
               {section.note[locale]}

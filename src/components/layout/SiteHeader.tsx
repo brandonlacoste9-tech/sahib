@@ -15,13 +15,14 @@ export async function SiteHeader() {
   const t = await getTranslations('nav');
 
   return (
-    <header className="border-b border-line">
+    <header className="relative border-b border-line">
       <a
         href="#content"
         className="sr-only focus:not-sr-only focus:absolute focus:left-6 focus:top-4 focus:z-50 focus:bg-paper focus:px-3 focus:py-2 focus:text-sm focus:text-teal"
       >
         {t('skip')}
       </a>
+      <div className="jali h-1.5 w-full border-b border-gold/40" aria-hidden="true" />
       <div className="mx-auto flex max-w-[1120px] flex-wrap items-center justify-between gap-x-8 gap-y-4 px-6 py-5">
         <Link href="/" className="shrink-0">
           <Image src="/logo.png" alt="Sahib" width={140} height={70} priority />
