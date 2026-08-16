@@ -47,8 +47,8 @@ export default async function HomePage({ params }: Props) {
       </section>
       <div className="relative h-[min(80vh,52rem)] w-full">
         <Image
-          src="/hero.jpg"
-          alt="Dining room at Sahib Dorval"
+          src="/hero-thali.jpg"
+          alt="Brass thali of butter chicken, saffron rice and naan with an Arabic dallah"
           fill
           priority
           sizes="100vw"
