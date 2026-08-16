@@ -23,7 +23,10 @@
     "houseKicker": "Indépendant",
     "houseTitle": "Depuis 2003.",
     "house": "Tandoor, balti, et un pub indien à l'anglaise dans les deux salles — Taj Mahal et Cobra à la pression. Les West Islanders ont voté notre samosa le meilleur.",
-    "trivia": "Soirée trivia, Dorval, les jeudis à 19 h. Équipes de 6 max. Prix de 50 $. Réservation recommandée.",
+    "triviaKicker": "Dorval",
+    "triviaTitle": "Soirée trivia.",
+    "trivia": "Les jeudis à 19 h. Équipes de 6 max. Prix de 50 $. Réservation recommandée.",
+    "award": "Best of MTL 2024 — restaurant indien",
     "aboutLink": "À propos de Sahib"
   },
   "about": {
@@ -74,7 +77,12 @@
     "back": "Tous les articles",
     "more": "Lire"
   },
-  "contact": { "email": "rajiv@sahib.ca", "map": "Carte" },
+  "contact": {
+    "email": "rajiv@sahib.ca",
+    "map": "Carte",
+    "giftTitle": "Certificats-cadeaux",
+    "gift": "Toutes dénominations, pour la table, à emporter ou en livraison. Demandez au comptoir."
+  },
   "justbookme": {
     "title": "JustBookMe",
     "lead": "Vous n'arrivez pas à joindre ? Laissez une demande de table. Nous confirmons par téléphone ou texto.",

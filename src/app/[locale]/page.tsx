@@ -58,16 +58,47 @@ export default async function HomePage({ params }: Props) {
         </div>
       </section>
       <section className="mx-auto max-w-[1120px] px-6 py-20 md:py-28">
-        <p className="text-sm tracking-[0.18em] text-teal uppercase">{t('houseKicker')}</p>
-        <h2 className="mt-5 max-w-3xl text-4xl text-ink md:text-5xl">{t('houseTitle')}</h2>
+        <div className="grid items-start gap-12 md:grid-cols-[1fr_8rem]">
+          <div>
+            <p className="text-sm tracking-[0.18em] text-teal uppercase">
+              {t('houseKicker')}
+            </p>
+            <h2 className="mt-5 max-w-3xl text-4xl text-ink md:text-5xl">
+              {t('houseTitle')}
+            </h2>
+            <div className="mt-6">
+              <SectionRule />
+            </div>
+            <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted">
+              {t('house')}
+            </p>
+            <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted">
+              {t('award')}
+            </p>
+            <Link href="/about" className="mt-10 inline-block text-teal">
+              {t('aboutLink')}
+            </Link>
+          </div>
+          <div className="relative mx-auto aspect-square w-28 overflow-hidden md:mx-0">
+            <Image
+              src="/best-of-mtl-2024.jpg"
+              alt={t('award')}
+              fill
+              sizes="112px"
+              className="object-cover object-[center_12%]"
+            />
+          </div>
+        </div>
+      </section>
+      <section className="mx-auto max-w-[1120px] px-6 pb-20 md:pb-28">
+        <p className="text-sm tracking-[0.18em] text-teal uppercase">
+          {t('triviaKicker')}
+        </p>
+        <h2 className="mt-5 text-4xl text-ink md:text-5xl">{t('triviaTitle')}</h2>
         <div className="mt-6">
           <SectionRule />
         </div>
-        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted">{t('house')}</p>
-        <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted">{t('trivia')}</p>
-        <Link href="/about" className="mt-10 inline-block text-teal">
-          {t('aboutLink')}
-        </Link>
+        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted">{t('trivia')}</p>
       </section>
     </>
   );

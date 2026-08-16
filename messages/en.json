@@ -23,7 +23,10 @@
     "houseKicker": "Independent",
     "houseTitle": "Since 2003.",
     "house": "Tandoor, balti pot, and a British-style Indian pub in both rooms — Taj Mahal and Cobra on tap. West Islanders voted our samosa the best.",
-    "trivia": "Trivia night, Dorval, Thursdays 7:00 PM. Teams of up to 6. $50 prize. Reserve recommended.",
+    "triviaKicker": "Dorval",
+    "triviaTitle": "Trivia night.",
+    "trivia": "Thursdays at 7:00 PM. Teams of up to 6. $50 prize. Reserve recommended.",
+    "award": "Best of MTL 2024 — Indian restaurant",
     "aboutLink": "About Sahib"
   },
   "about": {
@@ -74,7 +77,12 @@
     "back": "All posts",
     "more": "Read"
   },
-  "contact": { "email": "rajiv@sahib.ca", "map": "Map" },
+  "contact": {
+    "email": "rajiv@sahib.ca",
+    "map": "Map",
+    "giftTitle": "Gift certificates",
+    "gift": "Any denomination, for the table, take-away, or delivery. Ask at the desk."
+  },
   "justbookme": {
     "title": "JustBookMe",
     "lead": "Can't get through? Leave a table request. We will confirm by phone or text.",

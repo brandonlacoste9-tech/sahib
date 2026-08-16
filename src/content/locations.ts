@@ -38,6 +38,11 @@ export const locations: Location[] = [
     closedWeekdays: [1, 2],
     mapUrl:
       'https://www.google.com/maps/search/?api=1&query=225B+Hymus+Blvd+Pointe-Claire+QC',
+    note: {
+      en: 'Buffet lunch Wednesday to Sunday 11:30–14:30. Delivery from this room only.',
+      fr: 'Buffet du midi mercredi au dimanche 11 h 30–14 h 30. Livraison depuis cette salle seulement.',
+      hi: 'बफ़ेट लंच बुध से रवि 11:30–14:30। डिलीवरी केवल इसी कमरे से।',
+    },
   },
   {
     id: 'dorval',
@@ -59,9 +64,9 @@ export const locations: Location[] = [
     mapUrl:
       'https://www.google.com/maps/search/?api=1&query=636+Chemin+du+Bord-du-Lac+Dorval+QC',
     note: {
-      en: 'Outdoor seating is not guaranteed.',
-      fr: 'Les places en terrasse ne sont pas garanties.',
-      hi: 'बाहर की सीट की गारंटी नहीं है।',
+      en: 'Outdoor seating is not guaranteed. No delivery. Parking on site.',
+      fr: 'Les places en terrasse ne sont pas garanties. Pas de livraison. Stationnement sur place.',
+      hi: 'बाहर की सीट की गारंटी नहीं है। डिलीवरी नहीं। जगह पर पार्किंग।',
     },
   },
 ];

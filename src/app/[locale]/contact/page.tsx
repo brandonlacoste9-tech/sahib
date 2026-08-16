@@ -96,6 +96,10 @@ export default async function ContactPage({ params }: Props) {
             </article>
           ))}
         </div>
+        <div className="mt-20 max-w-2xl border-t border-line pt-16">
+          <h2 className="text-3xl text-ink md:text-4xl">{tContact('giftTitle')}</h2>
+          <p className="mt-5 leading-relaxed text-muted">{tContact('gift')}</p>
+        </div>
         <SocialLinks className="mt-16 flex flex-wrap gap-x-6 gap-y-3 text-base" />
       </section>
     </>
