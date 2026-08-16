@@ -10,9 +10,9 @@ export const socialLinks = [
     label: 'Facebook',
   },
   {
-    id: 'indeed',
-    href: 'https://ca.indeed.com/cmp/Restaurant-Sahib-Inc',
-    label: 'Indeed',
+    id: 'linkedin',
+    href: 'https://www.linkedin.com/company/restaurant-sahib/',
+    label: 'LinkedIn',
   },
 ] as const;
 
