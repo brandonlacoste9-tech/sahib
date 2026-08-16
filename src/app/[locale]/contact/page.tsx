@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { PageHeading } from '@/components/brand/PageHeading';
 import { RestaurantJsonLd } from '@/components/jsonld/RestaurantJsonLd';
+import { Link } from '@/i18n/navigation';
 import { cateringEmail, locations } from '@/content/locations';
 import type { Locale } from '@/i18n/routing';
 
@@ -72,14 +73,12 @@ export default async function ContactPage({ params }: Props) {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href={room.justBookMeUrl}
-                    target="_blank"
-                    rel="noreferrer"
+                  <Link
+                    href={`/book/${room.justBookMeSlug}`}
                     className="text-teal"
                   >
                     JustBookMe
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <a

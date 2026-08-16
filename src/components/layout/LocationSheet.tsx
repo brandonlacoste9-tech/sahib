@@ -2,6 +2,7 @@
 
 import { useEffect, useId } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { locations } from '@/content/locations';
 import type { Locale } from '@/i18n/routing';
 
@@ -19,7 +20,7 @@ function hrefFor(
 ) {
   if (action === 'reserve') return loc.reserveUrl;
   if (action === 'order') return loc.orderUrl;
-  return loc.justBookMeUrl;
+  return `/book/${loc.justBookMeSlug}`;
 }
 
 export function LocationSheet({ action, open, onClose }: LocationSheetProps) {
@@ -78,23 +79,37 @@ export function LocationSheet({ action, open, onClose }: LocationSheetProps) {
           </p>
         ) : null}
         <ul className="mt-8 flex flex-col gap-6">
-          {locations.map((loc) => (
-            <li key={loc.id}>
-              <a
-                href={hrefFor(action, loc)}
-                target="_blank"
-                rel="noreferrer"
-                className="group block text-left"
-              >
+          {locations.map((loc) => {
+            const href = hrefFor(action, loc);
+            const inner = (
+              <>
                 <span className="block font-heading text-2xl text-teal">
                   {loc.name[locale]}
                 </span>
                 <span className="mt-1 block text-sm text-muted">
                   {loc.addressLines.join(', ')}
                 </span>
-              </a>
-            </li>
-          ))}
+              </>
+            );
+            return (
+              <li key={loc.id}>
+                {action === 'justbookme' ? (
+                  <Link href={href} onClick={onClose} className="group block text-left">
+                    {inner}
+                  </Link>
+                ) : (
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group block text-left"
+                  >
+                    {inner}
+                  </a>
+                )}
+              </li>
+            );
+          })}
         </ul>
       </div>
     </div>

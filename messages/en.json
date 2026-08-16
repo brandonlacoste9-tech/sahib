@@ -47,5 +47,26 @@
     "invalidOccasion": "Enter an occasion",
     "invalidNotes": "Notes are too long"
   },
-  "contact": { "email": "rajiv@sahib.ca", "map": "Map" }
+  "contact": { "email": "rajiv@sahib.ca", "map": "Map" },
+  "justbookme": {
+    "title": "JustBookMe",
+    "lead": "Can't get through? Leave a table request. We will confirm by phone or text.",
+    "name": "Name",
+    "phone": "Phone",
+    "email": "Email (optional)",
+    "guests": "Party size",
+    "date": "Date",
+    "time": "Time",
+    "pickTime": "Choose a time",
+    "notes": "Notes (high chair, allergy, occasion)",
+    "send": "Send request",
+    "success": "Request received. We will confirm shortly.",
+    "error": "Could not send — call the restaurant.",
+    "invalidName": "Enter a name",
+    "invalidPhone": "Enter a phone number",
+    "invalidEmail": "Enter a valid email",
+    "invalidGuests": "Party size must be 1 to 20",
+    "invalidDate": "That day we are closed — pick another",
+    "invalidTime": "Pick a time between 11:30 and 21:30"
+  }
 }

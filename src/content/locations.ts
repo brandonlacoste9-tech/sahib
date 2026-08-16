@@ -10,7 +10,9 @@ export type Location = {
   hours: { en: string; fr: string; hi: string };
   reserveUrl: string;
   orderUrl: string;
+  justBookMeSlug: string;
   justBookMeUrl: string;
+  closedWeekdays: number[];
   mapUrl: string;
   note?: { en: string; fr: string; hi: string };
 };
@@ -31,7 +33,9 @@ export const locations: Location[] = [
     reserveUrl:
       'https://www.tbdine.com/book/restaurant/sahib?idApp=1390&language=en-us',
     orderUrl: 'http://orderonline.sahib.ca/',
+    justBookMeSlug: 'sahib-pointe-claire',
     justBookMeUrl: 'https://justbookme.ca/book/sahib-pointe-claire',
+    closedWeekdays: [1, 2],
     mapUrl:
       'https://www.google.com/maps/search/?api=1&query=225B+Hymus+Blvd+Pointe-Claire+QC',
   },
@@ -49,7 +53,9 @@ export const locations: Location[] = [
     },
     reserveUrl: 'https://widgets.libroreserve.com/WEB/QC014745582811/book',
     orderUrl: 'https://sahibindianrestaurant.order-online.ai/',
+    justBookMeSlug: 'sahib-dorval',
     justBookMeUrl: 'https://justbookme.ca/book/sahib-dorval',
+    closedWeekdays: [1],
     mapUrl:
       'https://www.google.com/maps/search/?api=1&query=636+Chemin+du+Bord-du-Lac+Dorval+QC',
     note: {
@@ -61,3 +67,8 @@ export const locations: Location[] = [
 ];
 
 export const cateringEmail = 'rajiv@sahib.ca';
+
+export function getLocationByBookSlug(slug: string) {
+  const key = slug.trim().toLowerCase();
+  return locations.find((loc) => loc.justBookMeSlug === key) ?? null;
+}

@@ -8,6 +8,7 @@ describe('locations', () => {
       expect(loc.reserveUrl.startsWith('http')).toBe(true);
       expect(loc.orderUrl.startsWith('http')).toBe(true);
       expect(loc.justBookMeUrl).toContain('justbookme.ca/book/sahib-');
+      expect(loc.justBookMeSlug.startsWith('sahib-')).toBe(true);
       expect(loc.phone).toMatch(/^514/);
     }
   });

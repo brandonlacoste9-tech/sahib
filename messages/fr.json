@@ -47,5 +47,26 @@
     "invalidOccasion": "Entrez une occasion",
     "invalidNotes": "Les notes sont trop longues"
   },
-  "contact": { "email": "rajiv@sahib.ca", "map": "Carte" }
+  "contact": { "email": "rajiv@sahib.ca", "map": "Carte" },
+  "justbookme": {
+    "title": "JustBookMe",
+    "lead": "Vous n'arrivez pas à joindre ? Laissez une demande de table. Nous confirmons par téléphone ou texto.",
+    "name": "Nom",
+    "phone": "Téléphone",
+    "email": "Courriel (facultatif)",
+    "guests": "Nombre de personnes",
+    "date": "Date",
+    "time": "Heure",
+    "pickTime": "Choisissez une heure",
+    "notes": "Notes (chaise haute, allergie, occasion)",
+    "send": "Envoyer la demande",
+    "success": "Demande reçue. Nous confirmons sous peu.",
+    "error": "Envoi impossible — appelez le restaurant.",
+    "invalidName": "Entrez un nom",
+    "invalidPhone": "Entrez un numéro",
+    "invalidEmail": "Entrez un courriel valide",
+    "invalidGuests": "Entre 1 et 20 personnes",
+    "invalidDate": "Fermé ce jour-là — choisissez une autre date",
+    "invalidTime": "Choisissez une heure entre 11 h 30 et 21 h 30"
+  }
 }
