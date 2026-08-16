@@ -58,7 +58,7 @@ export function SahibAssistant({
       const res = await fetch('/api/voice', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ text }),
+        body: JSON.stringify({ text, locale }),
       });
       if (!res.ok) throw new Error('voice');
       const blob = await res.blob();

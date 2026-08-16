@@ -2,20 +2,29 @@ import { describe, it, expect } from 'vitest';
 import {
   DEFAULT_SAHIB_VOICE,
   FALLBACK_PREMADE_VOICE,
-  parseVoiceText,
+  PIERRE_VOICE,
+  THIERRY_VOICE,
+  parseVoiceRequest,
+  voiceIdForLocale,
 } from '../src/lib/elevenlabs';
 
 describe('ElevenLabs voice', () => {
   it('accepts a short Sahib line and rejects empty or huge text', () => {
-    expect(parseVoiceText({ text: 'Hello, Sahib Pointe-Claire.' })).toBe(
+    expect(parseVoiceRequest({ text: 'Hello, Sahib Pointe-Claire.' })?.text).toBe(
       'Hello, Sahib Pointe-Claire.'
     );
-    expect(parseVoiceText({ text: '' })).toBeNull();
-    expect(parseVoiceText({ text: 'x'.repeat(501) })).toBeNull();
+    expect(parseVoiceRequest({ text: '' })).toBeNull();
+    expect(parseVoiceRequest({ text: 'x'.repeat(501) })).toBeNull();
   });
 
-  it('defaults to Pierre, a French-Canadian English host', () => {
-    expect(DEFAULT_SAHIB_VOICE).toBe('SLhJQg3VdZI7WdEazpYM');
+  it('uses Pierre for English and Thierry for French', () => {
+    expect(DEFAULT_SAHIB_VOICE).toBe(PIERRE_VOICE);
+    expect(voiceIdForLocale('en')).toBe(PIERRE_VOICE);
+    expect(voiceIdForLocale('fr')).toBe(THIERRY_VOICE);
+    expect(voiceIdForLocale('hi')).toBe(PIERRE_VOICE);
     expect(FALLBACK_PREMADE_VOICE).toBe('JBFqnCBsd6RMkjVDRZzb');
+    expect(
+      parseVoiceRequest({ text: 'Bonjour', locale: 'fr' })?.locale
+    ).toBe('fr');
   });
 });

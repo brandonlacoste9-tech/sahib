@@ -2,15 +2,10 @@ import { NextResponse } from 'next/server';
 import {
   FALLBACK_PREMADE_VOICE,
   elevenLabsConfig,
-  parseVoiceText,
+  parseVoiceRequest,
 } from '@/lib/elevenlabs';
 
 export async function POST(request: Request) {
-  const { apiKey, voiceId } = elevenLabsConfig();
-  if (!apiKey) {
-    return NextResponse.json({ error: 'Voice not configured' }, { status: 503 });
-  }
-
   let body: unknown;
   try {
     body = await request.json();
@@ -18,10 +13,17 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 });
   }
 
-  const text = parseVoiceText(body);
-  if (!text) {
+  const parsed = parseVoiceRequest(body);
+  if (!parsed) {
     return NextResponse.json({ error: 'Invalid text' }, { status: 400 });
   }
+
+  const { apiKey, voiceId } = elevenLabsConfig(parsed.locale);
+  if (!apiKey) {
+    return NextResponse.json({ error: 'Voice not configured' }, { status: 503 });
+  }
+
+  const { text } = parsed;
 
   const payload = JSON.stringify({
     text,
