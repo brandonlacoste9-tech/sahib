@@ -15,6 +15,9 @@ describe('fake Sahib receptionist', () => {
 
   it('parses party size, evening time, and Friday', () => {
     expect(parseGuests('table for 4')).toBe(4);
+    expect(parseGuests('four people')).toBe(4);
+    expect(parseGuests('quatre')).toBe(4);
+    expect(parseGuests('Give me a number between 1 and 20.')).toBeNull();
     expect(parseTime('7pm')).toBe('19:00');
     const friday = parseDate('friday', [1, 2], new Date(2026, 7, 16), 'en');
     expect(friday).toBe('2026-08-21');

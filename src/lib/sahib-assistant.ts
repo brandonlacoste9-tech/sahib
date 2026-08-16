@@ -23,12 +23,89 @@ const weekdayNames: Record<AssistantLocale, string[]> = {
   hi: ['रविवार', 'सोमवार', 'मंगलवार', 'बुधवार', 'गुरुवार', 'शुक्रवार', 'शनिवार'],
 };
 
+const guestWords: Record<string, number> = {
+  one: 1,
+  two: 2,
+  three: 3,
+  four: 4,
+  five: 5,
+  six: 6,
+  seven: 7,
+  eight: 8,
+  nine: 9,
+  ten: 10,
+  eleven: 11,
+  twelve: 12,
+  thirteen: 13,
+  fourteen: 14,
+  fifteen: 15,
+  sixteen: 16,
+  seventeen: 17,
+  eighteen: 18,
+  nineteen: 19,
+  twenty: 20,
+  un: 1,
+  une: 1,
+  deux: 2,
+  trois: 3,
+  quatre: 4,
+  cinq: 5,
+  sept: 7,
+  huit: 8,
+  neuf: 9,
+  dix: 10,
+  onze: 11,
+  douze: 12,
+  treize: 13,
+  quatorze: 14,
+  quinze: 15,
+  seize: 16,
+  vingt: 20,
+  एक: 1,
+  दो: 2,
+  तीन: 3,
+  चार: 4,
+  पाँच: 5,
+  पांच: 5,
+  छह: 6,
+  छः: 6,
+  सात: 7,
+  आठ: 8,
+  नौ: 9,
+  दस: 10,
+};
+
+export function isSahibEcho(raw: string): boolean {
+  const text = raw.toLowerCase();
+  return (
+    /give me a number|between 1 and 20|how many will be dining|hello,?\s*sahib/.test(
+      text,
+    ) ||
+    /nombre entre|pour combien|je n’écoute|j’écoute/.test(text) ||
+    /1 से 20|कितने लोग|नमस्ते/.test(text)
+  );
+}
+
 export function parseGuests(raw: string): number | null {
-  const digits = raw.match(/(\d{1,2})/);
-  if (!digits) return null;
-  const n = Number(digits[1]);
-  if (n < 1 || n > 20) return null;
-  return n;
+  const text = raw.toLowerCase().normalize('NFC');
+  if (isSahibEcho(text)) return null;
+  const tokens = text.split(/[^\p{L}\p{N}]+/u).filter(Boolean);
+  const found: number[] = [];
+  for (const token of tokens) {
+    const fromWord = guestWords[token];
+    if (fromWord) {
+      found.push(fromWord);
+      continue;
+    }
+    if (/^\d{1,2}$/.test(token)) {
+      const n = Number(token);
+      if (n >= 1 && n <= 20) found.push(n);
+    }
+  }
+  if (found.length === 1) return found[0];
+  if (found.length === 2 && found[0] === 1 && found[1] === 20) return null;
+  if (found.length > 0) return found[0];
+  return null;
 }
 
 export function parsePhone(raw: string): string | null {

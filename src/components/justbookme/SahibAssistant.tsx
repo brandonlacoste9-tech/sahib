@@ -4,6 +4,7 @@ import { useEffect, useRef, useState, type FormEvent } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import {
   applyTurn,
+  isSahibEcho,
   openingLine,
   type AssistantDraft,
   type AssistantLocale,
@@ -46,6 +47,7 @@ export function SahibAssistant({
   const speakTokenRef = useRef(0);
   const recogRef = useRef<SpeechRecognitionLike | null>(null);
   const sendRef = useRef<(text: string) => void>(() => undefined);
+  const speakingRef = useRef(false);
 
   useEffect(() => {
     endRef.current?.scrollIntoView({ block: 'end' });
@@ -70,6 +72,9 @@ export function SahibAssistant({
     const token = ++speakTokenRef.current;
     window.speechSynthesis?.cancel();
     audioRef.current?.pause();
+    recogRef.current?.abort();
+    setListening(false);
+    speakingRef.current = true;
     try {
       const res = await fetch('/api/voice', {
         method: 'POST',
@@ -95,15 +100,22 @@ export function SahibAssistant({
       });
       if (token !== speakTokenRef.current) return;
       audio.currentTime = 0;
+      audio.onended = () => {
+        if (token === speakTokenRef.current) speakingRef.current = false;
+      };
       await audio.play();
       if (prevUrl) URL.revokeObjectURL(prevUrl);
       return;
     } catch {
       if (token !== speakTokenRef.current) return;
+      speakingRef.current = false;
       if (!window.speechSynthesis) return;
       const utter = new SpeechSynthesisUtterance(text);
       utter.lang = locale === 'fr' ? 'fr-CA' : locale === 'hi' ? 'hi-IN' : 'en-CA';
       utter.rate = 0.96;
+      utter.onend = () => {
+        if (token === speakTokenRef.current) speakingRef.current = false;
+      };
       window.speechSynthesis.speak(utter);
     }
   }
@@ -111,6 +123,7 @@ export function SahibAssistant({
   async function send(text: string) {
     const trimmed = text.trim();
     if (!trimmed || busy || step === 'done') return;
+    if (isSahibEcho(trimmed)) return;
     setInput('');
     setLines((prev) => [...prev, { from: 'guest', text: trimmed }]);
 
@@ -183,6 +196,7 @@ export function SahibAssistant({
       const heard = last[0].transcript.trim();
       setInput(heard);
       if (last.isFinal && heard) {
+        if (speakingRef.current || isSahibEcho(heard)) return;
         stopListening();
         sendRef.current(heard);
       }
