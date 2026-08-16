@@ -66,7 +66,7 @@ export function MenuList({ data, locale }: Props) {
                   </p>
                 ) : null}
                 {visibleTags(item.tags).length > 0 ? (
-                  <p className="col-span-2 mt-2 text-sm text-gold">
+                  <p className="dish-name col-span-2 mt-2 text-sm">
                     {visibleTags(item.tags)
                       .map((tag) => tagLabels[locale][tag])
                       .join(' · ')}
