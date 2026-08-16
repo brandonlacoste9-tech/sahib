@@ -26,7 +26,7 @@ export async function POST(request: Request) {
   const { text } = parsed;
 
   const payload = JSON.stringify({
-    text,
+    text: `<break time="0.5s" />${text}`,
     model_id: 'eleven_multilingual_v2',
     voice_settings: {
       stability: 0.55,

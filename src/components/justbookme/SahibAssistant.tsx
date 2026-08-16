@@ -36,6 +36,7 @@ export function SahibAssistant({
   const endRef = useRef<HTMLDivElement>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const objectUrlRef = useRef<string | null>(null);
+  const speakTokenRef = useRef(0);
 
   useEffect(() => {
     endRef.current?.scrollIntoView({ block: 'end' });
@@ -44,14 +45,15 @@ export function SahibAssistant({
   useEffect(() => {
     void speak(hello);
     return () => {
+      speakTokenRef.current += 1;
       audioRef.current?.pause();
-      if (objectUrlRef.current) URL.revokeObjectURL(objectUrlRef.current);
       if (typeof window !== 'undefined') window.speechSynthesis?.cancel();
     };
   }, [hello, locale]);
 
   async function speak(text: string) {
     if (typeof window === 'undefined') return;
+    const token = ++speakTokenRef.current;
     window.speechSynthesis?.cancel();
     audioRef.current?.pause();
     try {
@@ -62,14 +64,28 @@ export function SahibAssistant({
       });
       if (!res.ok) throw new Error('voice');
       const blob = await res.blob();
-      if (objectUrlRef.current) URL.revokeObjectURL(objectUrlRef.current);
+      if (token !== speakTokenRef.current) return;
+      const prevUrl = objectUrlRef.current;
       const url = URL.createObjectURL(blob);
       objectUrlRef.current = url;
-      const audio = new Audio(url);
+      const audio = new Audio();
+      audio.preload = 'auto';
+      audio.src = url;
       audioRef.current = audio;
+      await new Promise<void>((resolve, reject) => {
+        audio.addEventListener('canplaythrough', () => resolve(), { once: true });
+        audio.addEventListener('error', () => reject(new Error('audio')), {
+          once: true,
+        });
+        audio.load();
+      });
+      if (token !== speakTokenRef.current) return;
+      audio.currentTime = 0;
       await audio.play();
+      if (prevUrl) URL.revokeObjectURL(prevUrl);
       return;
     } catch {
+      if (token !== speakTokenRef.current) return;
       if (!window.speechSynthesis) return;
       const utter = new SpeechSynthesisUtterance(text);
       utter.lang = locale === 'fr' ? 'fr-CA' : locale === 'hi' ? 'hi-IN' : 'en-CA';
