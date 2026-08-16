@@ -5,6 +5,7 @@
     "pub": "Pub",
     "catering": "Traiteur",
     "gallery": "Galerie",
+    "about": "À propos",
     "blog": "Blog",
     "contact": "Contact",
     "reserve": "Réserver",
@@ -15,11 +16,28 @@
   },
   "sheet": { "pickLocation": "Choisissez un emplacement", "close": "Fermer" },
   "home": {
-    "kicker": "West Island · Dep. 20 ans",
+    "kicker": "West Island · Dep. 2003",
     "title": "Restaurant indien et pub.",
-    "lead": "Deux salles. Cuisine primée. Un vrai bar.",
+    "lead": "Deux salles. Le tandoor. Un vrai bar.",
     "buffet": "Buffet du midi, Pointe-Claire seulement, mercredi au dimanche 11 h 30–14 h 30.",
-    "trivia": "Soirée trivia, Dorval, les jeudis à 19 h. Équipes de 6 max. Prix de 50 $. Réservation recommandée."
+    "houseKicker": "Indépendant",
+    "houseTitle": "Depuis 2003.",
+    "house": "Tandoor, balti, et un pub indien à l'anglaise dans les deux salles — Taj Mahal et Cobra à la pression. Les West Islanders ont voté notre samosa le meilleur.",
+    "trivia": "Soirée trivia, Dorval, les jeudis à 19 h. Équipes de 6 max. Prix de 50 $. Réservation recommandée.",
+    "aboutLink": "À propos de Sahib"
+  },
+  "about": {
+    "title": "À propos",
+    "lead": "Deux salles sur le West Island. Indépendant depuis 2003.",
+    "kitchenTitle": "La cuisine",
+    "kitchen": "Des chefs indiens professionnels, à tous les niveaux de piment. Tandoori maigre, sans gras. Choix sans gluten. Un volet végétarien qui est un menu, pas une concession. Plateaux bhojan, grillades tandoor, et balti de Birmingham. Les West Islanders ont voté notre samosa le meilleur.",
+    "buffetTitle": "Buffet du midi",
+    "buffet": "Pointe-Claire seulement. Préparé à neuf, celui que les habitués nomment en premier : butter chicken, curry d'agneau, chicken tikka.",
+    "pubTitle": "Le pub",
+    "pub": "Un pub indien à l'anglaise dans les deux salles. Taj Mahal et Cobra à la pression, avec Guinness, Bass et Newcastle. Bouteilles locales et une longue carte des vins. 5 à 7 en semaine. Quatre grands écrans. Trivia le jeudi à Dorval.",
+    "visitTitle": "Nous rejoindre",
+    "visit": "Sur place, à emporter, traiteur et événements privés dans les deux salles. Livraison depuis Pointe-Claire seulement. Stationnement gratuit. Certificats-cadeaux au comptoir.",
+    "founded": "Fondé en 2003. Entreprise indépendante."
   },
   "catering": {
     "title": "Traiteur",

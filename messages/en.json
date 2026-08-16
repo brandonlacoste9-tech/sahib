@@ -5,6 +5,7 @@
     "pub": "Pub",
     "catering": "Catering",
     "gallery": "Gallery",
+    "about": "About",
     "blog": "Blog",
     "contact": "Contact",
     "reserve": "Reserve",
@@ -15,11 +16,28 @@
   },
   "sheet": { "pickLocation": "Choose a location", "close": "Close" },
   "home": {
-    "kicker": "West Island · Est. 20 years",
+    "kicker": "West Island · Est. 2003",
     "title": "Indian restaurant and pub.",
-    "lead": "Two rooms. Award-winning cooking. A proper bar.",
+    "lead": "Two rooms. Cooking from the tandoor. A proper bar.",
     "buffet": "Buffet lunch, Pointe-Claire only, Wednesday to Sunday 11:30–14:30.",
-    "trivia": "Trivia night, Dorval, Thursdays 7:00 PM. Teams of up to 6. $50 prize. Reserve recommended."
+    "houseKicker": "Independent",
+    "houseTitle": "Since 2003.",
+    "house": "Tandoor, balti pot, and a British-style Indian pub in both rooms — Taj Mahal and Cobra on tap. West Islanders voted our samosa the best.",
+    "trivia": "Trivia night, Dorval, Thursdays 7:00 PM. Teams of up to 6. $50 prize. Reserve recommended.",
+    "aboutLink": "About Sahib"
+  },
+  "about": {
+    "title": "About",
+    "lead": "Two rooms on the West Island. Independent since 2003.",
+    "kitchenTitle": "The kitchen",
+    "kitchen": "Professional Indian chefs cook to every spice level. Lean, fat-free tandoori. Gluten-free choices. A vegetarian spread that is a menu, not an afterthought. Bhojan platters, tandoori grill feasts, and balti pots from the Birmingham tradition. West Islanders voted our samosa the best.",
+    "buffetTitle": "Buffet lunch",
+    "buffet": "Pointe-Claire only. Freshly prepared, and still the one guests name first: butter chicken, lamb curry, chicken tikka.",
+    "pubTitle": "The pub",
+    "pub": "A British-style Indian pub in both rooms. Taj Mahal and Cobra on tap, with Guinness, Bass, and Newcastle. Domestic bottles and a long wine list. Weekday happy hour. Four large screens. Thursday trivia at Dorval.",
+    "visitTitle": "How to come",
+    "visit": "Dine-in, take-away, catering, and private events at both rooms. Delivery from Pointe-Claire only. Free parking. Gift certificates at the desk.",
+    "founded": "Founded 2003. Self-owned."
   },
   "catering": {
     "title": "Catering",

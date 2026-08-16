@@ -7,6 +7,7 @@ const navItems = [
   { href: '/menu', key: 'menu' },
   { href: '/pub', key: 'pub' },
   { href: '/catering', key: 'catering' },
+  { href: '/about', key: 'about' },
   { href: '/gallery', key: 'gallery' },
   { href: '/blog', key: 'blog' },
   { href: '/contact', key: 'contact' },

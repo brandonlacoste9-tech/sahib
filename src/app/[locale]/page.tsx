@@ -4,6 +4,7 @@ import { ScriptPair } from '@/components/brand/ScriptPair';
 import { SectionRule } from '@/components/brand/SectionRule';
 import { HomeActions } from '@/components/home/HomeActions';
 import { RestaurantJsonLd } from '@/components/jsonld/RestaurantJsonLd';
+import { Link } from '@/i18n/navigation';
 import { locations } from '@/content/locations';
 import type { Locale } from '@/i18n/routing';
 
@@ -53,11 +54,20 @@ export default async function HomePage({ params }: Props) {
           <p className="mt-8 max-w-xl text-sm leading-relaxed text-muted">
             {t('buffet')}
           </p>
-          <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted">
-            {t('trivia')}
-          </p>
           <HomeActions />
         </div>
+      </section>
+      <section className="mx-auto max-w-[1120px] px-6 py-20 md:py-28">
+        <p className="text-sm tracking-[0.18em] text-teal uppercase">{t('houseKicker')}</p>
+        <h2 className="mt-5 max-w-3xl text-4xl text-ink md:text-5xl">{t('houseTitle')}</h2>
+        <div className="mt-6">
+          <SectionRule />
+        </div>
+        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted">{t('house')}</p>
+        <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted">{t('trivia')}</p>
+        <Link href="/about" className="mt-10 inline-block text-teal">
+          {t('aboutLink')}
+        </Link>
       </section>
     </>
   );

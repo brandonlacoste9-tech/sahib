@@ -43,6 +43,8 @@ function restaurantNode(loc: Location) {
     '@id': `${siteUrl}/#${loc.id}`,
     name: `Sahib ${loc.name.en}`,
     servesCuisine: 'Indian',
+    foundingDate: '2003',
+    award: 'Best Samosa, West Islanders',
     telephone: loc.phoneHref.replace('tel:', ''),
     address: postalAddress(loc),
     hasMap: loc.mapUrl,
