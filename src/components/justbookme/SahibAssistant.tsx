@@ -34,20 +34,49 @@ export function SahibAssistant({
   const [input, setInput] = useState('');
   const [busy, setBusy] = useState(false);
   const endRef = useRef<HTMLDivElement>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const objectUrlRef = useRef<string | null>(null);
 
   useEffect(() => {
     endRef.current?.scrollIntoView({ block: 'end' });
   }, [lines]);
 
   useEffect(() => {
-    if (typeof window === 'undefined' || !window.speechSynthesis) return;
-    const utter = new SpeechSynthesisUtterance(hello);
-    utter.lang = locale === 'fr' ? 'fr-CA' : locale === 'hi' ? 'hi-IN' : 'en-CA';
-    utter.rate = 0.96;
-    window.speechSynthesis.cancel();
-    window.speechSynthesis.speak(utter);
-    return () => window.speechSynthesis.cancel();
+    void speak(hello);
+    return () => {
+      audioRef.current?.pause();
+      if (objectUrlRef.current) URL.revokeObjectURL(objectUrlRef.current);
+      if (typeof window !== 'undefined') window.speechSynthesis?.cancel();
+    };
   }, [hello, locale]);
+
+  async function speak(text: string) {
+    if (typeof window === 'undefined') return;
+    window.speechSynthesis?.cancel();
+    audioRef.current?.pause();
+    try {
+      const res = await fetch('/api/voice', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text }),
+      });
+      if (!res.ok) throw new Error('voice');
+      const blob = await res.blob();
+      if (objectUrlRef.current) URL.revokeObjectURL(objectUrlRef.current);
+      const url = URL.createObjectURL(blob);
+      objectUrlRef.current = url;
+      const audio = new Audio(url);
+      audioRef.current = audio;
+      await audio.play();
+      return;
+    } catch {
+      if (!window.speechSynthesis) return;
+      const utter = new SpeechSynthesisUtterance(text);
+      utter.lang = locale === 'fr' ? 'fr-CA' : locale === 'hi' ? 'hi-IN' : 'en-CA';
+      utter.rate = 0.96;
+      window.speechSynthesis.speak(utter);
+    }
+  }
 
   async function send(text: string) {
     const trimmed = text.trim();
@@ -59,6 +88,7 @@ export function SahibAssistant({
     setDraft(next.draft);
     setStep(next.step);
     setLines((prev) => [...prev, { from: 'sahib', text: next.reply }]);
+    void speak(next.reply);
 
     if (next.step === 'done') {
       setBusy(true);
