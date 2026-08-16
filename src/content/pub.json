@@ -1,0 +1,1627 @@
+{
+  "sections": [
+    {
+      "id": "signatures",
+      "title": { "en": "Signatures", "fr": "Signatures", "hi": "सिग्नेचर" },
+      "items": [
+        {
+          "id": "while-my-sitar-gently-weeps",
+          "name": {
+            "en": "While My Sitar Gently Weeps",
+            "fr": "While My Sitar Gently Weeps",
+            "hi": "While My Sitar Gently Weeps"
+          },
+          "description": {
+            "en": "House vodka sour, lifted with saffron and elderflower.",
+            "fr": "Sour à la vodka maison, safran et sureau.",
+            "hi": "घर की वोदका सॉर, केसर और एल्डरफ़्लावर के साथ।"
+          },
+          "recipe": {
+            "en": "Vodka, saffron, grapefruit, St-Germain, lemon.",
+            "fr": "Vodka, safran, pamplemousse, St-Germain, citron.",
+            "hi": "वोदका, केसर, अंगूर, सेंट-जर्मेन, नींबू।"
+          },
+          "price": 1400,
+          "tags": ["favorite"]
+        },
+        {
+          "id": "goa-way",
+          "name": { "en": "Goa Way", "fr": "Goa Way", "hi": "Goa Way" },
+          "description": {
+            "en": "Floral gin cooler with lychee and lavender.",
+            "fr": "Gin floral, litchi et lavande.",
+            "hi": "लीची और लैवेंडर वाला फूलदार जिन कूलर।"
+          },
+          "recipe": {
+            "en": "Blue Royal gin, lychee liqueur, lavender syrup, lime.",
+            "fr": "Gin Blue Royal, liqueur de litchi, sirop de lavande, lime.",
+            "hi": "ब्लू रॉयल जिन, लीची लिकर, लैवेंडर सिरप, नींबू।"
+          },
+          "price": 1400,
+          "tags": []
+        },
+        {
+          "id": "midnight-in-mumbai",
+          "name": {
+            "en": "Midnight in Mumbai",
+            "fr": "Midnight in Mumbai",
+            "hi": "Midnight in Mumbai"
+          },
+          "description": {
+            "en": "Dark rum highball with mandarin and ginger beer.",
+            "fr": "Highball au rhum foncé, mandarine et bière de gingembre.",
+            "hi": "डार्क रम, संतरा और जिंजर बीयर का हाईबॉल।"
+          },
+          "recipe": {
+            "en": "Dark rum, mandarin liqueur, ginger beer, bitters.",
+            "fr": "Rhum foncé, liqueur de mandarine, bière de gingembre, amers.",
+            "hi": "डार्क रम, मैंडरिन लिकर, जिंजर बीयर, बिटर्स।"
+          },
+          "price": 1400,
+          "tags": []
+        },
+        {
+          "id": "mango-rita",
+          "name": { "en": "Mango-Rita", "fr": "Mango-Rita", "hi": "Mango-Rita" },
+          "description": {
+            "en": "A margarita built on mango and tequila.",
+            "fr": "Margarita à la mangue et à la tequila.",
+            "hi": "आम और टेकिला की मगरिता।"
+          },
+          "recipe": {
+            "en": "Mango liqueur, tequila, orange liqueur.",
+            "fr": "Liqueur de mangue, tequila, liqueur d'orange.",
+            "hi": "आम लिकर, टेकिला, ऑरेंज लिकर।"
+          },
+          "price": 1400,
+          "tags": []
+        },
+        {
+          "id": "namastay-a-while",
+          "name": { "en": "Namastay a While", "fr": "Namastay a While", "hi": "Namastay a While" },
+          "description": {
+            "en": "Spiced rum and chai, finished with cream liqueur.",
+            "fr": "Rhum épicé et chai, liqueur crémeuse.",
+            "hi": "स्पाइस्ड रम और चाय, क्रीम लिकर के साथ।"
+          },
+          "recipe": {
+            "en": "Spiced rum, Baileys, Galliano, chai, star-anise bitters.",
+            "fr": "Rhum épicé, Baileys, Galliano, chai, amers à l'anis étoilé.",
+            "hi": "स्पाइस्ड रम, बेलीज़, गैलियानो, चाय, चक्र फूल बिटर्स।"
+          },
+          "price": 1400,
+          "tags": []
+        },
+        {
+          "id": "636-espresso-martini",
+          "name": { "en": "636 Espresso Martini", "fr": "636 Espresso Martini", "hi": "636 Espresso Martini" },
+          "description": {
+            "en": "Dorval's espresso martini — Chartreuse and chocolate bitters.",
+            "fr": "L'espresso martini de Dorval — Chartreuse et amers de chocolat.",
+            "hi": "डोरवाल का एस्प्रेसो मार्टिनी — चार्टरेज़ और चॉकलेट बिटर्स।"
+          },
+          "recipe": {
+            "en": "Green Chartreuse, Galliano, espresso syrup, chocolate bitters.",
+            "fr": "Chartreuse verte, Galliano, sirop d'espresso, amers de chocolat.",
+            "hi": "ग्रीन चार्टरेज़, गैलियानो, एस्प्रेसो सिरप, चॉकलेट बिटर्स।"
+          },
+          "price": 1400,
+          "tags": ["favorite"]
+        }
+      ]
+    },
+    {
+      "id": "classics",
+      "title": { "en": "Classics", "fr": "Classiques", "hi": "क्लासिक" },
+      "items": [
+        {
+          "id": "aperol-spritz",
+          "name": { "en": "Aperol Spritz", "fr": "Aperol Spritz", "hi": "Aperol Spritz" },
+          "description": {
+            "en": "Aperol, sparkling wine, soda.",
+            "fr": "Aperol, vin mousseux, soda.",
+            "hi": "एपेरोल, स्पार्कलिंग वाइन, सोडा।"
+          },
+          "price": 1400,
+          "tags": []
+        },
+        {
+          "id": "dry-martini",
+          "name": { "en": "Dry Martini", "fr": "Dry Martini", "hi": "Dry Martini" },
+          "description": {
+            "en": "Gin or vodka, dry vermouth.",
+            "fr": "Gin ou vodka, vermouth dry.",
+            "hi": "जिन या वोदका, ड्राई वर्माउथ।"
+          },
+          "price": 1400,
+          "tags": []
+        },
+        {
+          "id": "tamarin-margarita",
+          "name": { "en": "Tamarind Margarita", "fr": "Margarita tamarin", "hi": "इमली मगरिता" },
+          "description": {
+            "en": "Tequila margarita with tamarind.",
+            "fr": "Margarita à la tequila et au tamarin.",
+            "hi": "टेकिला मगरिता, इमली के साथ।"
+          },
+          "price": 1400,
+          "tags": []
+        },
+        {
+          "id": "indian-goddess",
+          "name": { "en": "Indian Goddess", "fr": "Indian Goddess", "hi": "Indian Goddess" },
+          "description": {
+            "en": "House cocktail, gently spiced.",
+            "fr": "Cocktail maison, légèrement épicé.",
+            "hi": "घर का कॉकटेल, हल्के मसाले के साथ।"
+          },
+          "price": 1400,
+          "tags": []
+        },
+        {
+          "id": "bloody-caesar",
+          "name": { "en": "Bloody Caesar", "fr": "Bloody Caesar", "hi": "Bloody Caesar" },
+          "description": {
+            "en": "Vodka, Clamato, spice and celery.",
+            "fr": "Vodka, Clamato, épices et céleri.",
+            "hi": "वोदका, क्लमाटो, मसाले और अजवाइन पत्ता।"
+          },
+          "price": 1200,
+          "tags": []
+        },
+        {
+          "id": "the-last-word",
+          "name": { "en": "The Last Word", "fr": "The Last Word", "hi": "The Last Word" },
+          "description": {
+            "en": "Gin, green Chartreuse, maraschino, lime.",
+            "fr": "Gin, Chartreuse verte, marasquin, lime.",
+            "hi": "जिन, ग्रीन चार्टरेज़, मारस्किनो, नींबू।"
+          },
+          "price": 1200,
+          "tags": []
+        },
+        {
+          "id": "dark-and-stormy",
+          "name": { "en": "Dark and Stormy", "fr": "Dark and Stormy", "hi": "Dark and Stormy" },
+          "description": {
+            "en": "Dark rum and ginger beer.",
+            "fr": "Rhum foncé et bière de gingembre.",
+            "hi": "डार्क रम और जिंजर बीयर।"
+          },
+          "price": 1200,
+          "tags": []
+        },
+        {
+          "id": "ophirs-negroni",
+          "name": { "en": "Ophir's Negroni", "fr": "Negroni Ophir", "hi": "Ophir's Negroni" },
+          "description": {
+            "en": "Ophir Indian-spiced gin, Campari, sweet vermouth.",
+            "fr": "Gin Ophir aux épices indiennes, Campari, vermouth doux.",
+            "hi": "ओफ़िर इंडियन-स्पाइस्ड जिन, कैम्परी, स्वीट वर्माउथ।"
+          },
+          "price": 1200,
+          "tags": []
+        },
+        {
+          "id": "amaretto-sour",
+          "name": { "en": "Amaretto Sour", "fr": "Amaretto Sour", "hi": "Amaretto Sour" },
+          "description": {
+            "en": "Amaretto, lemon, a little sugar.",
+            "fr": "Amaretto, citron, un peu de sucre.",
+            "hi": "अमरेटो, नींबू, थोड़ी चीनी।"
+          },
+          "price": 1200,
+          "tags": []
+        },
+        {
+          "id": "sangria",
+          "name": { "en": "Sangria", "fr": "Sangria", "hi": "Sangria" },
+          "description": {
+            "en": "Red or white, house-made.",
+            "fr": "Rouge ou blanc, maison.",
+            "hi": "लाल या सफ़ेद, घर की संग्रिया।"
+          },
+          "price": 1200,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "mocktails",
+      "title": { "en": "Mocktails", "fr": "Mocktails", "hi": "मॉकटेल" },
+      "items": [
+        {
+          "id": "mango-mojito",
+          "name": { "en": "Mango Mojito", "fr": "Mojito à la mangue", "hi": "मैंगो मोहितो" },
+          "description": {
+            "en": "Mango, mint, lime and soda. No alcohol.",
+            "fr": "Mangue, menthe, lime et soda. Sans alcool.",
+            "hi": "आम, पुदीना, नींबू और सोडा। बिना शराब।"
+          },
+          "price": 800,
+          "tags": []
+        },
+        {
+          "id": "noroi-na-gin",
+          "name": { "en": "Noroi N/A Gin", "fr": "Gin sans alcool Noroi", "hi": "नोरोई बिना-शराब जिन" },
+          "description": {
+            "en": "Québec non-alcoholic gin serve.",
+            "fr": "Gin québécois sans alcool.",
+            "hi": "क्वेबेक की बिना-शराब जिन।"
+          },
+          "price": 900,
+          "tags": []
+        },
+        {
+          "id": "noroi-na-whiskey",
+          "name": { "en": "Noroi N/A Whiskey", "fr": "Whiskey sans alcool Noroi", "hi": "नोरोई बिना-शराब व्हिस्की" },
+          "description": {
+            "en": "Québec non-alcoholic whiskey serve.",
+            "fr": "Whiskey québécois sans alcool.",
+            "hi": "क्वेबेक की बिना-शराब व्हिस्की।"
+          },
+          "price": 800,
+          "tags": []
+        },
+        {
+          "id": "noroi-na-rum",
+          "name": { "en": "Noroi N/A Rum", "fr": "Rhum sans alcool Noroi", "hi": "नोरोई बिना-शराब रम" },
+          "description": {
+            "en": "Québec non-alcoholic rum serve.",
+            "fr": "Rhum québécois sans alcool.",
+            "hi": "क्वेबेक की बिना-शराब रम।"
+          },
+          "price": 900,
+          "tags": []
+        },
+        {
+          "id": "caesar-mocktail",
+          "name": { "en": "Caesar", "fr": "Caesar", "hi": "Caesar" },
+          "description": {
+            "en": "Clamato, spice and celery. No alcohol.",
+            "fr": "Clamato, épices et céleri. Sans alcool.",
+            "hi": "क्लमाटो, मसाले और अजवाइन पत्ता। बिना शराब।"
+          },
+          "price": 800,
+          "tags": []
+        },
+        {
+          "id": "cosmo-mocktail",
+          "name": { "en": "Cosmopolitan", "fr": "Cosmopolitan", "hi": "Cosmopolitan" },
+          "description": {
+            "en": "Cranberry, citrus, no alcohol.",
+            "fr": "Canneberge et agrumes, sans alcool.",
+            "hi": "क्रैनबेरी और नींबू, बिना शराब।"
+          },
+          "price": 800,
+          "tags": []
+        },
+        {
+          "id": "moscow-mule-mocktail",
+          "name": { "en": "Moscow Mule", "fr": "Moscow Mule", "hi": "Moscow Mule" },
+          "description": {
+            "en": "Ginger beer, lime, no alcohol.",
+            "fr": "Bière de gingembre, lime, sans alcool.",
+            "hi": "जिंजर बीयर और नींबू, बिना शराब।"
+          },
+          "price": 900,
+          "tags": []
+        },
+        {
+          "id": "mango-lassi",
+          "name": { "en": "Mango Lassi", "fr": "Lassi à la mangue", "hi": "आम लस्सी" },
+          "description": {
+            "en": "Yogurt shaken with mango.",
+            "fr": "Yaourt fouetté à la mangue.",
+            "hi": "आम के साथ फेंटी दही।"
+          },
+          "price": 600,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "shirley-temple",
+          "name": { "en": "Shirley Temple", "fr": "Shirley Temple", "hi": "Shirley Temple" },
+          "description": {
+            "en": "Ginger ale, grenadine, cherry.",
+            "fr": "Ginger ale, grenadine, cerise.",
+            "hi": "जिंजर एल, ग्रेनेडीन, चेरी।"
+          },
+          "price": 400,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "white-wine",
+      "title": { "en": "White wine", "fr": "Vins blancs", "hi": "सफ़ेद शराब" },
+      "items": [
+        {
+          "id": "pinot-grigio-murari-glass",
+          "name": { "en": "Pinot Grigio, Murari", "fr": "Pinot Grigio, Murari", "hi": "Pinot Grigio, Murari" },
+          "description": {
+            "en": "Italy. 7 oz glass.",
+            "fr": "Italie. Verre 7 oz.",
+            "hi": "इटली। ७ आउंस गिलास।"
+          },
+          "price": 1000,
+          "tags": []
+        },
+        {
+          "id": "pinot-grigio-murari-litre",
+          "name": { "en": "Pinot Grigio, Murari, 1 L", "fr": "Pinot Grigio, Murari, 1 L", "hi": "Pinot Grigio, Murari, 1 L" },
+          "description": {
+            "en": "Italy. One-litre carafe.",
+            "fr": "Italie. Carafe d'un litre.",
+            "hi": "इटली। एक लीटर कराफ़।"
+          },
+          "price": 3500,
+          "tags": []
+        },
+        {
+          "id": "chardonnay-diabolico-glass",
+          "name": { "en": "Chardonnay, Diabolico", "fr": "Chardonnay, Diabolico", "hi": "Chardonnay, Diabolico" },
+          "description": {
+            "en": "Chile. 7 oz glass.",
+            "fr": "Chili. Verre 7 oz.",
+            "hi": "चिली। ७ आउंस गिलास।"
+          },
+          "price": 1200,
+          "tags": []
+        },
+        {
+          "id": "chardonnay-diabolico-litre",
+          "name": { "en": "Chardonnay, Diabolico, 1 L", "fr": "Chardonnay, Diabolico, 1 L", "hi": "Chardonnay, Diabolico, 1 L" },
+          "description": {
+            "en": "Chile. One-litre carafe.",
+            "fr": "Chili. Carafe d'un litre.",
+            "hi": "चिली। एक लीटर कराफ़।"
+          },
+          "price": 3500,
+          "tags": []
+        },
+        {
+          "id": "la-sablette-375",
+          "name": { "en": "La Sablette, Muscadet-Sèvre, 375 ml", "fr": "La Sablette, Muscadet-Sèvre, 375 ml", "hi": "La Sablette, Muscadet-Sèvre, 375 ml" },
+          "description": {
+            "en": "France. Half bottle.",
+            "fr": "France. Demi-bouteille.",
+            "hi": "फ़्रांस। आधी बोतल।"
+          },
+          "price": 2200,
+          "tags": []
+        },
+        {
+          "id": "la-sablette-750",
+          "name": { "en": "La Sablette, Muscadet-Sèvre, 750 ml", "fr": "La Sablette, Muscadet-Sèvre, 750 ml", "hi": "La Sablette, Muscadet-Sèvre, 750 ml" },
+          "description": {
+            "en": "France. Bottle.",
+            "fr": "France. Bouteille.",
+            "hi": "फ़्रांस। बोतल।"
+          },
+          "price": 3400,
+          "tags": []
+        },
+        {
+          "id": "mouton-cadet-white-375",
+          "name": { "en": "Mouton Cadet, Philippe de Rothschild, 375 ml", "fr": "Mouton Cadet, Philippe de Rothschild, 375 ml", "hi": "Mouton Cadet, Philippe de Rothschild, 375 ml" },
+          "description": {
+            "en": "France. White. Half bottle.",
+            "fr": "France. Blanc. Demi-bouteille.",
+            "hi": "फ़्रांस। सफ़ेद। आधी बोतल।"
+          },
+          "price": 2400,
+          "tags": []
+        },
+        {
+          "id": "mouton-cadet-white-750",
+          "name": { "en": "Mouton Cadet, Philippe de Rothschild, 750 ml", "fr": "Mouton Cadet, Philippe de Rothschild, 750 ml", "hi": "Mouton Cadet, Philippe de Rothschild, 750 ml" },
+          "description": {
+            "en": "France. White. Bottle.",
+            "fr": "France. Blanc. Bouteille.",
+            "hi": "फ़्रांस। सफ़ेद। बोतल।"
+          },
+          "price": 3600,
+          "tags": []
+        },
+        {
+          "id": "riesling-wilm-375",
+          "name": { "en": "Riesling, Wilm Alsace, 375 ml", "fr": "Riesling, Wilm Alsace, 375 ml", "hi": "Riesling, Wilm Alsace, 375 ml" },
+          "description": {
+            "en": "France. Half bottle.",
+            "fr": "France. Demi-bouteille.",
+            "hi": "फ़्रांस। आधी बोतल।"
+          },
+          "price": 2400,
+          "tags": []
+        },
+        {
+          "id": "riesling-wilm-750",
+          "name": { "en": "Riesling, Wilm Alsace, 750 ml", "fr": "Riesling, Wilm Alsace, 750 ml", "hi": "Riesling, Wilm Alsace, 750 ml" },
+          "price": 3600,
+          "description": {
+            "en": "France. Bottle.",
+            "fr": "France. Bouteille.",
+            "hi": "फ़्रांस। बोतल।"
+          },
+          "tags": []
+        },
+        {
+          "id": "chardonnay-lindemans",
+          "name": { "en": "Chardonnay, Lindemans", "fr": "Chardonnay, Lindemans", "hi": "Chardonnay, Lindemans" },
+          "description": {
+            "en": "Australia. Bottle.",
+            "fr": "Australie. Bouteille.",
+            "hi": "ऑस्ट्रेलिया। बोतल।"
+          },
+          "price": 2900,
+          "tags": []
+        },
+        {
+          "id": "sauvignon-blanc-les-jamelles",
+          "name": { "en": "Sauvignon Blanc, Les Jamelles", "fr": "Sauvignon Blanc, Les Jamelles", "hi": "Sauvignon Blanc, Les Jamelles" },
+          "description": {
+            "en": "France. Bottle.",
+            "fr": "France. Bouteille.",
+            "hi": "फ़्रांस। बोतल।"
+          },
+          "price": 2900,
+          "tags": []
+        },
+        {
+          "id": "clu-clu-falerio",
+          "name": { "en": "Clu Clu, Falerio Trebbiano", "fr": "Clu Clu, Falerio Trebbiano", "hi": "Clu Clu, Falerio Trebbiano" },
+          "description": {
+            "en": "Italy. Bottle.",
+            "fr": "Italie. Bouteille.",
+            "hi": "इटली। बोतल।"
+          },
+          "price": 3400,
+          "tags": []
+        },
+        {
+          "id": "pinot-gris-wilm",
+          "name": { "en": "Pinot Gris, Wilm Alsace", "fr": "Pinot Gris, Wilm Alsace", "hi": "Pinot Gris, Wilm Alsace" },
+          "description": {
+            "en": "France. Bottle.",
+            "fr": "France. Bouteille.",
+            "hi": "फ़्रांस। बोतल।"
+          },
+          "price": 3600,
+          "tags": []
+        },
+        {
+          "id": "pinot-blanc-wilm",
+          "name": { "en": "Pinot Blanc, Wilm Alsace", "fr": "Pinot Blanc, Wilm Alsace", "hi": "Pinot Blanc, Wilm Alsace" },
+          "description": {
+            "en": "France. Bottle.",
+            "fr": "France. Bouteille.",
+            "hi": "फ़्रांस। बोतल।"
+          },
+          "price": 3700,
+          "tags": []
+        },
+        {
+          "id": "gruner-veltliner-klimt",
+          "name": { "en": "Grüner Veltliner, Klimt", "fr": "Grüner Veltliner, Klimt", "hi": "Grüner Veltliner, Klimt" },
+          "description": {
+            "en": "Austria. Bottle.",
+            "fr": "Autriche. Bouteille.",
+            "hi": "ऑस्ट्रिया। बोतल।"
+          },
+          "price": 3800,
+          "tags": []
+        },
+        {
+          "id": "chardonnay-bread-and-butter",
+          "name": { "en": "Chardonnay, Bread & Butter", "fr": "Chardonnay, Bread & Butter", "hi": "Chardonnay, Bread & Butter" },
+          "description": {
+            "en": "California. Bottle.",
+            "fr": "Californie. Bouteille.",
+            "hi": "कैलिफ़ोर्निया। बोतल।"
+          },
+          "price": 3900,
+          "tags": []
+        },
+        {
+          "id": "sauvignon-blanc-kim-crawford",
+          "name": { "en": "Sauvignon Blanc, Kim Crawford", "fr": "Sauvignon Blanc, Kim Crawford", "hi": "Sauvignon Blanc, Kim Crawford" },
+          "description": {
+            "en": "New Zealand. Bottle.",
+            "fr": "Nouvelle-Zélande. Bouteille.",
+            "hi": "न्यूज़ीलैंड। बोतल।"
+          },
+          "price": 3900,
+          "tags": []
+        },
+        {
+          "id": "gewurztraminer-pfaff",
+          "name": { "en": "Gewürztraminer, Pfaff Alsace", "fr": "Gewurztraminer, Pfaff Alsace", "hi": "Gewürztraminer, Pfaff Alsace" },
+          "description": {
+            "en": "France. Bottle.",
+            "fr": "France. Bouteille.",
+            "hi": "फ़्रांस। बोतल।"
+          },
+          "price": 4500,
+          "tags": []
+        },
+        {
+          "id": "chablisienne-la-sereine",
+          "name": { "en": "Chablisienne, La Sereine", "fr": "Chablisienne, La Sereine", "hi": "Chablisienne, La Sereine" },
+          "description": {
+            "en": "France. Bottle.",
+            "fr": "France. Bouteille.",
+            "hi": "फ़्रांस। बोतल।"
+          },
+          "price": 5500,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "red-wine",
+      "title": { "en": "Red wine", "fr": "Vins rouges", "hi": "लाल शराब" },
+      "items": [
+        {
+          "id": "pinot-noir-murari-glass",
+          "name": { "en": "Pinot Noir, Murari", "fr": "Pinot Noir, Murari", "hi": "Pinot Noir, Murari" },
+          "description": {
+            "en": "France. 7 oz glass.",
+            "fr": "France. Verre 7 oz.",
+            "hi": "फ़्रांस। ७ आउंस गिलास।"
+          },
+          "price": 1000,
+          "tags": []
+        },
+        {
+          "id": "pinot-noir-murari-litre",
+          "name": { "en": "Pinot Noir, Murari, 1 L", "fr": "Pinot Noir, Murari, 1 L", "hi": "Pinot Noir, Murari, 1 L" },
+          "description": {
+            "en": "France. One-litre carafe.",
+            "fr": "France. Carafe d'un litre.",
+            "hi": "फ़्रांस। एक लीटर कराफ़।"
+          },
+          "price": 3500,
+          "tags": []
+        },
+        {
+          "id": "cabernet-syrah-glass",
+          "name": { "en": "Cabernet Sauvignon–Syrah", "fr": "Cabernet Sauvignon–Syrah", "hi": "Cabernet Sauvignon–Syrah" },
+          "description": {
+            "en": "France. 7 oz glass.",
+            "fr": "France. Verre 7 oz.",
+            "hi": "फ़्रांस। ७ आउंस गिलास।"
+          },
+          "price": 1000,
+          "tags": []
+        },
+        {
+          "id": "cabernet-syrah-litre",
+          "name": { "en": "Cabernet Sauvignon–Syrah, 1 L", "fr": "Cabernet Sauvignon–Syrah, 1 L", "hi": "Cabernet Sauvignon–Syrah, 1 L" },
+          "description": {
+            "en": "France. One-litre carafe.",
+            "fr": "France. Carafe d'un litre.",
+            "hi": "फ़्रांस। एक लीटर कराफ़।"
+          },
+          "price": 3500,
+          "tags": []
+        },
+        {
+          "id": "mouton-cadet-red-375",
+          "name": { "en": "Mouton Cadet, Philippe de Rothschild, 375 ml", "fr": "Mouton Cadet, Philippe de Rothschild, 375 ml", "hi": "Mouton Cadet, Philippe de Rothschild, 375 ml" },
+          "description": {
+            "en": "France. Red. Half bottle.",
+            "fr": "France. Rouge. Demi-bouteille.",
+            "hi": "फ़्रांस। लाल। आधी बोतल।"
+          },
+          "price": 2400,
+          "tags": []
+        },
+        {
+          "id": "cabernet-wolf-blass-375",
+          "name": { "en": "Cabernet Sauvignon, Wolf Blass, 375 ml", "fr": "Cabernet Sauvignon, Wolf Blass, 375 ml", "hi": "Cabernet Sauvignon, Wolf Blass, 375 ml" },
+          "description": {
+            "en": "Australia. Half bottle.",
+            "fr": "Australie. Demi-bouteille.",
+            "hi": "ऑस्ट्रेलिया। आधी बोतल।"
+          },
+          "price": 2600,
+          "tags": []
+        },
+        {
+          "id": "cabernet-wolf-blass-750",
+          "name": { "en": "Cabernet Sauvignon, Wolf Blass, 750 ml", "fr": "Cabernet Sauvignon, Wolf Blass, 750 ml", "hi": "Cabernet Sauvignon, Wolf Blass, 750 ml" },
+          "description": {
+            "en": "Australia. Bottle.",
+            "fr": "Australie. Bouteille.",
+            "hi": "ऑस्ट्रेलिया। बोतल।"
+          },
+          "price": 4000,
+          "tags": []
+        },
+        {
+          "id": "cabernet-j-lohr-375",
+          "name": { "en": "Cabernet Sauvignon, J. Lohr, 375 ml", "fr": "Cabernet Sauvignon, J. Lohr, 375 ml", "hi": "Cabernet Sauvignon, J. Lohr, 375 ml" },
+          "description": {
+            "en": "United States. Half bottle.",
+            "fr": "États-Unis. Demi-bouteille.",
+            "hi": "संयुक्त राज्य। आधी बोतल।"
+          },
+          "price": 2900,
+          "tags": []
+        },
+        {
+          "id": "cabernet-j-lohr-750",
+          "name": { "en": "Cabernet Sauvignon, J. Lohr, 750 ml", "fr": "Cabernet Sauvignon, J. Lohr, 750 ml", "hi": "Cabernet Sauvignon, J. Lohr, 750 ml" },
+          "description": {
+            "en": "United States. Bottle.",
+            "fr": "États-Unis. Bouteille.",
+            "hi": "संयुक्त राज्य। बोतल।"
+          },
+          "price": 4900,
+          "tags": []
+        },
+        {
+          "id": "pinot-noir-les-jamelles",
+          "name": { "en": "Pinot Noir, Les Jamelles", "fr": "Pinot Noir, Les Jamelles", "hi": "Pinot Noir, Les Jamelles" },
+          "description": {
+            "en": "France. Bottle.",
+            "fr": "France. Bouteille.",
+            "hi": "फ़्रांस। बोतल।"
+          },
+          "price": 2900,
+          "tags": []
+        },
+        {
+          "id": "shiraz-lindemans",
+          "name": { "en": "Shiraz, Lindemans", "fr": "Shiraz, Lindemans", "hi": "Shiraz, Lindemans" },
+          "description": {
+            "en": "Australia. Bottle.",
+            "fr": "Australie. Bouteille.",
+            "hi": "ऑस्ट्रेलिया। बोतल।"
+          },
+          "price": 3500,
+          "tags": []
+        },
+        {
+          "id": "barbera-dasti",
+          "name": { "en": "Barbera d'Asti Superiore", "fr": "Barbera d'Asti Superiore", "hi": "Barbera d'Asti Superiore" },
+          "description": {
+            "en": "Italy. Bottle.",
+            "fr": "Italie. Bouteille.",
+            "hi": "इटली। बोतल।"
+          },
+          "price": 3500,
+          "tags": []
+        },
+        {
+          "id": "chianti-ruffino",
+          "name": { "en": "Chianti, Ruffino", "fr": "Chianti, Ruffino", "hi": "Chianti, Ruffino" },
+          "description": {
+            "en": "Italy. Bottle.",
+            "fr": "Italie. Bouteille.",
+            "hi": "इटली। बोतल।"
+          },
+          "price": 3800,
+          "tags": []
+        },
+        {
+          "id": "valpolicella-ripasso",
+          "name": { "en": "Valpolicella Ripasso, Montecorna Farina", "fr": "Valpolicella Ripasso, Montecorna Farina", "hi": "Valpolicella Ripasso, Montecorna Farina" },
+          "description": {
+            "en": "Italy. Bottle.",
+            "fr": "Italie. Bouteille.",
+            "hi": "इटली। बोतल।"
+          },
+          "price": 3900,
+          "tags": []
+        },
+        {
+          "id": "lebegue-st-emilion",
+          "name": { "en": "J. Lebègue, Saint-Émilion", "fr": "J. Lebègue, Saint-Émilion", "hi": "J. Lebègue, Saint-Émilion" },
+          "description": {
+            "en": "France. Bottle.",
+            "fr": "France. Bouteille.",
+            "hi": "फ़्रांस। बोतल।"
+          },
+          "price": 5000,
+          "tags": []
+        },
+        {
+          "id": "amarone",
+          "name": { "en": "Amarone della Valpolicella", "fr": "Amarone della Valpolicella", "hi": "Amarone della Valpolicella" },
+          "description": {
+            "en": "Italy. Bottle.",
+            "fr": "Italie. Bouteille.",
+            "hi": "इटली। बोतल।"
+          },
+          "price": 7900,
+          "tags": []
+        },
+        {
+          "id": "chateauneuf-vieux-lazaret",
+          "name": { "en": "Châteauneuf-du-Pape, Vieux Lazaret", "fr": "Châteauneuf-du-Pape, Vieux Lazaret", "hi": "Châteauneuf-du-Pape, Vieux Lazaret" },
+          "description": {
+            "en": "France. Bottle.",
+            "fr": "France. Bouteille.",
+            "hi": "फ़्रांस। बोतल।"
+          },
+          "price": 8000,
+          "tags": []
+        },
+        {
+          "id": "chateau-clarke",
+          "name": { "en": "Château Clarke, Baron Edmond de Rothschild", "fr": "Château Clarke, Baron Edmond de Rothschild", "hi": "Château Clarke, Baron Edmond de Rothschild" },
+          "description": {
+            "en": "France. Bottle.",
+            "fr": "France. Bouteille.",
+            "hi": "फ़्रांस। बोतल।"
+          },
+          "price": 8500,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "rose",
+      "title": { "en": "Rosé", "fr": "Rosés", "hi": "रोज़े" },
+      "items": [
+        {
+          "id": "gerard-bertrand-375",
+          "name": { "en": "Gérard Bertrand, Côte des Roses, 375 ml", "fr": "Gérard Bertrand, Côte des Roses, 375 ml", "hi": "Gérard Bertrand, Côte des Roses, 375 ml" },
+          "description": {
+            "en": "France. Half bottle.",
+            "fr": "France. Demi-bouteille.",
+            "hi": "फ़्रांस। आधी बोतल।"
+          },
+          "price": 2700,
+          "tags": []
+        },
+        {
+          "id": "gerard-bertrand-750",
+          "name": { "en": "Gérard Bertrand, Côte des Roses, 750 ml", "fr": "Gérard Bertrand, Côte des Roses, 750 ml", "hi": "Gérard Bertrand, Côte des Roses, 750 ml" },
+          "description": {
+            "en": "France. Bottle.",
+            "fr": "France. Bouteille.",
+            "hi": "फ़्रांस। बोतल।"
+          },
+          "price": 3900,
+          "tags": []
+        },
+        {
+          "id": "puech-haut-argali",
+          "name": { "en": "Puech-Haut, Argali", "fr": "Puech-Haut, Argali", "hi": "Puech-Haut, Argali" },
+          "description": {
+            "en": "France. Bottle.",
+            "fr": "France. Bouteille.",
+            "hi": "फ़्रांस। बोतल।"
+          },
+          "price": 4900,
+          "tags": []
+        },
+        {
+          "id": "whispering-angel",
+          "name": { "en": "Whispering Angel", "fr": "Whispering Angel", "hi": "Whispering Angel" },
+          "description": {
+            "en": "France. Bottle.",
+            "fr": "France. Bouteille.",
+            "hi": "फ़्रांस। बोतल।"
+          },
+          "price": 5700,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "beer",
+      "title": { "en": "Beer", "fr": "Bières", "hi": "बीयर" },
+      "note": {
+        "en": "On tap: Lager, Pilsner, Cobra Blonde, IPA, King Cobra. 12 oz $8 · pint $10 · pitcher $27.",
+        "fr": "En fût : lager, pilsner, Cobra blonde, IPA, King Cobra. 12 oz 8 $ · pinte 10 $ · pichet 27 $.",
+        "hi": "टैप पर: लैगर, पिल्सनर, कोबरा ब्लॉण्ड, IPA, किंग कोबरा। १२ आउंस $८ · पाइंट $१० · पिचर $२७।"
+      },
+      "items": [
+        {
+          "id": "beer-flight",
+          "name": { "en": "Flight", "fr": "Flight", "hi": "फ़्लाइट" },
+          "description": {
+            "en": "Four 5 oz pours from the tap list.",
+            "fr": "Quatre verres de 5 oz, bières en fût.",
+            "hi": "टैप सूची से चार ५ आउंस गिलास।"
+          },
+          "price": 1500,
+          "tags": []
+        },
+        {
+          "id": "tap-lager",
+          "name": { "en": "Lager", "fr": "Lager", "hi": "लैगर" },
+          "description": {
+            "en": "On tap. 12 oz $8 · pint $10 · pitcher $27.",
+            "fr": "En fût. 12 oz 8 $ · pinte 10 $ · pichet 27 $.",
+            "hi": "टैप पर। १२ आउंस $८ · पाइंट $१० · पिचर $२७।"
+          },
+          "price": 1000,
+          "tags": []
+        },
+        {
+          "id": "tap-pilsner",
+          "name": { "en": "Pilsner", "fr": "Pilsner", "hi": "पिल्सनर" },
+          "description": {
+            "en": "On tap. 12 oz $8 · pint $10 · pitcher $27.",
+            "fr": "En fût. 12 oz 8 $ · pinte 10 $ · pichet 27 $.",
+            "hi": "टैप पर। १२ आउंस $८ · पाइंट $१० · पिचर $२७।"
+          },
+          "price": 1000,
+          "tags": []
+        },
+        {
+          "id": "tap-cobra-blonde",
+          "name": { "en": "Cobra Blonde", "fr": "Cobra blonde", "hi": "कोबरा ब्लॉण्ड" },
+          "description": {
+            "en": "On tap. 12 oz $8 · pint $10 · pitcher $27.",
+            "fr": "En fût. 12 oz 8 $ · pinte 10 $ · pichet 27 $.",
+            "hi": "टैप पर। १२ आउंस $८ · पाइंट $१० · पिचर $२७।"
+          },
+          "price": 1000,
+          "tags": []
+        },
+        {
+          "id": "tap-ipa",
+          "name": { "en": "IPA", "fr": "IPA", "hi": "IPA" },
+          "description": {
+            "en": "On tap. 12 oz $8 · pint $10 · pitcher $27.",
+            "fr": "En fût. 12 oz 8 $ · pinte 10 $ · pichet 27 $.",
+            "hi": "टैप पर। १२ आउंस $८ · पाइंट $१० · पिचर $२७।"
+          },
+          "price": 1000,
+          "tags": []
+        },
+        {
+          "id": "tap-king-cobra",
+          "name": { "en": "King Cobra", "fr": "King Cobra", "hi": "किंग कोबरा" },
+          "description": {
+            "en": "On tap. 12 oz $8 · pint $10 · pitcher $27.",
+            "fr": "En fût. 12 oz 8 $ · pinte 10 $ · pichet 27 $.",
+            "hi": "टैप पर। १२ आउंस $८ · पाइंट $१० · पिचर $२७।"
+          },
+          "price": 1000,
+          "tags": []
+        },
+        {
+          "id": "kingfisher-premium",
+          "name": { "en": "Kingfisher Premium", "fr": "Kingfisher Premium", "hi": "Kingfisher Premium" },
+          "description": {
+            "en": "Bottle.",
+            "fr": "Bouteille.",
+            "hi": "बोतल।"
+          },
+          "price": 900,
+          "tags": []
+        },
+        {
+          "id": "delirium-tremens",
+          "name": { "en": "Delirium Tremens", "fr": "Delirium Tremens", "hi": "Delirium Tremens" },
+          "description": {
+            "en": "Bottle.",
+            "fr": "Bouteille.",
+            "hi": "बोतल।"
+          },
+          "price": 900,
+          "tags": []
+        },
+        {
+          "id": "oharas-irish-ipa",
+          "name": { "en": "O'Hara's Irish IPA", "fr": "O'Hara's Irish IPA", "hi": "O'Hara's Irish IPA" },
+          "description": {
+            "en": "Bottle, 500 ml.",
+            "fr": "Bouteille, 500 ml.",
+            "hi": "बोतल, ५०० मिली।"
+          },
+          "price": 900,
+          "tags": []
+        },
+        {
+          "id": "mongozo",
+          "name": { "en": "Mongozo", "fr": "Mongozo", "hi": "Mongozo" },
+          "description": {
+            "en": "Gluten-free. Bottle.",
+            "fr": "Sans gluten. Bouteille.",
+            "hi": "ग्लूटेन-मुक्त। बोतल।"
+          },
+          "price": 900,
+          "tags": []
+        },
+        {
+          "id": "corona-zero",
+          "name": { "en": "Corona 0%", "fr": "Corona 0 %", "hi": "Corona 0%" },
+          "description": {
+            "en": "Non-alcoholic. Bottle.",
+            "fr": "Sans alcool. Bouteille.",
+            "hi": "बिना शराब। बोतल।"
+          },
+          "price": 900,
+          "tags": []
+        },
+        {
+          "id": "cidre-michel-jodoin",
+          "name": { "en": "Cidre Michel Jodoin", "fr": "Cidre Michel Jodoin", "hi": "Cidre Michel Jodoin" },
+          "description": {
+            "en": "Québec cider. Bottle.",
+            "fr": "Cidre québécois. Bouteille.",
+            "hi": "क्वेबेक साइडर। बोतल।"
+          },
+          "price": 900,
+          "tags": []
+        },
+        {
+          "id": "badger-fursty-ferret",
+          "name": { "en": "Badger Fursty Ferret", "fr": "Badger Fursty Ferret", "hi": "Badger Fursty Ferret" },
+          "description": {
+            "en": "Can, 440 ml.",
+            "fr": "Canette, 440 ml.",
+            "hi": "कैन, ४४० मिली।"
+          },
+          "price": 1100,
+          "tags": []
+        },
+        {
+          "id": "erdinger-wheat",
+          "name": { "en": "Erdinger Wheat", "fr": "Erdinger blé", "hi": "Erdinger Wheat" },
+          "description": {
+            "en": "Weissbier. Can, 500 ml.",
+            "fr": "Weissbier. Canette, 500 ml.",
+            "hi": "वाइसबीयर। कैन, ५०० मिली।"
+          },
+          "price": 1100,
+          "tags": []
+        },
+        {
+          "id": "oharas-nitro-stout",
+          "name": { "en": "O'Hara's Irish Nitro Stout", "fr": "O'Hara's Irish Nitro Stout", "hi": "O'Hara's Irish Nitro Stout" },
+          "description": {
+            "en": "Can, 440 ml.",
+            "fr": "Canette, 440 ml.",
+            "hi": "कैन, ४४० मिली।"
+          },
+          "price": 1100,
+          "tags": []
+        },
+        {
+          "id": "iron-maiden-trooper",
+          "name": { "en": "Iron Maiden Trooper", "fr": "Iron Maiden Trooper", "hi": "Iron Maiden Trooper" },
+          "description": {
+            "en": "Can, 500 ml.",
+            "fr": "Canette, 500 ml.",
+            "hi": "कैन, ५०० मिली।"
+          },
+          "price": 1100,
+          "tags": []
+        },
+        {
+          "id": "stiegl-radler",
+          "name": { "en": "Stiegl Radler", "fr": "Stiegl Radler", "hi": "Stiegl Radler" },
+          "description": {
+            "en": "Can, 500 ml.",
+            "fr": "Canette, 500 ml.",
+            "hi": "कैन, ५०० मिली।"
+          },
+          "price": 1100,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "gin",
+      "title": { "en": "Gin", "fr": "Gin", "hi": "जिन" },
+      "items": [
+        {
+          "id": "monkey-47",
+          "name": { "en": "Monkey 47", "fr": "Monkey 47", "hi": "Monkey 47" },
+          "description": {
+            "en": "German dry gin.",
+            "fr": "Gin dry allemand.",
+            "hi": "जर्मन ड्राई जिन।"
+          },
+          "price": 1500,
+          "tags": []
+        },
+        {
+          "id": "roku",
+          "name": { "en": "Roku", "fr": "Roku", "hi": "Roku" },
+          "description": {
+            "en": "Japanese gin.",
+            "fr": "Gin japonais.",
+            "hi": "जापानी जिन।"
+          },
+          "price": 1200,
+          "tags": []
+        },
+        {
+          "id": "blue-royal",
+          "name": { "en": "Blue Royal", "fr": "Blue Royal", "hi": "Blue Royal" },
+          "description": {
+            "en": "House gin.",
+            "fr": "Gin maison.",
+            "hi": "घर का जिन।"
+          },
+          "price": 1000,
+          "tags": []
+        },
+        {
+          "id": "bombay-sapphire",
+          "name": { "en": "Bombay Sapphire", "fr": "Bombay Sapphire", "hi": "Bombay Sapphire" },
+          "description": {
+            "en": "London dry gin.",
+            "fr": "Gin dry de Londres.",
+            "hi": "लंदन ड्राई जिन।"
+          },
+          "price": 800,
+          "tags": []
+        },
+        {
+          "id": "bombay-bramble",
+          "name": { "en": "Bombay Bramble", "fr": "Bombay Bramble", "hi": "Bombay Bramble" },
+          "description": {
+            "en": "Blackberry and raspberry gin.",
+            "fr": "Gin à la mûre et à la framboise.",
+            "hi": "ब्लैकबेरी-रास्पबेरी जिन।"
+          },
+          "price": 900,
+          "tags": []
+        },
+        {
+          "id": "gordons-pink",
+          "name": { "en": "Gordon's Pink", "fr": "Gordon's Pink", "hi": "Gordon's Pink" },
+          "description": {
+            "en": "Pink gin.",
+            "fr": "Gin rosé.",
+            "hi": "पिंक जिन।"
+          },
+          "price": 800,
+          "tags": []
+        },
+        {
+          "id": "noroi-gin",
+          "name": { "en": "Noroi", "fr": "Noroi", "hi": "Noroi" },
+          "description": {
+            "en": "Québec gin.",
+            "fr": "Gin québécois.",
+            "hi": "क्वेबेक जिन।"
+          },
+          "price": 800,
+          "tags": []
+        },
+        {
+          "id": "ophirs-indian-spiced-gin",
+          "name": { "en": "Ophir Indian Spiced Gin", "fr": "Ophir Indian Spiced Gin", "hi": "Ophir Indian Spiced Gin" },
+          "description": {
+            "en": "Gin with Indian botanicals.",
+            "fr": "Gin aux botaniques indiennes.",
+            "hi": "भारतीय जड़ी-बूटियों वाला जिन।"
+          },
+          "price": 1200,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "rum",
+      "title": { "en": "Rum", "fr": "Rhum", "hi": "रम" },
+      "items": [
+        {
+          "id": "bacardi-white",
+          "name": { "en": "Bacardi White", "fr": "Bacardi blanc", "hi": "Bacardi White" },
+          "description": {
+            "en": "White rum.",
+            "fr": "Rhum blanc.",
+            "hi": "सफ़ेद रम।"
+          },
+          "price": 800,
+          "tags": []
+        },
+        {
+          "id": "bacardi-spiced",
+          "name": { "en": "Bacardi Spiced", "fr": "Bacardi épicé", "hi": "Bacardi Spiced" },
+          "description": {
+            "en": "Spiced rum.",
+            "fr": "Rhum épicé.",
+            "hi": "मसालेदार रम।"
+          },
+          "price": 800,
+          "tags": []
+        },
+        {
+          "id": "plantation-dark-jamaican",
+          "name": { "en": "Plantation Original Dark Jamaican", "fr": "Plantation Original Dark Jamaican", "hi": "Plantation Original Dark Jamaican" },
+          "description": {
+            "en": "Jamaican dark rum.",
+            "fr": "Rhum foncé jamaïcain.",
+            "hi": "जमैका की डार्क रम।"
+          },
+          "price": 1000,
+          "tags": []
+        },
+        {
+          "id": "goslings",
+          "name": { "en": "Gosling's Black Seal", "fr": "Gosling's Black Seal", "hi": "Gosling's Black Seal" },
+          "description": {
+            "en": "Bermuda dark rum.",
+            "fr": "Rhum foncé des Bermudes.",
+            "hi": "बरमूडा की डार्क रम।"
+          },
+          "price": 1200,
+          "tags": []
+        },
+        {
+          "id": "wild-tiger-india",
+          "name": { "en": "Wild Tiger India", "fr": "Wild Tiger India", "hi": "Wild Tiger India" },
+          "description": {
+            "en": "Indian rum.",
+            "fr": "Rhum indien.",
+            "hi": "भारतीय रम।"
+          },
+          "price": 1200,
+          "tags": []
+        },
+        {
+          "id": "appleton-estate",
+          "name": { "en": "Appleton Estate", "fr": "Appleton Estate", "hi": "Appleton Estate" },
+          "description": {
+            "en": "Jamaican rum.",
+            "fr": "Rhum jamaïcain.",
+            "hi": "जमैका की रम।"
+          },
+          "price": 1000,
+          "tags": []
+        },
+        {
+          "id": "captain-morgan",
+          "name": { "en": "Captain Morgan", "fr": "Captain Morgan", "hi": "Captain Morgan" },
+          "description": {
+            "en": "Spiced rum.",
+            "fr": "Rhum épicé.",
+            "hi": "मसालेदार रम।"
+          },
+          "price": 800,
+          "tags": []
+        },
+        {
+          "id": "el-dorado-dark",
+          "name": { "en": "El Dorado Dark Guyana", "fr": "El Dorado Dark Guyana", "hi": "El Dorado Dark Guyana" },
+          "description": {
+            "en": "Guyanese dark rum.",
+            "fr": "Rhum foncé du Guyana.",
+            "hi": "गयाना की डार्क रम।"
+          },
+          "price": 800,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "tequila",
+      "title": { "en": "Tequila", "fr": "Tequila", "hi": "टेकिला" },
+      "items": [
+        {
+          "id": "jose-cuervo",
+          "name": { "en": "José Cuervo", "fr": "José Cuervo", "hi": "José Cuervo" },
+          "description": {
+            "en": "Mexican tequila.",
+            "fr": "Tequila mexicaine.",
+            "hi": "मैक्सिकन टेकिला।"
+          },
+          "price": 1000,
+          "tags": []
+        },
+        {
+          "id": "casamigos",
+          "name": { "en": "Casamigos", "fr": "Casamigos", "hi": "Casamigos" },
+          "description": {
+            "en": "Blanco tequila.",
+            "fr": "Tequila blanco.",
+            "hi": "ब्लांको टेकिला।"
+          },
+          "price": 1200,
+          "tags": []
+        },
+        {
+          "id": "patron",
+          "name": { "en": "Patrón", "fr": "Patrón", "hi": "Patrón" },
+          "description": {
+            "en": "Premium tequila.",
+            "fr": "Tequila premium.",
+            "hi": "प्रीमियम टेकिला।"
+          },
+          "price": 1400,
+          "tags": []
+        },
+        {
+          "id": "el-jimador",
+          "name": { "en": "El Jimador", "fr": "El Jimador", "hi": "El Jimador" },
+          "description": {
+            "en": "Mexican tequila.",
+            "fr": "Tequila mexicaine.",
+            "hi": "मैक्सिकन टेकिला।"
+          },
+          "price": 800,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "vodka",
+      "title": { "en": "Vodka", "fr": "Vodka", "hi": "वोदका" },
+      "items": [
+        {
+          "id": "titos",
+          "name": { "en": "Tito's", "fr": "Tito's", "hi": "Tito's" },
+          "description": {
+            "en": "Texas handmade vodka.",
+            "fr": "Vodka artisanale du Texas.",
+            "hi": "टेक्सस की हाथ से बनी वोदका।"
+          },
+          "price": 900,
+          "tags": []
+        },
+        {
+          "id": "moskovskaya",
+          "name": { "en": "Moskovskaya", "fr": "Moskovskaya", "hi": "Moskovskaya" },
+          "description": {
+            "en": "Russian vodka.",
+            "fr": "Vodka russe.",
+            "hi": "रूसी वोदका।"
+          },
+          "price": 800,
+          "tags": []
+        },
+        {
+          "id": "grey-goose",
+          "name": { "en": "Grey Goose", "fr": "Grey Goose", "hi": "Grey Goose" },
+          "description": {
+            "en": "French vodka.",
+            "fr": "Vodka française.",
+            "hi": "फ़्रांसीसी वोदका।"
+          },
+          "price": 1200,
+          "tags": []
+        },
+        {
+          "id": "stoli",
+          "name": { "en": "Stolichnaya", "fr": "Stolichnaya", "hi": "Stolichnaya" },
+          "description": {
+            "en": "Latvian vodka.",
+            "fr": "Vodka lettone.",
+            "hi": "लातवियाई वोदका।"
+          },
+          "price": 800,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "whiskey",
+      "title": { "en": "Whiskey", "fr": "Whiskey", "hi": "व्हिस्की" },
+      "items": [
+        {
+          "id": "oban-little-bay",
+          "name": { "en": "Oban Little Bay", "fr": "Oban Little Bay", "hi": "Oban Little Bay" },
+          "description": {
+            "en": "Highland single malt.",
+            "fr": "Single malt des Highlands.",
+            "hi": "हाइलैंड सिंगल माल्ट।"
+          },
+          "price": 1400,
+          "tags": []
+        },
+        {
+          "id": "dalwhinnie-15",
+          "name": { "en": "Dalwhinnie 15", "fr": "Dalwhinnie 15", "hi": "Dalwhinnie 15" },
+          "description": {
+            "en": "Highland single malt, 15 years.",
+            "fr": "Single malt des Highlands, 15 ans.",
+            "hi": "हाइलैंड सिंगल माल्ट, १५ वर्ष।"
+          },
+          "price": 1400,
+          "tags": []
+        },
+        {
+          "id": "glenmorangie-10",
+          "name": { "en": "Glenmorangie 10", "fr": "Glenmorangie 10", "hi": "Glenmorangie 10" },
+          "description": {
+            "en": "Highland single malt, 10 years.",
+            "fr": "Single malt des Highlands, 10 ans.",
+            "hi": "हाइलैंड सिंगल माल्ट, १० वर्ष।"
+          },
+          "price": 1200,
+          "tags": []
+        },
+        {
+          "id": "amrut-indian-single-malt",
+          "name": { "en": "Amrut Indian Single Malt", "fr": "Amrut Indian Single Malt", "hi": "Amrut Indian Single Malt" },
+          "description": {
+            "en": "Indian single malt.",
+            "fr": "Single malt indien.",
+            "hi": "भारतीय सिंगल माल्ट।"
+          },
+          "price": 1200,
+          "tags": []
+        },
+        {
+          "id": "johnnie-walker-black",
+          "name": { "en": "Johnnie Walker Black Label", "fr": "Johnnie Walker Black Label", "hi": "Johnnie Walker Black Label" },
+          "description": {
+            "en": "Blended Scotch.",
+            "fr": "Scotch assemblé.",
+            "hi": "ब्लेंडेड स्कॉच।"
+          },
+          "price": 1000,
+          "tags": []
+        },
+        {
+          "id": "glenlivet-founders",
+          "name": { "en": "Glenlivet Founder's Reserve", "fr": "Glenlivet Founder's Reserve", "hi": "Glenlivet Founder's Reserve" },
+          "description": {
+            "en": "Speyside single malt.",
+            "fr": "Single malt du Speyside.",
+            "hi": "स्पेसाइड सिंगल माल्ट।"
+          },
+          "price": 1000,
+          "tags": []
+        },
+        {
+          "id": "jameson",
+          "name": { "en": "Jameson Irish Whiskey", "fr": "Jameson Irish Whiskey", "hi": "Jameson Irish Whiskey" },
+          "description": {
+            "en": "Irish whiskey.",
+            "fr": "Whiskey irlandais.",
+            "hi": "आयरिश व्हिस्की।"
+          },
+          "price": 800,
+          "tags": []
+        },
+        {
+          "id": "bulleit-bourbon",
+          "name": { "en": "Bulleit Bourbon", "fr": "Bulleit Bourbon", "hi": "Bulleit Bourbon" },
+          "description": {
+            "en": "Kentucky bourbon.",
+            "fr": "Bourbon du Kentucky.",
+            "hi": "केंटकी बॉर्बन।"
+          },
+          "price": 800,
+          "tags": []
+        },
+        {
+          "id": "woodford-reserve",
+          "name": { "en": "Woodford Reserve", "fr": "Woodford Reserve", "hi": "Woodford Reserve" },
+          "description": {
+            "en": "Kentucky straight bourbon.",
+            "fr": "Bourbon straight du Kentucky.",
+            "hi": "केंटकी स्ट्रेट बॉर्बन।"
+          },
+          "price": 1000,
+          "tags": []
+        },
+        {
+          "id": "jack-daniels",
+          "name": { "en": "Jack Daniel's", "fr": "Jack Daniel's", "hi": "Jack Daniel's" },
+          "description": {
+            "en": "Tennessee whiskey.",
+            "fr": "Whiskey du Tennessee.",
+            "hi": "टेनेसी व्हिस्की।"
+          },
+          "price": 800,
+          "tags": []
+        },
+        {
+          "id": "canadian-club",
+          "name": { "en": "Canadian Club", "fr": "Canadian Club", "hi": "Canadian Club" },
+          "description": {
+            "en": "Canadian whisky.",
+            "fr": "Whisky canadien.",
+            "hi": "कनाडाई व्हिस्की।"
+          },
+          "price": 800,
+          "tags": []
+        },
+        {
+          "id": "crown-royal",
+          "name": { "en": "Crown Royal", "fr": "Crown Royal", "hi": "Crown Royal" },
+          "description": {
+            "en": "Canadian whisky.",
+            "fr": "Whisky canadien.",
+            "hi": "कनाडाई व्हिस्की।"
+          },
+          "price": 800,
+          "tags": []
+        },
+        {
+          "id": "chivas",
+          "name": { "en": "Chivas Regal", "fr": "Chivas Regal", "hi": "Chivas Regal" },
+          "description": {
+            "en": "Blended Scotch.",
+            "fr": "Scotch assemblé.",
+            "hi": "ब्लेंडेड स्कॉच।"
+          },
+          "price": 800,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "digestifs",
+      "title": { "en": "Digestifs", "fr": "Digestifs", "hi": "डाइजेस्टिफ़" },
+      "items": [
+        {
+          "id": "armagnac",
+          "name": { "en": "Armagnac", "fr": "Armagnac", "hi": "Armagnac" },
+          "description": {
+            "en": "Gascon brandy.",
+            "fr": "Eau-de-vie de Gascogne.",
+            "hi": "गैस्कनी ब्रांडी।"
+          },
+          "price": 1200,
+          "tags": []
+        },
+        {
+          "id": "calvados",
+          "name": { "en": "Calvados", "fr": "Calvados", "hi": "Calvados" },
+          "description": {
+            "en": "Norman apple brandy.",
+            "fr": "Eau-de-vie de pomme normande.",
+            "hi": "नॉरमंडी सेब ब्रांडी।"
+          },
+          "price": 1000,
+          "tags": []
+        },
+        {
+          "id": "frangelico",
+          "name": { "en": "Frangelico", "fr": "Frangelico", "hi": "Frangelico" },
+          "description": {
+            "en": "Hazelnut liqueur.",
+            "fr": "Liqueur de noisette.",
+            "hi": "हेज़लनट लिकर।"
+          },
+          "price": 800,
+          "tags": []
+        },
+        {
+          "id": "galliano",
+          "name": { "en": "Galliano", "fr": "Galliano", "hi": "Galliano" },
+          "description": {
+            "en": "Italian herbal liqueur.",
+            "fr": "Liqueur aux herbes italienne.",
+            "hi": "इतालवी जड़ी-बूटी लिकर।"
+          },
+          "price": 800,
+          "tags": []
+        },
+        {
+          "id": "porto",
+          "name": { "en": "Porto", "fr": "Porto", "hi": "Porto" },
+          "description": {
+            "en": "Portuguese fortified wine.",
+            "fr": "Vin muté portugais.",
+            "hi": "पुर्तगाली फ़ोर्टिफ़ाइड वाइन।"
+          },
+          "price": 800,
+          "tags": []
+        },
+        {
+          "id": "remy-martin-vsop",
+          "name": { "en": "Rémy Martin VSOP", "fr": "Rémy Martin VSOP", "hi": "Rémy Martin VSOP" },
+          "description": {
+            "en": "Cognac.",
+            "fr": "Cognac.",
+            "hi": "कोन्याक।"
+          },
+          "price": 1200,
+          "tags": []
+        },
+        {
+          "id": "kahlua",
+          "name": { "en": "Kahlúa", "fr": "Kahlúa", "hi": "Kahlúa" },
+          "description": {
+            "en": "Coffee liqueur.",
+            "fr": "Liqueur de café.",
+            "hi": "कॉफ़ी लिकर।"
+          },
+          "price": 900,
+          "tags": []
+        },
+        {
+          "id": "grand-marnier",
+          "name": { "en": "Grand Marnier", "fr": "Grand Marnier", "hi": "Grand Marnier" },
+          "description": {
+            "en": "Orange cognac liqueur.",
+            "fr": "Liqueur d'orange au cognac.",
+            "hi": "संतरे की कोन्याक लिकर।"
+          },
+          "price": 1000,
+          "tags": []
+        },
+        {
+          "id": "goldschlager",
+          "name": { "en": "Goldschläger", "fr": "Goldschläger", "hi": "Goldschläger" },
+          "description": {
+            "en": "Cinnamon schnapps with gold leaf.",
+            "fr": "Schnaps à la cannelle, feuille d'or.",
+            "hi": "दालचीनी श्नैप्स, सोने की पत्ती के साथ।"
+          },
+          "price": 800,
+          "tags": []
+        },
+        {
+          "id": "jagermeister",
+          "name": { "en": "Jägermeister", "fr": "Jägermeister", "hi": "Jägermeister" },
+          "description": {
+            "en": "German herbal liqueur.",
+            "fr": "Liqueur aux herbes allemande.",
+            "hi": "जर्मन जड़ी-बूटी लिकर।"
+          },
+          "price": 800,
+          "tags": []
+        },
+        {
+          "id": "st-remy",
+          "name": { "en": "St-Rémy", "fr": "St-Rémy", "hi": "St-Rémy" },
+          "description": {
+            "en": "French brandy.",
+            "fr": "Brandy français.",
+            "hi": "फ़्रांसीसी ब्रांडी।"
+          },
+          "price": 800,
+          "tags": []
+        },
+        {
+          "id": "sambuca",
+          "name": { "en": "Sambuca", "fr": "Sambuca", "hi": "Sambuca" },
+          "description": {
+            "en": "Anise liqueur.",
+            "fr": "Liqueur à l'anis.",
+            "hi": "सौंफ़ की लिकर।"
+          },
+          "price": 800,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "coffees",
+      "title": { "en": "Specialty coffees", "fr": "Cafés", "hi": "कॉफ़ी" },
+      "items": [
+        {
+          "id": "irish-coffee",
+          "name": { "en": "Irish Coffee", "fr": "Café irlandais", "hi": "आयरिश कॉफ़ी" },
+          "description": {
+            "en": "Coffee, Irish whiskey, cream.",
+            "fr": "Café, whiskey irlandais, crème.",
+            "hi": "कॉफ़ी, आयरिश व्हिस्की, क्रीम।"
+          },
+          "price": 1200,
+          "tags": []
+        },
+        {
+          "id": "spanish-coffee",
+          "name": { "en": "Spanish Coffee", "fr": "Café espagnol", "hi": "स्पैनिश कॉफ़ी" },
+          "description": {
+            "en": "Coffee with rum and orange liqueur.",
+            "fr": "Café, rhum et liqueur d'orange.",
+            "hi": "कॉफ़ी, रम और संतरे की लिकर।"
+          },
+          "price": 1200,
+          "tags": []
+        },
+        {
+          "id": "sahib-coffee",
+          "name": { "en": "Sahib Coffee", "fr": "Café Sahib", "hi": "साहिब कॉफ़ी" },
+          "description": {
+            "en": "House coffee with a measure of spirit.",
+            "fr": "Café maison, une mesure d'alcool.",
+            "hi": "घर की कॉफ़ी, एक नाप शराब के साथ।"
+          },
+          "price": 1200,
+          "tags": []
+        }
+      ]
+    }
+  ]
+}
