@@ -26,5 +26,5 @@
     "success": "Sent. We will write you back.",
     "error": "Could not send — call 514.426.1121"
   },
-  "contact": { "email": "rajiv@sahib.ca" }
+  "contact": { "email": "rajiv@sahib.ca", "map": "Map" }
 }

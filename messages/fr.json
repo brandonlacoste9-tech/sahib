@@ -26,5 +26,5 @@
     "success": "Envoyé. Nous vous écrirons.",
     "error": "Envoi impossible — appelez le 514.426.1121"
   },
-  "contact": { "email": "rajiv@sahib.ca" }
+  "contact": { "email": "rajiv@sahib.ca", "map": "Carte" }
 }

@@ -26,5 +26,5 @@
     "success": "भेज दिया। हम आपको लिखेंगे।",
     "error": "नहीं भेज सके — 514.426.1121 पर कॉल करें"
   },
-  "contact": { "email": "rajiv@sahib.ca" }
+  "contact": { "email": "rajiv@sahib.ca", "map": "नक्शा" }
 }
