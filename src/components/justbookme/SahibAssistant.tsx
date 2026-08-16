@@ -9,6 +9,11 @@ import {
   type AssistantLocale,
   type AssistantStep,
 } from '@/lib/sahib-assistant';
+import {
+  getSpeechRecognitionCtor,
+  speechLang,
+  type SpeechRecognitionLike,
+} from '@/lib/speech-input';
 
 type Props = {
   slug: string;
@@ -33,20 +38,29 @@ export function SahibAssistant({
   const [lines, setLines] = useState<Line[]>([{ from: 'sahib', text: hello }]);
   const [input, setInput] = useState('');
   const [busy, setBusy] = useState(false);
+  const [listening, setListening] = useState(false);
+  const [micReady, setMicReady] = useState(false);
   const endRef = useRef<HTMLDivElement>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const objectUrlRef = useRef<string | null>(null);
   const speakTokenRef = useRef(0);
+  const recogRef = useRef<SpeechRecognitionLike | null>(null);
+  const sendRef = useRef<(text: string) => void>(() => undefined);
 
   useEffect(() => {
     endRef.current?.scrollIntoView({ block: 'end' });
   }, [lines]);
 
   useEffect(() => {
+    setMicReady(Boolean(getSpeechRecognitionCtor()));
+  }, []);
+
+  useEffect(() => {
     void speak(hello);
     return () => {
       speakTokenRef.current += 1;
       audioRef.current?.pause();
+      recogRef.current?.abort();
       if (typeof window !== 'undefined') window.speechSynthesis?.cancel();
     };
   }, [hello, locale]);
@@ -138,8 +152,60 @@ export function SahibAssistant({
     }
   }
 
+  sendRef.current = (text: string) => {
+    void send(text);
+  };
+
+  function stopListening() {
+    recogRef.current?.stop();
+    recogRef.current = null;
+    setListening(false);
+  }
+
+  function toggleMic() {
+    if (step === 'done' || busy) return;
+    if (listening) {
+      stopListening();
+      return;
+    }
+    const Ctor = getSpeechRecognitionCtor();
+    if (!Ctor) return;
+    speakTokenRef.current += 1;
+    audioRef.current?.pause();
+    window.speechSynthesis?.cancel();
+    const recog = new Ctor();
+    recog.lang = speechLang(locale);
+    recog.interimResults = true;
+    recog.continuous = false;
+    recog.onresult = (event) => {
+      const last = event.results[event.results.length - 1];
+      if (!last) return;
+      const heard = last[0].transcript.trim();
+      setInput(heard);
+      if (last.isFinal && heard) {
+        stopListening();
+        sendRef.current(heard);
+      }
+    };
+    recog.onerror = () => {
+      stopListening();
+    };
+    recog.onend = () => {
+      setListening(false);
+      recogRef.current = null;
+    };
+    recogRef.current = recog;
+    try {
+      recog.start();
+      setListening(true);
+    } catch {
+      setListening(false);
+    }
+  }
+
   function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    stopListening();
     void send(input);
   }
 
@@ -171,10 +237,33 @@ export function SahibAssistant({
         <input
           value={input}
           onChange={(event) => setInput(event.target.value)}
-          placeholder={t('typeHere')}
+          placeholder={listening ? t('listening') : t('typeHere')}
           disabled={step === 'done' || busy}
           className="min-w-0 flex-1 bg-transparent px-4 py-3 text-base text-ink placeholder:text-muted/60"
         />
+        {micReady ? (
+          <button
+            type="button"
+            onClick={toggleMic}
+            disabled={step === 'done' || busy}
+            aria-pressed={listening}
+            aria-label={listening ? t('listening') : t('listen')}
+            className={`px-3 disabled:opacity-40 ${listening ? 'text-gold' : 'text-teal'}`}
+          >
+            <svg
+              viewBox="0 0 24 24"
+              className="h-5 w-5"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+            >
+              <rect x="9" y="3.5" width="6" height="11" rx="3" />
+              <path d="M6.5 11.5a5.5 5.5 0 0 0 11 0" />
+              <path d="M12 17v3.5" />
+            </svg>
+          </button>
+        ) : null}
         <button
           type="submit"
           disabled={step === 'done' || busy}

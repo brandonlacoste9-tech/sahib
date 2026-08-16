@@ -110,6 +110,8 @@
     "invalidTime": "Pick a time between 11:30 and 21:30",
     "connected": "Line answered",
     "typeHere": "Type as if you were on the phone…",
+    "listen": "Speak",
+    "listening": "Listening…",
     "say": "Send",
     "orForm": "Prefer a form instead"
   }
