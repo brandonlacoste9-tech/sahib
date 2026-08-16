@@ -22,9 +22,30 @@
   },
   "catering": {
     "title": "Catering",
+    "weddingsTitle": "Weddings",
+    "weddingsBody": "Receptions and celebrations with custom menus — buffet or plated — for the day that matters.",
+    "corporateTitle": "Corporate",
+    "corporateBody": "Working lunches, office parties, and client dinners. Flexible headcounts and delivery.",
+    "privateTitle": "Private events",
+    "privateBody": "Birthdays, family gatherings, and private parties at either room or your venue.",
+    "formTitle": "Request a quote",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "guests": "Number of guests",
+    "occasion": "Occasion",
+    "notes": "Notes",
     "send": "Send request",
     "success": "Sent. We will write you back.",
-    "error": "Could not send — call 514.426.1121"
+    "error": "Could not send — call 514.426.1121",
+    "invalidFirstName": "Enter a first name",
+    "invalidLastName": "Enter a last name",
+    "invalidEmail": "Enter a valid email",
+    "invalidPhone": "Enter a phone number",
+    "invalidGuests": "Enter a guest count between 1 and 2000",
+    "invalidOccasion": "Enter an occasion",
+    "invalidNotes": "Notes are too long"
   },
   "contact": { "email": "rajiv@sahib.ca", "map": "Map" }
 }

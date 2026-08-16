@@ -22,9 +22,30 @@
   },
   "catering": {
     "title": "Traiteur",
+    "weddingsTitle": "Mariages",
+    "weddingsBody": "Réceptions et célébrations avec menus sur mesure — buffet ou assiettes — pour le grand jour.",
+    "corporateTitle": "Entreprise",
+    "corporateBody": "Déjeuners de travail, fêtes de bureau et dîners clients. Effectifs souples et livraison.",
+    "privateTitle": "Événements privés",
+    "privateBody": "Anniversaires, réunions de famille et fêtes privées dans l'une de nos salles ou chez vous.",
+    "formTitle": "Demander un devis",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Courriel",
+    "phone": "Téléphone",
+    "guests": "Nombre d'invités",
+    "occasion": "Occasion",
+    "notes": "Notes",
     "send": "Envoyer la demande",
     "success": "Envoyé. Nous vous écrirons.",
-    "error": "Envoi impossible — appelez le 514.426.1121"
+    "error": "Envoi impossible — appelez le 514.426.1121",
+    "invalidFirstName": "Entrez un prénom",
+    "invalidLastName": "Entrez un nom",
+    "invalidEmail": "Entrez un courriel valide",
+    "invalidPhone": "Entrez un numéro de téléphone",
+    "invalidGuests": "Entrez un nombre d'invités entre 1 et 2000",
+    "invalidOccasion": "Entrez une occasion",
+    "invalidNotes": "Les notes sont trop longues"
   },
   "contact": { "email": "rajiv@sahib.ca", "map": "Carte" }
 }
