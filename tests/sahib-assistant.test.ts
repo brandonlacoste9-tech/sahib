@@ -9,8 +9,9 @@ import {
 
 describe('fake Sahib receptionist', () => {
   it('greets with the room name', () => {
+    expect(openingLine('Pointe-Claire', 'en')).toMatch(/Rajiv/);
     expect(openingLine('Pointe-Claire', 'en')).toMatch(/Pointe-Claire/);
-    expect(openingLine('Dorval', 'fr')).toMatch(/Dorval/);
+    expect(openingLine('Dorval', 'fr')).toMatch(/Rajiv/);
   });
 
   it('parses party size, evening time, and Friday', () => {

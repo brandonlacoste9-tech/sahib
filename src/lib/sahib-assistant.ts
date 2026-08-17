@@ -169,12 +169,12 @@ export function parseDate(
 
 export function openingLine(locationName: string, locale: AssistantLocale): string {
   if (locale === 'fr') {
-    return `Bonjour, Sahib ${locationName}, j’écoute. Pour combien de personnes?`;
+    return `Bonjour, Sahib ${locationName}, ici Rajiv. Pour combien de personnes?`;
   }
   if (locale === 'hi') {
-    return `नमस्ते, साहिब ${locationName}। कितने लोग आएंगे?`;
+    return `नमस्ते, साहिब ${locationName}, मैं राजीव हूँ। कितने लोग आएंगे?`;
   }
-  return `Hello, Sahib ${locationName}, this is Sahib. How many will be dining?`;
+  return `Hello, Sahib ${locationName}, this is Rajiv. How many will be dining?`;
 }
 
 export function promptFor(

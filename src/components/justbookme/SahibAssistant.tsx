@@ -229,7 +229,7 @@ export function SahibAssistant({
         <p className="text-sm tracking-[0.16em] text-teal uppercase">
           {t('connected')}
         </p>
-        <p className="text-sm text-muted">Sahib · {locationName}</p>
+        <p className="text-sm text-muted">Rajiv · {locationName}</p>
       </div>
       <p className="border-b border-line px-4 py-2 text-xs text-muted">{hours}</p>
       <div className="flex max-h-[28rem] flex-col gap-3 overflow-y-auto px-4 py-5">
